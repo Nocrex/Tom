@@ -6619,7 +6619,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 84,
+        "count": 85,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7328,6 +7328,15 @@
                 "points": 1,
                 "steamids": [
                     76561198130971240
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-17T16:04:38.084422+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1483495968853725396 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 85 total)",
+                "points": 1,
+                "steamids": [
+                    76561199389851560
                 ],
                 "verified": true
             }
