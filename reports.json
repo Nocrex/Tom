@@ -5268,6 +5268,21 @@
             }
         ]
     },
+    "217469993628073994": {
+        "count": 1,
+        "profile_id": 76561198074302262,
+        "reports": [
+            {
+                "date": "2026-03-19T12:25:07.358688+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484146488681693276 <@217469993628073994> (Spoob (Spoob)) cheater exposed (+1 points, 1 total)",
+                "points": 1,
+                "steamids": [
+                    76561199831175220
+                ],
+                "verified": true
+            }
+        ]
+    },
     "228839875380510720": {
         "count": 2,
         "profile_id": 76561198126515080,
