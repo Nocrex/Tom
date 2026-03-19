@@ -10019,7 +10019,7 @@
         ]
     },
     "341316635606515712": {
-        "count": 2,
+        "count": 4,
         "profile_id": 76561198357764641,
         "reports": [
             {
@@ -10037,6 +10037,16 @@
                 "points": 1,
                 "steamids": [
                     76561199827425693
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-19T21:21:14.159041+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484287476444168334 <@341316635606515712> (2014 troybilt tb2450) cheater exposed (+2 points, 4 total)",
+                "points": 2,
+                "steamids": [
+                    76561199858420832,
+                    76561198726947150
                 ],
                 "verified": true
             }
