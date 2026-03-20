@@ -6634,7 +6634,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 87,
+        "count": 88,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7370,6 +7370,15 @@
                 "points": 1,
                 "steamids": [
                     76561199523783411
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-20T07:37:27.279411+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484362736459710524 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 88 total)",
+                "points": 1,
+                "steamids": [
+                    76561199810824088
                 ],
                 "verified": true
             }
@@ -10872,7 +10881,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 40,
+        "count": 41,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -11232,6 +11241,15 @@
                 "points": 1,
                 "steamids": [
                     76561198757819017
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-20T07:57:27.440957+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484334292929876150 <@365145249074642956> (Teltta) cheater exposed (+1 points, 41 total)",
+                "points": 1,
+                "steamids": [
+                    76561198745135826
                 ],
                 "verified": true
             }
@@ -18039,7 +18057,7 @@
         ]
     },
     "603399916135383041": {
-        "count": 26,
+        "count": 27,
         "profile_id": 76561198308157992,
         "reports": [
             {
@@ -18219,6 +18237,15 @@
                     76561198729516532
                 ],
                 "verified": true
+            },
+            {
+                "date": "2026-03-20T07:42:39.756809+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484013470235099186 <@603399916135383041> (odo) cheater exposed (+1 points, 27 total)",
+                "points": 1,
+                "steamids": [
+                    76561198782196452
+                ],
+                "verified": false
             }
         ]
     },
