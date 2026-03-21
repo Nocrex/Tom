@@ -6634,7 +6634,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 90,
+        "count": 97,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7397,6 +7397,53 @@
                 "points": 1,
                 "steamids": [
                     76561198729527072
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-21T07:24:05.485520+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484784040195133551 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 91 total)",
+                "points": 1,
+                "steamids": [
+                    76561198728539087
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-21T07:25:24.671494+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484782218202058863 <@286378350975647744> (Sauli01) cheater exposed (+2 points, 93 total)",
+                "points": 2,
+                "steamids": [
+                    76561199806161820,
+                    76561199887365551
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-21T07:27:06.793232+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484763322162090114 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 94 total)",
+                "points": 1,
+                "steamids": [
+                    76561198730901574
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-21T07:49:35.334995+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484737767446679684 <@286378350975647744> (Sauli01) cheater exposed (+2 points, 96 total)",
+                "points": 2,
+                "steamids": [
+                    76561198366445674,
+                    76561198304638650
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-21T07:51:29.097091+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1484751630405468190 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 97 total)",
+                "points": 1,
+                "steamids": [
+                    76561198786585926
                 ],
                 "verified": true
             }
