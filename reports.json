@@ -8481,7 +8481,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 20,
+        "count": 22,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -8622,6 +8622,16 @@
                     76561199500066585,
                     76561198060552170,
                     76561199557915337
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-24T20:25:01.608237+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486060771766173767 <@309337035716558858> (lukasmaestro) cheater exposed (+2 points, 22 total)",
+                "points": 2,
+                "steamids": [
+                    76561199837985889,
+                    76561199400098378
                 ],
                 "verified": true
             }
@@ -13734,7 +13744,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 41,
+        "count": 42,
         "profile_id": 76561199750445142,
         "reports": [
             {
@@ -14032,6 +14042,15 @@
                 "points": 1,
                 "steamids": [
                     76561199879996050
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-24T20:25:47.915506+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486088327110070323 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 42 total)",
+                "points": 1,
+                "steamids": [
+                    76561198724521611
                 ],
                 "verified": true
             }
@@ -20889,7 +20908,7 @@
         ]
     },
     "825341186142109698": {
-        "count": 92,
+        "count": 93,
         "profile_id": 76561199190321580,
         "reports": [
             {
@@ -21646,6 +21665,15 @@
                 "points": 2,
                 "steamids": [
                     76561199231778661
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-24T20:09:39.358935+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486037696806654072 <@825341186142109698> (Dxxn) cheater exposed (+1 points, 93 total)",
+                "points": 1,
+                "steamids": [
+                    76561199447892503
                 ],
                 "verified": true
             }
