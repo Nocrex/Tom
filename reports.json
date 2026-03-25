@@ -20774,7 +20774,7 @@
         ]
     },
     "771063194084573205": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561198258715564,
         "reports": [
             {
@@ -20819,6 +20819,15 @@
                 "points": 1,
                 "steamids": [
                     76561199877690941
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-25T19:42:28.532738+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486443326210314270 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 6 total)",
+                "points": 1,
+                "steamids": [
+                    76561198920415926
                 ],
                 "verified": true
             }
