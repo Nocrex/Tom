@@ -13872,7 +13872,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 52,
+        "count": 54,
         "profile_id": 76561199750445142,
         "reports": [
             {
@@ -14245,6 +14245,24 @@
                 "points": 1,
                 "steamids": [
                     76561198202816899
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-27T14:18:17.988428+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487080294719815680 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 53 total)",
+                "points": 1,
+                "steamids": [
+                    76561198724215842
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-27T14:36:36.853605+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487091642526728203 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 54 total)",
+                "points": 1,
+                "steamids": [
+                    76561198047082175
                 ],
                 "verified": true
             }
@@ -15750,7 +15768,7 @@
         ]
     },
     "571009999925542922": {
-        "count": 239,
+        "count": 240,
         "profile_id": 76561199323117199,
         "reports": [
             {
@@ -17761,6 +17779,15 @@
                 "points": 1,
                 "steamids": [
                     76561199250513593
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-27T14:37:00.078280+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486851542425276416 <@571009999925542922> (Midnight) cheater exposed (+1 points, 240 total)",
+                "points": 1,
+                "steamids": [
+                    76561198723890069
                 ],
                 "verified": true
             }

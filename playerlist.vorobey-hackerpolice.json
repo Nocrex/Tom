@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-03-27 13:10:07",
-        "title": "vorobey-hackerpolice - 2026-03-27 13:10:07",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-03-27 14:37:00",
+        "title": "vorobey-hackerpolice - 2026-03-27 14:37:00",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -19768,6 +19768,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:763950114]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1487080294719815680"
+            ],
+            "last_seen": {
+                "time": 1774621097
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:86816447]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1487091642526728203"
+            ],
+            "last_seen": {
+                "time": 1774622196
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1890173794]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1459957721691328543"
@@ -24972,6 +24996,18 @@
             ],
             "last_seen": {
                 "time": 1774470843
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:763624341]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1486851542425276416"
+            ],
+            "last_seen": {
+                "time": 1774622220
             }
         },
         {
