@@ -36,7 +36,7 @@ async def tfbd_export(reports):
             "authors": [ "All contributors in the hackerpolice channel" ],
             "description": f"List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated {now}",
             "title": f"vorobey-hackerpolice - {now}",
-            "update_url": f"https://raw.githubusercontent.com/AveraFox/Tom/refs/heads/main/{statics.TFBD_LIST_NAME}"
+            "update_url": f"https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/{statics.TFBD_LIST_NAME}"
         },
         "players": list(map(lambda s: {
             "attributes": ["cheater"],
