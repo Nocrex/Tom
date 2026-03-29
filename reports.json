@@ -6709,7 +6709,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 106,
+        "count": 107,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7576,6 +7576,15 @@
                 "points": 1,
                 "steamids": [
                     76561198357381570
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-29T20:08:06.311403+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487905756820017372 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 107 total)",
+                "points": 1,
+                "steamids": [
+                    76561198745527208
                 ],
                 "verified": true
             }
@@ -11273,7 +11282,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 57,
+        "count": 60,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -11787,6 +11796,25 @@
                 "points": 1,
                 "steamids": [
                     76561198820828675
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-29T20:18:44.643576+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487903221325234357 <@365145249074642956> (Teltta) cheater exposed (+2 points, 59 total)",
+                "points": 2,
+                "steamids": [
+                    76561198792518142,
+                    76561198739621741
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-29T20:19:21.859393+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487901473978188010 <@365145249074642956> (Teltta) cheater exposed (+1 points, 60 total)",
+                "points": 1,
+                "steamids": [
+                    76561199506010871
                 ],
                 "verified": true
             }
