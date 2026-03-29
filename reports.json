@@ -8523,7 +8523,7 @@
         ]
     },
     "307653956660625411": {
-        "count": 11,
+        "count": 12,
         "profile_id": 76561199545021803,
         "reports": [
             {
@@ -8607,6 +8607,15 @@
                 "points": 1,
                 "steamids": [
                     76561198730602733
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-03-29T18:08:23.420863+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1487874485020397698 <@307653956660625411> (noskillch) cheater exposed (+1 points, 12 total)",
+                "points": 1,
+                "steamids": [
+                    76561199496950509
                 ],
                 "verified": true
             }
