@@ -1,6 +1,6 @@
 {
     "1002220641459634226": {
-        "count": 37,
+        "count": 38,
         "profile_id": 76561199695684975,
         "reports": [
             {
@@ -309,6 +309,15 @@
                 "points": 1,
                 "steamids": [
                     76561199378594295
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-01T22:54:56.476304+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1489034706677923960 <@1002220641459634226> ([VOLVO] ae) cheater exposed (+1 points, 38 total)",
+                "points": 1,
+                "steamids": [
+                    76561198720312500
                 ],
                 "verified": true
             }
@@ -8607,7 +8616,7 @@
         ]
     },
     "307653956660625411": {
-        "count": 12,
+        "count": 13,
         "profile_id": 76561199545021803,
         "reports": [
             {
@@ -8700,6 +8709,15 @@
                 "points": 1,
                 "steamids": [
                     76561199496950509
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-01T22:23:45.693311+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1488833083775127683 <@307653956660625411> (noskillch) cheater exposed (+1 points, 13 total)",
+                "points": 1,
+                "steamids": [
+                    76561199808718440
                 ],
                 "verified": true
             }
@@ -19098,7 +19116,7 @@
         ]
     },
     "603399916135383041": {
-        "count": 33,
+        "count": 34,
         "profile_id": 76561198308157992,
         "reports": [
             {
@@ -19323,6 +19341,15 @@
                 "steamids": [
                     76561198879059246,
                     76561199169282400
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-01T22:22:41.346219+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1488863335721210046 <@603399916135383041> (odo) cheater exposed (+1 points, 34 total)",
+                "points": 1,
+                "steamids": [
+                    76561199049602233
                 ],
                 "verified": true
             }
@@ -21453,7 +21480,7 @@
         ]
     },
     "771063194084573205": {
-        "count": 6,
+        "count": 7,
         "profile_id": 76561198258715564,
         "reports": [
             {
@@ -21507,6 +21534,15 @@
                 "points": 1,
                 "steamids": [
                     76561198920415926
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-01T22:25:43.963108+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1488878281749958817 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 7 total)",
+                "points": 1,
+                "steamids": [
+                    76561199852717570
                 ],
                 "verified": true
             }
