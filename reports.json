@@ -14777,7 +14777,7 @@
         ]
     },
     "454985875680395274": {
-        "count": 2,
+        "count": 3,
         "profile_id": 76561198343654266,
         "reports": [
             {
@@ -14795,6 +14795,15 @@
                 "points": 1,
                 "steamids": [
                     76561199350864880
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-02T22:34:44.106837+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1489306185180905533 <@454985875680395274> (Ragz) cheater exposed (+1 points, 3 total)",
+                "points": 1,
+                "steamids": [
+                    76561198724523475
                 ],
                 "verified": true
             }
