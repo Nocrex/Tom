@@ -8742,7 +8742,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 32,
+        "count": 33,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -8951,6 +8951,15 @@
                 "steamids": [
                     76561198404283785,
                     76561198730386303
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-03T10:15:48.551047+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1489568849408823478 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 33 total)",
+                "points": 1,
+                "steamids": [
+                    76561198759607418
                 ],
                 "verified": true
             }
