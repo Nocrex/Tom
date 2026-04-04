@@ -131,8 +131,15 @@ class Reports:
         for filename in os.listdir(list_dir):
             path = os.path.join(list_dir, filename)
             async with aiofiles.open(path) as f:
-                data = (await f.read()).split("\n")
-            self._lists[filename.split(".")[0]] = {int(match.group(0)) for match in map(lambda l: steam.STEAMID_REGEX.match(l), data) if match}
+                data = await f.read()
+                
+            list_name = ".".join(filename.split(".")[:-1])
+            
+            ids64 = set(map(lambda match: int(match.group(0)), steam.STEAMID_REGEX.finditer(data)))
+            ids3 = set(map(lambda match: steam.sid3_to64(match.group(0)), steam.STEAMID3_REGEX.finditer(data)))
+            
+            self._lists[list_name] = ids64 | ids3
+            print(list_name, len(self._lists[list_name]))
 
     # saves Report data to the data file
     async def save(self):
