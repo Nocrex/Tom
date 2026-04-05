@@ -10668,7 +10668,7 @@
         ]
     },
     "338026495811387392": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561198004449070,
         "reports": [
             {
@@ -10715,6 +10715,15 @@
                 "steamids": [
                     76561198787875762,
                     76561198389743694
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-05T13:16:01.483593+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1490179243286466630 <@338026495811387392> (John Demolitionsman) cheater exposed (+1 points, 8 total)",
+                "points": 1,
+                "steamids": [
+                    76561198724097091
                 ],
                 "verified": true
             }
