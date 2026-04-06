@@ -139,7 +139,6 @@ class Reports:
             ids3 = set(map(lambda match: steam.sid3_to64(match.group(0)), steam.STEAMID3_REGEX.finditer(data)))
             
             self._lists[list_name] = ids64 | ids3
-            print(list_name, len(self._lists[list_name]))
 
     # saves Report data to the data file
     async def save(self):
