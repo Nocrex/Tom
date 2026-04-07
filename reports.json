@@ -1,6 +1,6 @@
 {
     "1002220641459634226": {
-        "count": 39,
+        "count": 40,
         "profile_id": 76561199695684975,
         "reports": [
             {
@@ -327,6 +327,15 @@
                 "points": 1,
                 "steamids": [
                     76561198742175322
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-07T18:59:27.224215+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491149697006698516 <@1002220641459634226> ([VOLVO] ae) cheater exposed (+1 points, 40 total)",
+                "points": 1,
+                "steamids": [
+                    76561198898120720
                 ],
                 "verified": true
             }
@@ -8790,7 +8799,7 @@
         ]
     },
     "305799916201050112": {
-        "count": 1,
+        "count": 2,
         "profile_id": 76561198376536473,
         "reports": [
             {
@@ -8799,6 +8808,15 @@
                 "points": 1,
                 "steamids": [
                     76561199376466944
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-07T18:51:56.115021+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491148061651767326 <@305799916201050112> (Mrtoxic) cheater exposed (+1 points, 2 total)",
+                "points": 1,
+                "steamids": [
+                    76561198723099441
                 ],
                 "verified": true
             }
