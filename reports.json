@@ -16686,7 +16686,7 @@
         ]
     },
     "551621415959265284": {
-        "count": 8,
+        "count": 9,
         "profile_id": 76561199177593557,
         "reports": [
             {
@@ -16718,6 +16718,15 @@
                 "points": 1,
                 "steamids": [
                     76561198835300681
+                ],
+                "verified": true
+            },
+            {
+                "date": "2026-04-08T17:23:57.260338+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491482657907933325 <@551621415959265284> (BossZe) cheater exposed (+1 points, 9 total)",
+                "points": 1,
+                "steamids": [
+                    76561199678810639
                 ],
                 "verified": true
             }
