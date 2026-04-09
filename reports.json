@@ -11834,7 +11834,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 71,
+        "count": 72,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -12465,6 +12465,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1491433413633376277 <@365145249074642956> (Teltta) cheater exposed (+1 points, 71 total)",
                 "players": {
                     "76561198747307385": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-09T21:26:50.590010+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491870972004008066 <@365145249074642956> (Teltta) cheater exposed (+1 points, 72 total)",
+                "players": {
+                    "76561199548468387": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -14788,7 +14797,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 66,
+        "count": 67,
         "profile_id": 76561199750445142,
         "reports": [
             {
@@ -15270,6 +15279,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1491801358079098962 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 66 total)",
                 "players": {
                     "76561198717526774": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-09T21:09:04.006132+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1486712781020463285 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 67 total)",
+                "players": {
+                    "76561198202816899": "exploiter"
                 },
                 "points": 1,
                 "verified": true
