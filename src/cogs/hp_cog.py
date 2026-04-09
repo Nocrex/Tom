@@ -1,10 +1,14 @@
-import discord, typing, logging, re, traceback
+import discord
+import typing
+import logging
+import re
+import traceback
 from io import StringIO
 from discord.ext import commands, tasks
 from discord import app_commands
 
 from .. import statics, steam
-from ..reports import Reports
+from ..reports import PlayerKind, Reports
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +20,7 @@ def check_in_thread(interaction: discord.Interaction): # function to check if a 
         raise NotInThreadError()
     return True
 
-async def get_steamid(id: str) -> int: # resolve steam profile links and vanity urls
+async def get_steamid(id: str) -> int | None: # resolve steam profile links and vanity urls
     if steam.STEAMID_REGEX.fullmatch(id) is not None:
         return int(id)
     
@@ -37,20 +41,19 @@ def has_any_role(member: discord.Member, roles: typing.List[int]) -> bool: # che
 
 class HPCog(commands.Cog):
     def __init__(self, bot: commands.Bot):
-        self.reports: Reports = None
         self.bot: commands.Bot = bot
         self.toplist_needs_rebuild: bool = True
         self.toplist: typing.Optional[str] = None
 
     #### EVENT HANDLERS ####
     async def cog_load(self):
-        self.reports = await Reports.load()
+        self.reports: Reports = await Reports.load()
         logger.info("reports loaded")
         self.log_channel = await self.bot.fetch_channel(statics.REPORT_CHANNEL_ID)
         self.error_channel = await self.bot.fetch_channel(statics.ERROR_CHANNEL_ID)
         self.update_toplist.start() # start loop task to update the toplist regularly
 
-    async def interaction_check(self, interaction: discord.Interaction): 
+    async def interaction_check(self, interaction: discord.Interaction) -> bool: 
         # usually used to check some condition for all app_commands in this Cog, but just log user and the command that was run
         options = []
         if "options" in interaction.data:
@@ -90,6 +93,7 @@ class HPCog(commands.Cog):
                 class Mockuser:
                     def __init__(self, id):
                         self.global_name = id
+                        self.mention = f"<@{id}>"
                 user =  Mockuser(reporter.userid) # dummy class object, so the user id is used instead of the name
 
             msg += f"{reporter.points()}: {user.mention} ({user.global_name})\n"
@@ -97,7 +101,7 @@ class HPCog(commands.Cog):
         self.toplist = msg # Store toplist for later use
         logger.info("Toplist rebuilt")
 
-        reported_count = len(self.reports.get_cheater_steamids())
+        reported_count = self.reports.get_reported_count()
         await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{reported_count} SteamIDs"))
         logger.info("Status updated")
         
@@ -108,9 +112,12 @@ class HPCog(commands.Cog):
     )
     @app_commands.describe(user="User to lookup points for, leave blank to get your own count")
     @app_commands.checks.cooldown(1, 5.0) # only allow one call every 5 seconds
-    async def get_report_point_count(self, interaction: discord.Interaction, user: typing.Optional[discord.User] = None):
+    async def get_report_point_count(self, interaction: discord.Interaction, user: discord.Member | discord.User | None = None):
         if not user: # if no user was passed, look up points for the user calling the command
             user = interaction.user
+        
+        if not isinstance(user, discord.Member) or not isinstance(interaction.user, discord.Member):
+            return
 
         reporter = self.reports.get(user.id)
         if not reporter: # user does not have a reporter entry
@@ -149,15 +156,14 @@ class HPCog(commands.Cog):
     )
     async def lookup(self, interaction: discord.Interaction, steamid: str):
         await interaction.response.defer(ephemeral=True)
-        steamid = await get_steamid(steamid.strip())
-        if not steamid:
+        if not (steamid_i := await get_steamid(steamid.strip())):
             await interaction.followup.send("Invalid SteamID", ephemeral=True)
             return
         
-        reports = self.reports.find_cheater(int(steamid))
-        lists = self.reports.check_external_lists(int(steamid))
+        reports = self.reports.find_reported(steamid_i)
+        lists = self.reports.check_external_lists(steamid_i)
 
-        embed = discord.Embed(title=f"Information for {steamid}")
+        embed = discord.Embed(title=f"Information for {steamid_i}")
 
         if len(lists) > 0:
             embed.add_field(inline=False, name="External lists", value="\n".join(lists))
@@ -165,7 +171,7 @@ class HPCog(commands.Cog):
 
         if len(reports) > 0:
             embed.insert_field_at(0, inline=False, name="Reports", value=
-                '\n'.join(map(lambda r: r.message + (' -- (unverified)' if not r.verified else ''), reports)))
+                '\n'.join(map(lambda r: f"{r[0]} [{r[2].name}]" + (' -- (unverified)' if not r[1] else ''), reports)))
             embed.color = discord.Color.orange()
         
         if len(reports) + len(lists) == 0:
@@ -184,7 +190,10 @@ class HPCog(commands.Cog):
     @app_commands.check(check_in_thread)
     async def mark(self, interaction: discord.Interaction, tag: app_commands.Choice[int]):
         # just adds the selected tag to the thread the command is called in
-        thread: discord.Thread = interaction.channel
+        if not isinstance((thread := interaction.channel), discord.Thread):
+            await interaction.response.send_message("Can only be used in a report thread", ephemeral=True)
+            return
+            
         await thread.add_tags(statics.TAGS[tag.value])
         await interaction.response.send_message(f"Added tag {tag.name}", ephemeral=True)
 
@@ -197,7 +206,9 @@ class HPCog(commands.Cog):
     @app_commands.check(check_in_thread)
     async def unmark(self, interaction: discord.Interaction, tag: app_commands.Choice[int]):
         # removes the selected tag from the thread this command was called in
-        thread: discord.Thread = interaction.channel
+        if not isinstance((thread := interaction.channel), discord.Thread):
+            await interaction.response.send_message("Can only be used in a report thread", ephemeral=True)
+            return
         await thread.remove_tags(statics.TAGS[tag.value])
         await interaction.response.send_message(f"Removed tag {tag.name}", ephemeral=True)
         
@@ -207,7 +218,7 @@ class HPCog(commands.Cog):
     )
     @app_commands.describe(
         points="Amount of points this report gives (default 1)", 
-        steamids="Comma seperated list of reported steamids, ex. \"76561199796492647,76561199532619504\"",
+        steamids="Comma seperated list of reported steamids, ex. \"76561199796492647,76561199532619504\". Marks as Cheater by default, specify a different tag like \"76561199796492647[exploiter]\"",
         verified="If the steamids can be verified to be in the report",
         allow_duplicate="Skip checking if the user was already reported",
         reporter_steamid="SteamID of the person reporting, required if none has been logged yet",
@@ -226,6 +237,7 @@ class HPCog(commands.Cog):
         skip_reporter_steamid_check: bool = False
     ):            
         # Approves the report the command is executed in
+        assert isinstance(interaction.channel, discord.Thread)
         thread: discord.Thread = interaction.channel
         owner = await self.bot.fetch_user(thread.owner_id)
         reporter = self.reports.get_or_create(thread.owner_id)
@@ -234,43 +246,53 @@ class HPCog(commands.Cog):
             await interaction.response.send_message("Report was already approved", ephemeral=True)
             return
 
+        reporter_steamid_i = None
         if not reporter.profile_id and not reporter_steamid and not skip_reporter_steamid_check: # check if reporter has a steamid on record
             await interaction.response.send_message("Reporter does not have a steam profile ID associated", ephemeral=True)
             return
         elif reporter_steamid: # new steamid was passed to the command
-            reporter_steamid = await get_steamid(reporter_steamid.strip())
-            if not reporter_steamid:
+            reporter_steamid_i = await get_steamid(reporter_steamid.strip())
+            if not reporter_steamid_i:
                 await interaction.response.send_message(f"Reporter SteamID \"{reporter_steamid}\" is not valid", ephemeral=True)
                 return
 
         steamids_str = steamids.split(",") # get steamids from the command argument
-        steamids_list = []
+        steamids_dict: dict[int, PlayerKind] = {}
         for steamid in steamids_str: # verify each steamid and convert to number
-            steamid = await get_steamid(steamid.strip())
-            if not steamid:
+            type = PlayerKind.CHEATER
+            if "[" in steamid and "]" in steamid:
+                type_s = steamid[steamid.find("[")+1:steamid.find("]")]
+                try:
+                    type = PlayerKind(type_s)
+                except ValueError:
+                    await interaction.response.send_message(f"Unknown mark type {type_s}", ephemeral=True)
+                    return
+                steamid = steamid.replace(f"[{type.value}]", "")
+            steamid_i = await get_steamid(steamid.strip())
+            if not steamid_i:
                 await interaction.response.send_message(f"Cheater SteamID \"{steamid}\" is not valid", ephemeral=True)
                 return
-            steamids_list.append(int(steamid))
+            steamids_dict[steamid_i] = type
         
-        if len(steamids_list) == 0:
+        if len(steamids_dict) == 0:
             await interaction.response.send_message("At least one cheater SteamID is required, or \"none\"")
             return
         
         if not allow_duplicate:
-            for steamid in steamids_list: # check steamids if they were reported before
-                reports = self.reports.find_cheater(steamid)
-                if len(reports) > 0 and (not verified or any(map(lambda r: r.verified, reports))):
-                    await interaction.response.send_message(f"Cheater {steamid} was already reported:\n{chr(10).join(map(lambda r: r.message + (' -- (unverified)' if not r.verified else ''), reports))}", ephemeral=True)
+            for steamid in steamids_dict: # check steamids if they were reported before
+                reports = self.reports.find_reported(steamid)
+                if len(reports) > 0 and (not verified or any(map(lambda r: r[2], reports))):
+                    await interaction.response.send_message(f"Cheater {steamid} was already reported:\n{chr(10).join(map(lambda r: r[0] + (' -- (unverified)' if not r[1] else ''), reports))}", ephemeral=True)
                     return
 
-        if reporter_steamid: # if a steamid for the reporter was passed, add it to the record and log it in the log channel
-            reporter.profile_id = int(reporter_steamid)
-            await self.log_channel.send(f"Associated SteamID {reporter_steamid} with user {owner.mention}", silent=True)
+        if reporter_steamid_i: # if a steamid for the reporter was passed, add it to the record and log it in the log channel
+            reporter.profile_id = reporter_steamid_i
+            await self.log_channel.send(f"Associated SteamID {reporter_steamid_i} with user {owner.mention}", silent=True)
 
         # log channel message
         msg = f"{thread.jump_url} {owner.mention} ({owner.global_name}) cheater exposed (+{points} points, {reporter.points()+points} total)"
         # add report to internal record
-        reporter.add_report(msg, points, steamids_list, verified)
+        reporter.add_report(msg, points, steamids_dict, verified)
         # save data to json
         await self.reports.save()
         # mark toplist for rebuild
@@ -294,6 +316,7 @@ class HPCog(commands.Cog):
     @app_commands.checks.has_any_role(*statics.CONFIRM_ROLE_WHITELIST)
     async def unapprove(self, interaction: discord.Interaction):
         # removes a report for the current thread
+        assert isinstance(interaction.channel, discord.Thread)
         thread = interaction.channel
             
         reporter = self.reports.get(thread.owner_id)
