@@ -4,7 +4,7 @@ import aiofiles
 from . import statics
 from . import reports
 
-async def simple_export(reps: reports.Reports):
+async def simple_export(reps):
     steamids = []
     for reporter in reps._reporters.values():
         for report in reporter.reports:
@@ -18,7 +18,7 @@ async def simple_export(reps: reports.Reports):
 def steamid64_to_32(id: int) -> str:
     return f"[U:1:{id-statics.STEAMID64_OFFSET}]"
 
-async def tfbd_export(reps: reports.Reports):
+async def tfbd_export(reps):
     class PlayerRecord:
         def __init__(self) -> None:
             self.proof: list[str] = []
