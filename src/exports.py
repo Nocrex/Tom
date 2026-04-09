@@ -1,14 +1,16 @@
-import json, datetime, aiofiles
+import json
+import datetime
+import aiofiles
 from . import statics
 from . import reports
 
-async def simple_export(reports):
+async def simple_export(reps: reports.Reports):
     steamids = []
-    for reporter in reports._reporters.values():
+    for reporter in reps._reporters.values():
         for report in reporter.reports:
             if not report.verified:
                 continue
-            steamids += report.steamids
+            steamids += [p for p, t in report.players.items() if t == reports.PlayerKind.CHEATER]
     steamids = set(map(lambda i: str(i), steamids))
     async with aiofiles.open(statics.ID_LIST_FILE, "w") as f:
         await f.write("\n".join(sorted(steamids)))
@@ -16,18 +18,25 @@ async def simple_export(reports):
 def steamid64_to_32(id: int) -> str:
     return f"[U:1:{id-statics.STEAMID64_OFFSET}]"
 
-async def tfbd_export(reports):
-    steamids = {}
-    for reporter in reports._reporters.values():
+async def tfbd_export(reps: reports.Reports):
+    class PlayerRecord:
+        def __init__(self) -> None:
+            self.proof: list[str] = []
+            self.attrs: set[str] = set()
+            self.last_seen: int = 0
+    
+    steamids: dict[str, PlayerRecord] = {}
+    for reporter in reps._reporters.values():
         for report in reporter.reports:
             if not report.verified:
                 continue
-            for sid in report.steamids:
-                sid = steamid64_to_32(sid)
+            for steamid, kind in report.players.items():
+                sid = steamid64_to_32(steamid)
                 if sid not in steamids:
-                    steamids[sid] = [[],0]
-                steamids[sid][0] += [report.thread_url]
-                steamids[sid][1] = max(steamids[sid][1], int(report.timestamp.timestamp()))
+                    steamids[sid] = PlayerRecord()
+                steamids[sid].proof.append(report.thread_url)
+                steamids[sid].last_seen = max(steamids[sid].last_seen, int(report.timestamp.timestamp()))
+                steamids[sid].attrs.add(kind)
 
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     contents = {
@@ -39,11 +48,11 @@ async def tfbd_export(reports):
             "update_url": f"https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/{statics.TFBD_LIST_NAME}"
         },
         "players": list(map(lambda s: {
-            "attributes": ["cheater"],
+            "attributes": list(s[1].attrs),
             "steamid": s[0],
-            "proof": s[1][0],
+            "proof": s[1].proof,
             "last_seen": {
-                "time": s[1][1]
+                "time": s[1].last_seen
             }
         }, steamids.items()))
     }

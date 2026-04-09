@@ -1,41 +1,59 @@
-import aiofiles, json, asyncio, os
-from typing import List, Optional, Dict, Any, Self
-from . import statics, exports, steam
+import asyncio
+import enum
+import json
+import os
 from datetime import datetime, timezone
+from typing import Any, Dict, List, Optional, Self
+
+import aiofiles
+
+from . import exports, statics, steam
 
 # data classes to interact with the json data (I don't like working with dicts directly)
+class PlayerKind(str, enum.Enum):
+    CHEATER = "cheater"
+    EXPLOITER = "exploiter"
 
-# class that stores a single report, 
+
+# class that stores a single report,
 # stores confirmation message, list of cheater steamids and points awarded for the report
 class Report:
-    def __init__(self, message: str, steamids: List[int], points: int, verified: bool, timestamp: datetime):
+    def __init__(
+        self,
+        message: str,
+        players: dict[int, PlayerKind],
+        points: int,
+        verified: bool,
+        timestamp: datetime,
+    ):
         self.message: str = message
-        self.thread_url: str = message[:message.find(" ")]
-        self.steamids: List[int] = steamids
+        self.thread_url: str = message[: message.find(" ")]
+        self.players: dict[int, PlayerKind] = players
         self.points: int = points
         self.verified: bool = verified
         self.timestamp: datetime = timestamp
-    
+
     # creates a Report object from a json dict
     @staticmethod
     def from_json(json_report) -> Self:
         return Report(
-            json_report["msg"], 
-            json_report["steamids"],
+            json_report["msg"],
+            {int(p): PlayerKind(k) for p, k in json_report["players"].items()},
             json_report["points"],
             json_report["verified"],
-            datetime.fromisoformat(json_report["date"])
+            datetime.fromisoformat(json_report["date"]),
         )
 
     # creates a dict ready to be converted to json
     def to_json(self) -> Dict[str, Any]:
         return {
             "msg": self.message,
-            "steamids": self.steamids,
+            "players": self.players,
             "points": self.points,
             "verified": self.verified,
-            "date": self.timestamp.isoformat()
+            "date": self.timestamp.isoformat(),
         }
+
 
 # class that represents a person reporting cheaters
 # stores userid, list of Reports and steam profile id
@@ -46,9 +64,13 @@ class Reporter:
         self.profile_id: Optional[int] = profile_id
 
     # creates a new report for this reporter
-    def add_report(self, msg: str, points: int, steamids: List[int], verified: bool): 
-        self.reports.append(Report(msg, steamids, points, verified, datetime.now(timezone.utc)))
-    
+    def add_report(
+        self, msg: str, points: int, players: dict[int, PlayerKind], verified: bool
+    ):
+        self.reports.append(
+            Report(msg, players, points, verified, datetime.now(timezone.utc))
+        )
+
     # looks for a report with the passed thread link and removes it
     # returns True or False depending on if it succeeded or not
     def remove_report(self, link: str) -> bool:
@@ -59,7 +81,9 @@ class Reporter:
         return False
 
     # looks for a report based on a thread link
-    def find_report(self, thread_link: str) -> Optional[Report]: # could return None or a Report
+    def find_report(
+        self, thread_link: str
+    ) -> Optional[Report]:  # could return None or a Report
         for report in self.reports:
             if thread_link in report.message:
                 return report
@@ -71,7 +95,7 @@ class Reporter:
         for report in json_map["reports"]:
             reports.append(Report.from_json(report))
         return Reporter(userid, reports, json_map["profile_id"])
-    
+
     # sums up all the points of the reports of this reporter
     def points(self) -> int:
         points = 0
@@ -83,13 +107,14 @@ class Reporter:
     def to_json(self):
         return {
             "reports": list(map(lambda r: r.to_json(), self.reports)),
-            "count": self.points(), # store total count aswell, is not used by the program but makes the json more usable on it's own
-            "profile_id": self.profile_id
+            "count": self.points(),  # store total count aswell, is not used by the program but makes the json more usable on it's own
+            "profile_id": self.profile_id,
         }
 
+
 class Reports:
-    def __init__(self, reporters: Dict[str, Reporter]): 
-        self._reporters: Dict[str, Reporter]  = reporters
+    def __init__(self, reporters: Dict[str, Reporter]):
+        self._reporters: Dict[str, Reporter] = reporters
         self._lists: dict[str, set[int]] = dict()
 
     # gets the Reporter object for the given discord id, or creates a new empty one if it doesn't exist
@@ -104,14 +129,14 @@ class Reports:
         reporter_id = str(reporter_idi)
         if reporter_id in self._reporters:
             return self._reporters[reporter_id]
-        
+
     # looks up if a cheater has been reported before, if yes returns the first Report
-    def find_cheater(self, steamid: int) -> List[Report]:
-        matching_reports: List[Report] = []
+    def find_reported(self, steamid: int) -> List[tuple[str, bool, PlayerKind]]:
+        matching_reports: List[tuple[str, bool, PlayerKind]] = []
         for reporter in self._reporters.values():
             for report in reporter.reports:
-                if steamid in report.steamids:
-                    matching_reports.append(report)
+                if steamid in report.players:
+                    matching_reports.append((report.thread_url, report.verified, report.players[steamid]))
         return matching_reports
 
     def check_external_lists(self, steamid: int) -> set[str]:
@@ -132,14 +157,23 @@ class Reports:
             path = os.path.join(list_dir, filename)
             async with aiofiles.open(path) as f:
                 data = await f.read()
-                
+
             list_name = ".".join(filename.split(".")[:-1])
-            
-            ids64 = set(map(lambda match: int(match.group(0)), steam.STEAMID_REGEX.finditer(data)))
-            ids3 = set(map(lambda match: steam.sid3_to64(match.group(0)), steam.STEAMID3_REGEX.finditer(data)))
-            
+
+            ids64 = set(
+                map(
+                    lambda match: int(match.group(0)),
+                    steam.STEAMID_REGEX.finditer(data),
+                )
+            )
+            ids3 = set(
+                map(
+                    lambda match: steam.sid3_to64(match.group(0)),
+                    steam.STEAMID3_REGEX.finditer(data),
+                )
+            )
+
             self._lists[list_name] = ids64 | ids3
-            print(list_name, len(self._lists[list_name]))
 
     # saves Report data to the data file
     async def save(self):
@@ -151,29 +185,30 @@ class Reports:
     def get_top_n(self, n) -> List[Reporter]:
         reporter_list = list(self._reporters.values())
         reporter_list.sort(key=lambda r: r.points(), reverse=True)
-        return reporter_list[:min(20, len(reporter_list))]
-    
+        return reporter_list[: min(20, len(reporter_list))]
+
     # creates a Reports object from a json dict
     @staticmethod
     def from_json(json_map: dict) -> Self:
         for key in json_map:
             json_map[key] = Reporter.from_json(int(key), json_map[key])
         return Reports(json_map)
-    
+
     # creates a dict ready to be converted to json
     def to_json(self) -> Dict[str, dict]:
         reporters = {}
         for reporter in self._reporters:
             reporters[reporter] = self._reporters[reporter].to_json()
         return reporters
-    
-    def get_cheater_steamids(self) -> set[int]:
-        return set(steamid for reporter in self._reporters.values() for report in reporter.reports for steamid in report.steamids if report.verified)
+
+    def get_reported_count(self) -> int:
+        return len(set(player for reporter in self._reporters.values() for report in reporter.reports for player in report.players))
 
 
 async def test():
     reports = await Reports.load()
     await reports.save()
+
 
 if __name__ == "__main__":
     # test code to mess about with the file format

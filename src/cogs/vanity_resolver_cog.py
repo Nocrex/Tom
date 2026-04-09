@@ -1,18 +1,20 @@
-import discord, logging
+import discord
+import logging
 from discord.ext import commands
 from .hp_cog import HPCog
 from .. import statics
 
-from ..steam import *
+from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN
 
 logger = logging.getLogger(__name__)
 
 # Extra cog that watches channels for steam profile vanity links and attempts to find the perma link for them
 class VanityCog(commands.Cog):
     def __init__(self, bot: commands.Bot):
-        self.hp_cog: HPCog = bot.get_cog("HPCog")
-        if self.hp_cog == None:
+        self.hp_cog = bot.get_cog("HPCog")
+        if self.hp_cog is None:
             raise RuntimeError("Couldn't get HPCog")
+        assert isinstance(self.hp_cog, HPCog)
         self.bot: commands.Bot = bot
 
     @commands.Cog.listener()
@@ -40,7 +42,7 @@ class VanityCog(commands.Cog):
         mentioned_ids = set(matches) | set(steamids.values())
         for sid in mentioned_ids:
             sid = int(sid)
-            reports = self.hp_cog.reports.find_cheater(sid)
+            reports = self.hp_cog.reports.find_reported(sid)
             if len(reports) > 0:
                 verified = any(map(lambda r: r.verified, reports))
                 if verified:
