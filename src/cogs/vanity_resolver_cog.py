@@ -4,7 +4,7 @@ from discord.ext import commands
 from .hp_cog import HPCog
 from .. import statics
 
-from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN
+from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN, PERM_LINK_PREFIX
 
 logger = logging.getLogger(__name__)
 
