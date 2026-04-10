@@ -4,14 +4,14 @@ from discord.ext import commands
 from .hp_cog import HPCog
 from .. import statics
 
-from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN
+from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN, PERM_LINK_PREFIX
 
 logger = logging.getLogger(__name__)
 
 # Extra cog that watches channels for steam profile vanity links and attempts to find the perma link for them
 class VanityCog(commands.Cog):
     def __init__(self, bot: commands.Bot):
-        self.hp_cog = bot.get_cog("HPCog")
+        self.hp_cog: HPCog = bot.get_cog("HPCog")
         if self.hp_cog is None:
             raise RuntimeError("Couldn't get HPCog")
         assert isinstance(self.hp_cog, HPCog)
@@ -44,11 +44,11 @@ class VanityCog(commands.Cog):
             sid = int(sid)
             reports = self.hp_cog.reports.find_reported(sid)
             if len(reports) > 0:
-                verified = any(map(lambda r: r.verified, reports))
+                verified = any(map(lambda r: r[1], reports))
                 if verified:
-                    reported_perms[sid] = {"report": next(filter(lambda r: r.verified, reports)).thread_url, "verified": True}
+                    reported_perms[sid] = {"report": next(filter(lambda r: r[1], reports))[0], "verified": True}
                 else:
-                    reported_perms[sid] = {"report": reports[0].thread_url, "verified": False}
+                    reported_perms[sid] = {"report": reports[0][0], "verified": False}
             
             lists = self.hp_cog.reports.check_external_lists(sid)
             if len(lists) > 0:
