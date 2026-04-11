@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, env::args};
 
 use diesel::{Connection, ExpressionMethods, PgConnection, RunQueryDsl, insert_into};
 use dotenv::dotenv;
@@ -15,17 +15,20 @@ struct JsonReporter {
 struct JsonReport {
     date: String,
     msg: String,
-    points: u8,
+    points: i64,
     verified: bool,
     players: HashMap<String, String>,
 }
 
 fn main() -> anyhow::Result<()> {
     dotenv().ok();
+    let mut args = args();
+    args.next();
+    
     let mut con = PgConnection::establish(&dotenv::var("DATABASE_URL").unwrap()).unwrap();
 
     let data: HashMap<String, JsonReporter> =
-        serde_json::from_str(&std::fs::read_to_string("reports.json").unwrap()).unwrap();
+        serde_json::from_str(&std::fs::read_to_string(args.next().unwrap()).unwrap()).unwrap();
     
     let reporter_count = data.len();
 
@@ -39,10 +42,15 @@ fn main() -> anyhow::Result<()> {
             .on_conflict_do_nothing()
             .execute(&mut con)?;
 
-        for report in reporter_data.reports {
+        for mut report in reporter_data.reports {
             let time = chrono::DateTime::parse_from_rfc3339(&report.date)
                 .unwrap()
                 .to_utc();
+            
+            if report.points < 0 {
+                report.points = 1;
+                println!("Reporter {id} has a negative report count");
+            }
 
             let report_id: i32 = insert_into(reports::table)
                 .values((

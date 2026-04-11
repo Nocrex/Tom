@@ -78,7 +78,7 @@ async fn toplist(ctx: Context<'_>) -> Result<()> {
         .iter()
         .rev()
         .take(20)
-        .map(|(r, p)| format!("{p}: {}", r.id))
+        .map(|(r, p)| format!("{p}: <@{}>", r.id))
         .join("\n");
 
     ctx.send(

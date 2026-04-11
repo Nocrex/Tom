@@ -96,9 +96,7 @@ impl ReportDB for PostgresDB {
             let mut db = conn.blocking_lock();
 
             Ok(schema::playerreports::table
-                .select(schema::playerreports::steamid)
-                .distinct()
-                .count()
+                .select(diesel::dsl::count(schema::playerreports::steamid).aggregate_distinct())
                 .get_result::<i64>(&mut *db)? as u64)
         });
 
