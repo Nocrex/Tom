@@ -3,9 +3,10 @@ use crate::BotData;
 mod users;
 mod officers;
 
-pub(crate) fn register() -> Vec<poise::Command<BotData, anyhow::Error>> {
+pub fn register() -> Vec<poise::Command<BotData, anyhow::Error>> {
     vec![
         users::register(),
+        officers::register(),
     ].into_iter().flatten().collect()
 }
 

@@ -18,7 +18,7 @@ lazy_static! {
 
 const PERM_LINK_PREFIX: &str = "https://steamcommunity.com/profiles/";
 
-pub(crate) async fn get_steamid(steamid: &str) -> Result<Option<SteamID>> {
+pub async fn get_steamid(steamid: &str) -> Result<Option<SteamID>> {
     if let Ok(sid) = SteamID::from_str(steamid) {
         Ok(Some(sid))
     } else if let Some(cap) = PERM_LINK_PATTERN.captures(steamid) {
@@ -31,7 +31,7 @@ pub(crate) async fn get_steamid(steamid: &str) -> Result<Option<SteamID>> {
     }
 }
 
-pub(crate) async fn resolve_vanity(url: &str) -> Result<Option<SteamID>> {
+pub async fn resolve_vanity(url: &str) -> Result<Option<SteamID>> {
     let response = reqwest::get(format!("{url}?xml=1")).await?;
     if !response.status().is_success() {
         anyhow::bail!(
@@ -50,7 +50,7 @@ pub(crate) async fn resolve_vanity(url: &str) -> Result<Option<SteamID>> {
     Ok(Some(SteamID::from_str(&id_str)?))
 }
 
-pub(crate) trait SteamIDProfileLink {
+pub trait SteamIDProfileLink {
     fn profile(&self) -> String;
 }
 
@@ -60,7 +60,7 @@ impl SteamIDProfileLink for SteamID {
     }
 }
 
-pub(crate) fn load_lists(dir: &str) -> Result<HashMap<SteamID, Vec<String>>> {
+pub fn load_lists(dir: &str) -> Result<HashMap<SteamID, Vec<String>>> {
     let mut lists: HashMap<SteamID, Vec<String>> = HashMap::new();
     let dir = std::fs::read_dir(dir)?;
     for entry in dir {

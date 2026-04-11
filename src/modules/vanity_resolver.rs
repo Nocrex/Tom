@@ -13,7 +13,7 @@ use crate::{
     util::{self, PERM_LINK_PATTERN, SteamIDProfileLink, VANITY_LINK_PATTERN},
 };
 
-pub(crate) struct VanityResolver {
+pub struct VanityResolver {
     cfg: VanityConfig,
 }
 

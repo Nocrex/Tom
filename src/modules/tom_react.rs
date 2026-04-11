@@ -9,7 +9,7 @@ use tokio::time::Instant;
 
 use crate::config::ReactConfig;
 
-pub(crate) struct TomReact {
+pub struct TomReact {
     cooldowns: HashMap<UserId, Instant>,
     images: Vec<Attachment>,
     config: ReactConfig,

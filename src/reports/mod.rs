@@ -1,7 +1,7 @@
 use anyhow::Result;
 use poise::serenity_prelude::UserId;
-pub(crate) mod exports;
-pub(crate) mod sql;
+pub mod exports;
+pub mod sql;
 
 #[async_trait::async_trait]
 pub trait ReportDB {

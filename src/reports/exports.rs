@@ -6,7 +6,7 @@ use itertools::Itertools;
 use tokio::fs;
 use serde_json::json;
 
-pub(crate) async fn export(db: Arc<dyn ReportDB + Send + Sync>, cfg: &ExportConfig) -> Result<()> {
+pub async fn export(db: Arc<dyn ReportDB + Send + Sync>, cfg: &ExportConfig) -> Result<()> {
     let reports = db.all_reports().await?;
     simple_export(&reports, cfg).await?;
     tf2bd_export(&reports, cfg).await?;

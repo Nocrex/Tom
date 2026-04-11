@@ -1,36 +1,17 @@
-use std::{collections::HashMap, sync::Arc, time::Duration};
+use std::{sync::Arc, time::Duration};
 
-use anyhow::Error;
 use poise::serenity_prelude::{
     self as serenity, ActivityData, CacheHttp, ChannelId, CreateAttachment, CreateMessage
 };
-use steamid_ng::SteamID;
 use tokio::sync::RwLock;
 
-use crate::{
+use tom::{
+    BotData,
+    commands,
     config::Config,
+    util,
     modules::{tom_react::TomReact, vanity_resolver::VanityResolver}, reports::{ReportDB, sql::PostgresDB},
 };
-
-mod commands;
-mod config;
-mod reports;
-mod util;
-mod modules {
-    pub(crate) mod tom_react;
-    pub(crate) mod vanity_resolver;
-}
-
-type Context<'a> = poise::Context<'a, BotData, Error>;
-
-struct BotData {
-    reports: Arc<dyn reports::ReportDB + Send + Sync>,
-    lists: HashMap<SteamID, Vec<String>>,
-
-    react: RwLock<TomReact>,
-    vanity: VanityResolver,
-    config: Config,
-}
 
 #[tokio::main]
 async fn main() {

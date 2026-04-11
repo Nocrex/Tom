@@ -8,9 +8,9 @@ use tokio::sync::Mutex;
 use crate::reports::*;
 
 mod models;
-mod schema;
+pub mod schema;
 
-pub(crate) struct PostgresDB {
+pub struct PostgresDB {
     connection: Arc<Mutex<PgConnection>>,
 }
 
