@@ -10980,6 +10980,15 @@
                 },
                 "points": 1,
                 "verified": true
+            },
+            {
+                "date": "2026-04-11T10:11:42.632178+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1492452897189924996 <@338026495811387392> (John Demolitionsman) cheater exposed (+0 points, 10 total)",
+                "players": {
+                    "76561198717834098": "cheater"
+                },
+                "points": 0,
+                "verified": false
             }
         ]
     },
