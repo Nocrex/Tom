@@ -93,7 +93,7 @@ async fn toplist(ctx: Context<'_>) -> Result<()> {
 /// Look up previous reports of a SteamID
 #[poise::command(slash_command, guild_only, user_cooldown = 2)]
 async fn lookup(ctx: Context<'_>, steamid: String) -> Result<()> {
-    let Ok(id) = util::get_steamid(&steamid).await else {
+    let Some(id) = util::get_steamid(&steamid).await? else {
         ctx.send(
             CreateReply::default()
                 .content("Could not resolve steam id")

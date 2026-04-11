@@ -4,13 +4,9 @@ pub(crate) mod exports;
 
 #[async_trait::async_trait]
 pub trait ReportDB {
-    async fn add_report(&mut self, report: AddReport) -> Result<()>;
-    async fn remove_report(&mut self, thread_url: String) -> Result<()>;
-
-    async fn report(&self, thread_url: &str) -> Result<Option<Report>>;
-
     async fn find_reports(&self, steamid: &steamid_ng::SteamID) -> Result<Vec<PlayerReport>>;
     async fn all_reports(&self) -> Result<Vec<PlayerReport>>;
+    async fn reported_count(&self) -> Result<Vec<u64>>;
 
     async fn reporter(&self, user_id: UserId) -> Result<Option<Reporter>>;
     async fn reporter_with_points(

@@ -1,8 +1,9 @@
-use std::collections::HashMap;
+#![allow(unused)]
+use std::{collections::HashMap, sync::Arc, time::Duration};
 
 use anyhow::Error;
 use poise::serenity_prelude::{
-    self as serenity, CacheHttp, ChannelId, CreateAttachment, CreateMessage,
+    self as serenity, ActivityData, CacheHttp, ChannelId, CreateAttachment, CreateMessage
 };
 use steamid_ng::SteamID;
 use tokio::sync::RwLock;
@@ -24,7 +25,7 @@ mod modules {
 type Context<'a> = poise::Context<'a, BotData, Error>;
 
 struct BotData {
-    reports: Box<dyn reports::ReportDB + Send + Sync>,
+    reports: Arc<dyn reports::ReportDB + Send + Sync>,
     lists: HashMap<SteamID, Vec<String>>,
 
     react: RwLock<TomReact>,
@@ -47,12 +48,8 @@ async fn main() {
     let config: Config = toml::from_str(&std::fs::read_to_string("config.toml").unwrap()).unwrap();
 
     let framework = poise::Framework::builder()
-        .options(poise::FrameworkOptions {
-            commands: vec![
-                commands::users::lookup(),
-                commands::users::points(),
-                commands::users::toplist(),
-            ],
+        .options(poise::FrameworkOptions::<BotData, anyhow::Error> {
+            commands: commands::register(),
             on_error: |e| {
                 Box::pin(async move {
                     match e {
@@ -148,9 +145,24 @@ async fn main() {
                 let react = TomReact::load(ctx.http(), config.react.clone()).await?;
                 let vanity = VanityResolver::new(config.vanity.clone());
                 let lists = util::load_lists(&config.report.ext_list_dir)?;
+                
+                let reports = Arc::new();
+                
+                {
+                    let ctx = ctx.clone();
+                    let reports = reports.clone();
+                    tokio::task::spawn(async move {
+                        loop {
+                            let count = reports.reported_count();
+                            ctx.set_presence(Some(ActivityData::watching(format!("{count} SteamIDs"))), serenity::OnlineStatus::Online);
+                            tokio::time::sleep(Duration::from_mins(1)).await;
+                        }
+                    });
+                }
 
                 log::info!("Bot up and running");
                 Ok(BotData {
+                    reports,
                     lists,
                     config,
                     react: RwLock::new(react),
