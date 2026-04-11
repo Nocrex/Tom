@@ -8589,6 +8589,21 @@
             }
         ]
     },
+    "293943718233505802": {
+        "count": 1,
+        "profile_id": 76561198748035294,
+        "reports": [
+            {
+                "date": "2026-04-11T13:58:30.850034+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1492516858450940044 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199836517149": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
     "297831123340361738": {
         "count": 1,
         "profile_id": null,
@@ -16795,7 +16810,7 @@
         ]
     },
     "551621415959265284": {
-        "count": 9,
+        "count": 10,
         "profile_id": 76561199177593557,
         "reports": [
             {
@@ -16835,6 +16850,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1491482657907933325 <@551621415959265284> (BossZe) cheater exposed (+1 points, 9 total)",
                 "players": {
                     "76561199678810639": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-11T13:59:57.068408+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491748258878455908 <@551621415959265284> (BossZe) cheater exposed (+1 points, 10 total)",
+                "players": {
+                    "76561198986171084": "cheater"
                 },
                 "points": 1,
                 "verified": true
