@@ -22,7 +22,6 @@ impl Into<super::super::Reporter> for Reporter {
 #[diesel(table_name = super::schema::reports)]
 #[diesel(check_for_backend(diesel::pg::Pg))]
 pub struct Report {
-    pub id: i32,
     pub reporter: i64,
     pub time: chrono::NaiveDateTime,
     pub points: i16,
@@ -35,7 +34,7 @@ impl Into<super::super::Report> for Report {
         super::super::Report {
             timestamp: self.time.and_utc(),
             reporter_id: poise::serenity_prelude::UserId::from(self.reporter as u64),
-            points: self.points as u8,
+            points: self.points,
             thread_url: self.threadurl,
             message: self.message,
             players: vec![],
@@ -47,7 +46,6 @@ impl Into<super::super::Report> for Report {
 #[diesel(table_name = super::schema::playerreports)]
 #[diesel(check_for_backend(diesel::pg::Pg))]
 pub struct ReportedPlayer {
-    pub report: i32,
     pub steamid: i64,
     pub last_seen: chrono::NaiveDateTime,
     pub attribute: i16, 

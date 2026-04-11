@@ -124,7 +124,7 @@ impl ReportDB for PostgresDB {
         &self,
         user_id: UserId,
         fetch_reports: bool,
-    ) -> Result<Option<(Reporter, u32)>> {
+    ) -> Result<Option<(Reporter, i32)>> {
         let conn = self.connection.clone();
 
         let t = tokio::task::spawn_blocking(move || {
@@ -142,7 +142,7 @@ impl ReportDB for PostgresDB {
                 .optional()?;
 
             let mut reporter =
-                reporter.and_then(|(r, c)| c.map(|c| (Into::<Reporter>::into(r), c as u32)));
+                reporter.and_then(|(r, c)| c.map(|c| (Into::<Reporter>::into(r), c as i32)));
             if fetch_reports && let Some(reporter) = reporter.as_mut() {
                 for row in schema::reports::table
                     .select(models::Report::as_select())
@@ -160,7 +160,7 @@ impl ReportDB for PostgresDB {
         t.await?
     }
 
-    async fn reporters_with_points(&self) -> Result<Vec<(Reporter, u32)>> {
+    async fn reporters_with_points(&self) -> Result<Vec<(Reporter, i32)>> {
         let conn = self.connection.clone();
 
         let t = tokio::task::spawn_blocking(move || {
@@ -177,7 +177,7 @@ impl ReportDB for PostgresDB {
 
             let reporters: Vec<_> = reporters
                 .into_iter()
-                .filter_map(|(rep, c)| c.map(|c| (Into::<Reporter>::into(rep), c as u32)))
+                .filter_map(|(rep, c)| c.map(|c| (Into::<Reporter>::into(rep), c as i32)))
                 .collect();
 
             Ok(reporters)

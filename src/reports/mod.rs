@@ -14,9 +14,9 @@ pub trait ReportDB {
         &self,
         user_id: UserId,
         fetch_reports: bool,
-    ) -> Result<Option<(Reporter, u32)>>;
+    ) -> Result<Option<(Reporter, i32)>>;
 
-    async fn reporters_with_points(&self) -> Result<Vec<(Reporter, u32)>>;
+    async fn reporters_with_points(&self) -> Result<Vec<(Reporter, i32)>>;
 }
 
 #[repr(u8)]
@@ -46,7 +46,7 @@ pub struct Report {
     pub players: Vec<ReportedPlayer>,
     pub timestamp: chrono::DateTime<chrono::Utc>,
     pub reporter_id: UserId,
-    pub points: u8,
+    pub points: i16,
     pub thread_url: String,
     pub message: String,
 }
