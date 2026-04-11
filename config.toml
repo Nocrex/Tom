@@ -1,0 +1,27 @@
+error_channel = 1321260915424890920
+
+[report]
+approve_image = "https://cdn.discordapp.com/attachments/1121780046928023613/1306707037350006925/tomapp.gif"
+log_channel = 1221426805689417808
+officer_roles = [
+    1272988674455375872, # HP Officer
+    518203583825575964,  # Moderator
+    425686371974512640   # Admin
+]
+confirmed_tag = 1309945340073349130
+ext_list_dir = "lists"
+
+[report.export]
+id_list_filename = "reported_ids.txt"
+tfbd_list_filename = "playerlist.vorobey-hackerpolice.json"
+
+[vanity]
+resolve_channels = [
+    1121780046928023613, # hp-discussions
+    1309942164331036733, # hp-reports
+    1221426805689417808  # hp-modding
+]
+
+[react]
+image_channel = 1373262477395234857
+cooldown_seconds = 120
