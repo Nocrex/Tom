@@ -14,6 +14,12 @@ pub(crate) struct VanityResolver {
 }
 
 impl VanityResolver {
+    pub fn new(cfg: VanityConfig) -> Self {
+        Self{
+            cfg
+        }
+    }
+    
     pub async fn on_message(&self, msg: &Message, http: &impl CacheHttp, data: &BotData) -> Result<()> {
         if msg.author.bot {
             return Ok(());

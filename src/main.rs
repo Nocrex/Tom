@@ -1,10 +1,15 @@
 use std::collections::HashMap;
 
 use anyhow::Error;
-use poise::serenity_prelude::{self as serenity, CacheHttp};
+use poise::serenity_prelude::{
+    self as serenity, CacheHttp, ChannelId, CreateAttachment, CreateMessage,
+};
 use steamid_ng::SteamID;
 
-use crate::{config::Config, modules::{tom_react::TomReact, vanity_resolver::VanityResolver}};
+use crate::{
+    config::Config,
+    modules::{tom_react::TomReact, vanity_resolver::VanityResolver},
+};
 
 mod commands;
 mod config;
@@ -44,7 +49,54 @@ async fn main() {
                 commands::users::points(),
                 commands::users::toplist(),
             ],
-            on_error: |e| Box::pin(async move {  }),
+            on_error: |e| {
+                Box::pin(async move {
+                    match e {
+                        poise::FrameworkError::EventHandler {
+                            error,
+                            ctx,
+                            framework,
+                            ..
+                        } => {
+                            ChannelId::from(framework.user_data.config.error_channel)
+                                .send_files(
+                                    &ctx,
+                                    vec![CreateAttachment::bytes(
+                                        format!("{error:#?}"),
+                                        "error.txt",
+                                    )],
+                                    CreateMessage::new(),
+                                )
+                                .await;
+                        }
+                        poise::FrameworkError::Command { error, ctx, .. } => {
+                            ChannelId::from(ctx.data().config.error_channel)
+                                .send_files(
+                                    &ctx,
+                                    vec![CreateAttachment::bytes(
+                                        format!("{error:#?}"),
+                                        "error.txt",
+                                    )],
+                                    CreateMessage::new(),
+                                )
+                                .await;
+                        }
+                        poise::FrameworkError::CommandPanic { payload, ctx, .. } => {
+                            ChannelId::from(ctx.data().config.error_channel)
+                                .send_files(
+                                    &ctx,
+                                    vec![CreateAttachment::bytes(
+                                        format!("Code panicked!\n{:#?}", payload),
+                                        "panic.txt",
+                                    )],
+                                    CreateMessage::new(),
+                                )
+                                .await;
+                        }
+                        _ => (),
+                    }
+                })
+            },
             pre_command: |ctx| {
                 Box::pin(async move {
                     log::info!(
@@ -72,8 +124,16 @@ async fn main() {
             Box::pin(async move {
                 poise::builtins::register_globally(ctx, &framework.options().commands).await?;
                 let react = TomReact::load(ctx.http(), config.react).await?;
+                let vanity = VanityResolver::new(config.vanity.clone());
                 let lists = util::load_lists(&config.report.ext_list_dir)?;
-                Ok(BotData { react, lists, config })
+
+                log::info!("Bot up and running");
+                Ok(BotData {
+                    lists,
+                    config,
+                    react,
+                    vanity,
+                })
             })
         })
         .build();

@@ -21,11 +21,13 @@ impl TomReact {
             .messages_iter(&http)
             .filter_map(async |msg| msg.ok().map(|m| m.attachments))
             .collect::<Vec<Vec<Attachment>>>()
-            .await;
+            .await.into_iter().flatten().collect::<Vec<_>>();
+        
+        log::info!("Loaded {} reaction images", images.len());
 
         Ok(Self {
             cooldowns: Default::default(),
-            images: images.into_iter().flatten().collect(),
+            images,
             config
         })
     }
