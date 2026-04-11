@@ -22,7 +22,7 @@ async fn points(
     #[description = "User to get point count for"] user: Option<serenity::User>,
 ) -> Result<()> {
     let user = user.as_ref().unwrap_or_else(|| ctx.author());
-    let privileged = super::checks::is_officer(ctx);
+    let privileged = super::checks::is_officer(ctx).await;
 
     let Some((reporter, points)) = ctx
         .data()
@@ -84,7 +84,7 @@ async fn toplist(ctx: Context<'_>) -> Result<()> {
         .map(|(i, (r, p))| format!("{}. <@{}>: {p}", i + 1, r.id))
         .collect::<Vec<_>>();
 
-    let pages = msg.chunks(20).map(|page| page.join("\n")).collect_vec();
+    let pages = msg.chunks(30).map(|page| page.join("\n")).collect_vec();
 
     let total = pages.len();
 
