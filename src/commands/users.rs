@@ -1,11 +1,14 @@
 use crate::{
-    BotData, Context, util::{self, SteamIDProfileLink}
+    BotData, Context,
+    util::{self, SteamIDProfileLink},
 };
 use anyhow::Result;
 use itertools::Itertools;
 use poise::{
     CreateReply,
-    serenity_prelude::{self as serenity, Color, CreateEmbed, CreateEmbedAuthor},
+    serenity_prelude::{
+        self as serenity, Color, CreateActionRow, CreateButton, CreateEmbed, CreateEmbedAuthor,
+    },
 };
 
 pub(super) fn register() -> Vec<poise::Command<BotData, anyhow::Error>> {
@@ -19,7 +22,7 @@ async fn points(
     #[description = "User to get point count for"] user: Option<serenity::User>,
 ) -> Result<()> {
     let user = user.as_ref().unwrap_or_else(|| ctx.author());
-    let privileged = super::checks::is_officer(ctx).await?;
+    let privileged = super::checks::is_officer(ctx);
 
     let Some((reporter, points)) = ctx
         .data()
@@ -77,16 +80,63 @@ async fn toplist(ctx: Context<'_>) -> Result<()> {
     let msg = reporters
         .iter()
         .rev()
-        .take(20)
-        .map(|(r, p)| format!("{p}: <@{}>", r.id))
-        .join("\n");
+        .enumerate()
+        .map(|(i, (r, p))| format!("{}. <@{}>: {p}", i + 1, r.id))
+        .collect::<Vec<_>>();
+
+    let pages = msg.chunks(20).map(|page| page.join("\n")).collect_vec();
+
+    let total = pages.len();
+
+    let embeds = pages
+        .into_iter()
+        .enumerate()
+        .map(|(i, page)| {
+            CreateEmbed::new()
+                .title(format!("Top Reporters ({}/{total})", i + 1))
+                .description(page)
+        })
+        .collect_vec();
+
+    let mut page = 0;
+
+    let id = ctx.id();
+    let next_btn = format!("{id}_next");
+    let prev_btn = format!("{id}_prev");
 
     ctx.send(
         CreateReply::default()
-            .embed(CreateEmbed::new().title("Top Reporters").description(msg))
+            .embed(embeds[0].clone())
+            .components(vec![CreateActionRow::Buttons(vec![
+                CreateButton::new(&prev_btn).label('<'),
+                CreateButton::new(&next_btn).label('>'),
+            ])])
             .ephemeral(true),
     )
     .await?;
+
+    while let Some(press) = serenity::collector::ComponentInteractionCollector::new(ctx)
+        .filter(move |press| press.data.custom_id.starts_with(&id.to_string()))
+        .timeout(std::time::Duration::from_mins(5))
+        .await
+    {
+        if press.data.custom_id == next_btn {
+            page = (page + 1) % total;
+        } else if press.data.custom_id == prev_btn {
+            page = (page.wrapping_sub(1)).min(total-1);
+        } else {
+            continue;
+        }
+
+        press
+            .create_response(
+                ctx.http(),
+                serenity::CreateInteractionResponse::UpdateMessage(
+                    serenity::CreateInteractionResponseMessage::new().embed(embeds[page].clone()),
+                ),
+            )
+            .await?;
+    }
     Ok(())
 }
 

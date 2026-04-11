@@ -14,8 +14,17 @@ mod checks {
     use anyhow::Result;
     use poise::CreateReply;
     use crate::Context;
-    pub(super) async fn is_officer(ctx: Context<'_>) -> Result<bool> {
-        Ok(ctx.data().config.report.officer_roles.contains(&u64::from(ctx.author().id)))
+    pub(super) fn is_officer(ctx: Context<'_>) -> bool {
+        ctx.data().config.report.officer_roles.contains(&u64::from(ctx.author().id))
+    }
+    
+    pub(super) async fn officer_check(ctx: Context<'_>) -> Result<bool> {
+        if !is_officer(ctx){
+            ctx.send(CreateReply::default().content("You are not allowed to use this command").ephemeral(true)).await?;
+            Ok(false)
+        }else{
+            Ok(true)
+        }
     }
     
     pub(super) async fn in_thread(ctx: Context<'_>) -> Result<bool> {
