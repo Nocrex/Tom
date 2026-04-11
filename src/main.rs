@@ -1,4 +1,3 @@
-#![allow(unused)]
 use std::{collections::HashMap, sync::Arc, time::Duration};
 
 use anyhow::Error;
@@ -10,7 +9,7 @@ use tokio::sync::RwLock;
 
 use crate::{
     config::Config,
-    modules::{tom_react::TomReact, vanity_resolver::VanityResolver},
+    modules::{tom_react::TomReact, vanity_resolver::VanityResolver}, reports::{ReportDB, sql::PostgresDB},
 };
 
 mod commands;
@@ -146,15 +145,18 @@ async fn main() {
                 let vanity = VanityResolver::new(config.vanity.clone());
                 let lists = util::load_lists(&config.report.ext_list_dir)?;
                 
-                let reports = Arc::new();
+                let reports = Arc::new(PostgresDB::new(&dotenv::var("DATABASE_URL").expect("Missing DATABASE_URL")).await?);
                 
                 {
                     let ctx = ctx.clone();
                     let reports = reports.clone();
                     tokio::task::spawn(async move {
                         loop {
-                            let count = reports.reported_count();
-                            ctx.set_presence(Some(ActivityData::watching(format!("{count} SteamIDs"))), serenity::OnlineStatus::Online);
+                            if let Ok(count) = reports.reported_count().await {
+                                ctx.set_presence(Some(ActivityData::watching(format!("{count} SteamIDs"))), serenity::OnlineStatus::Online);
+                            } else {
+                                log::warn!("Error while fetching report count");
+                            }
                             tokio::time::sleep(Duration::from_mins(1)).await;
                         }
                     });

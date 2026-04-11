@@ -1,7 +1,6 @@
 use anyhow::Result;
 use lazy_static::lazy_static;
 use regex::Regex;
-use reqwest::StatusCode;
 use std::{collections::HashMap, str::FromStr};
 use steamid_ng::SteamID;
 
@@ -81,5 +80,6 @@ pub(crate) fn load_lists(dir: &str) -> Result<HashMap<SteamID, Vec<String>>> {
             .for_each(|id| lists.entry(id).or_default().push(list_name.to_owned()));
     }
 
+    log::info!("Loaded {} external lists", lists.len());
     Ok(lists)
 }
