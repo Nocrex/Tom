@@ -11098,7 +11098,7 @@
         "reports": []
     },
     "349192941367066624": {
-        "count": 82,
+        "count": 83,
         "profile_id": 76561198262914979,
         "reports": [
             {
@@ -11812,6 +11812,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1490056455213027679 <@349192941367066624> (Konuman) cheater exposed (+1 points, 82 total)",
                 "players": {
                     "76561198124120550": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-11T22:08:16.035419+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1492646552672538663 <@349192941367066624> (Konuman) cheater exposed (+1 points, 83 total)",
+                "players": {
+                    "76561198716200279": "cheater"
                 },
                 "points": 1,
                 "verified": true
