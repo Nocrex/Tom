@@ -3,7 +3,7 @@ use std::{collections::HashMap, str::FromStr};
 use anyhow::Result;
 use itertools::Itertools;
 use poise::serenity_prelude::{
-    CacheHttp, CreateAllowedMentions, CreateEmbed, CreateMessage, Message,
+    CacheHttp, Color, CreateAllowedMentions, CreateEmbed, CreateMessage, Message,
 };
 use steamid_ng::SteamID;
 
@@ -41,7 +41,6 @@ impl VanityResolver {
         if !self.cfg.resolve_channels.contains(&u64::from(channel_id)) {
             return Ok(());
         }
-
 
         let mut resolved_steamids = HashMap::new();
         let mut unresolved_steamids = vec![];
@@ -128,6 +127,14 @@ impl VanityResolver {
                     .map(|(id, l)| format!("`{}` -> {}", id.steam64(), l.iter().join(", ")))
                     .join("\n");
                 embed = embed.field("Players present in lists", marks, false);
+            }
+
+            if !reports.is_empty() {
+                embed = embed.color(Color::ORANGE);
+            } else if !list_marks.is_empty() {
+                embed = embed.color(Color::new(0xFEE75C));
+            } else {
+                embed = embed.color(Color::BLUE);
             }
 
             msg.channel_id
