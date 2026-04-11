@@ -1,6 +1,5 @@
 use crate::{
-    Context,
-    util::{self, SteamIDProfileLink},
+    BotData, Context, util::{self, SteamIDProfileLink}
 };
 use anyhow::Result;
 use itertools::Itertools;
@@ -9,9 +8,13 @@ use poise::{
     serenity_prelude::{self as serenity, Color, CreateEmbed, CreateEmbedAuthor},
 };
 
+pub(super) fn register() -> Vec<poise::Command<BotData, anyhow::Error>> {
+    vec![points(), lookup(), toplist()]
+}
+
 /// Gets a users (or your own) report point count
 #[poise::command(slash_command, guild_only, user_cooldown = 5)]
-pub async fn points(
+async fn points(
     ctx: Context<'_>,
     #[description = "User to get point count for"] user: Option<serenity::User>,
 ) -> Result<()> {
@@ -67,12 +70,8 @@ pub async fn points(
 
 /// List the top 20 people based on report count
 #[poise::command(slash_command, guild_only, user_cooldown = 5)]
-pub async fn toplist(ctx: Context<'_>) -> Result<()> {
-    let mut reporters = ctx
-        .data()
-        .reports
-        .reporters_with_points()
-        .await?;
+async fn toplist(ctx: Context<'_>) -> Result<()> {
+    let mut reporters = ctx.data().reports.reporters_with_points().await?;
 
     reporters.sort_by_key(|(_, p)| *p);
     let msg = reporters
@@ -93,7 +92,7 @@ pub async fn toplist(ctx: Context<'_>) -> Result<()> {
 
 /// Look up previous reports of a SteamID
 #[poise::command(slash_command, guild_only, user_cooldown = 2)]
-pub async fn lookup(ctx: Context<'_>, steamid: String) -> Result<()> {
+async fn lookup(ctx: Context<'_>, steamid: String) -> Result<()> {
     let Ok(id) = util::get_steamid(&steamid).await else {
         ctx.send(
             CreateReply::default()
@@ -144,7 +143,8 @@ pub async fn lookup(ctx: Context<'_>, steamid: String) -> Result<()> {
         embed = embed.field("No reports found", "", false);
     }
 
-    ctx.send(CreateReply::default().embed(embed).ephemeral(true)).await?;
+    ctx.send(CreateReply::default().embed(embed).ephemeral(true))
+        .await?;
 
     Ok(())
 }

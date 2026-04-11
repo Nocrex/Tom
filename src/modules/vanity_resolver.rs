@@ -2,11 +2,15 @@ use std::{collections::HashMap, str::FromStr};
 
 use anyhow::Result;
 use itertools::Itertools;
-use poise::serenity_prelude::{CacheHttp, CreateAllowedMentions, CreateEmbed, CreateMessage, Message};
+use poise::serenity_prelude::{
+    CacheHttp, CreateAllowedMentions, CreateEmbed, CreateMessage, Message,
+};
 use steamid_ng::SteamID;
 
 use crate::{
-    BotData, config::VanityConfig, util::{self, PERM_LINK_PATTERN, SteamIDProfileLink, VANITY_LINK_PATTERN}
+    BotData,
+    config::VanityConfig,
+    util::{self, PERM_LINK_PATTERN, SteamIDProfileLink, VANITY_LINK_PATTERN},
 };
 
 pub(crate) struct VanityResolver {
@@ -15,12 +19,15 @@ pub(crate) struct VanityResolver {
 
 impl VanityResolver {
     pub fn new(cfg: VanityConfig) -> Self {
-        Self{
-            cfg
-        }
+        Self { cfg }
     }
-    
-    pub async fn on_message(&self, msg: &Message, http: &impl CacheHttp, data: &BotData) -> Result<()> {
+
+    pub async fn on_message(
+        &self,
+        msg: &Message,
+        http: &impl CacheHttp,
+        data: &BotData,
+    ) -> Result<()> {
         if msg.author.bot {
             return Ok(());
         }
@@ -30,26 +37,26 @@ impl VanityResolver {
         };
 
         let channel_id = chan.parent_id.unwrap_or(chan.id);
-        
+
         if !self.cfg.resolve_channels.contains(&u64::from(channel_id)) {
-            return Ok(())
+            return Ok(());
         }
 
 
         let mut resolved_steamids = HashMap::new();
         let mut unresolved_steamids = vec![];
 
-        for url in VANITY_LINK_PATTERN
-            .find_iter(&msg.content)
-            .map(|m| m.as_str())
-            .dedup()
-        {
-            match util::resolve_vanity(url).await.ok() {
+        let vanity_links = VANITY_LINK_PATTERN
+            .captures_iter(&msg.content)
+            .map(|m| (m.get(0).unwrap().as_str(), m.get(1).unwrap().as_str()))
+            .collect::<Vec<_>>();
+        for (url, name) in vanity_links.into_iter().dedup() {
+            match util::resolve_vanity(url).await? {
                 Some(id) => {
-                    resolved_steamids.insert(url, id);
+                    resolved_steamids.insert(name, id);
                 }
                 None => {
-                    unresolved_steamids.push(url);
+                    unresolved_steamids.push(name);
                 }
             }
         }
@@ -123,13 +130,15 @@ impl VanityResolver {
                 embed = embed.field("Players present in lists", marks, false);
             }
 
-            msg.channel_id.send_message(
-                http,
-                CreateMessage::new()
-                    .reference_message(msg)
-                    .embed(embed)
-                    .allowed_mentions(CreateAllowedMentions::new().replied_user(false)),
-            );
+            msg.channel_id
+                .send_message(
+                    http,
+                    CreateMessage::new()
+                        .reference_message(msg)
+                        .embed(embed)
+                        .allowed_mentions(CreateAllowedMentions::new().replied_user(false)),
+                )
+                .await?;
         }
 
         Ok(())

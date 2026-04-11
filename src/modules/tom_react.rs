@@ -21,15 +21,25 @@ impl TomReact {
             .messages_iter(&http)
             .filter_map(async |msg| msg.ok().map(|m| m.attachments))
             .collect::<Vec<Vec<Attachment>>>()
-            .await.into_iter().flatten().collect::<Vec<_>>();
-        
+            .await
+            .into_iter()
+            .flatten()
+            .collect::<Vec<_>>();
+
         log::info!("Loaded {} reaction images", images.len());
 
         Ok(Self {
             cooldowns: Default::default(),
             images,
-            config
+            config,
         })
+    }
+    
+    pub async fn should_interact(&self, msg: &Message, http: &impl CacheHttp) -> Result<bool> {
+        if u64::from(msg.channel_id) == self.config.image_channel || msg.mentions_me(http).await? {
+            return Ok(true);
+        }
+        Ok(false)
     }
 
     pub async fn on_message(&mut self, msg: &Message, http: &impl CacheHttp) -> Result<()> {
@@ -47,17 +57,19 @@ impl TomReact {
             msg.react(http, '\u{1F4A4}').await?;
             Ok(())
         } else {
-            self.cooldowns
-                .insert(msg.author.id, now + Duration::from_secs(self.config.cooldown_seconds));
+            self.cooldowns.insert(
+                msg.author.id,
+                now + Duration::from_secs(self.config.cooldown_seconds),
+            );
             let img_ind = rand::rng().random_range(0..self.images.len());
-            let m = msg
-                .channel_id
+            msg.channel_id
                 .send_message(
                     http,
-                    CreateMessage::default().content(&self.images[img_ind].url),
+                    CreateMessage::default()
+                        .content(&self.images[img_ind].url)
+                        .reactions(['\u{2764}']),
                 )
                 .await?;
-            m.react(http, '\u{2764}').await?;
             Ok(())
         }
     }

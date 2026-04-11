@@ -1,6 +1,7 @@
 use anyhow::Result;
 use lazy_static::lazy_static;
 use regex::Regex;
+use reqwest::StatusCode;
 use std::{collections::HashMap, str::FromStr};
 use steamid_ng::SteamID;
 
@@ -12,17 +13,17 @@ lazy_static! {
     )
     .unwrap();
     pub static ref VANITY_LINK_PATTERN: Regex =
-        Regex::new("https://steamcommunity.com/id/[\\w-]+)").unwrap();
+        Regex::new("https://steamcommunity.com/id/([\\w-]+)").unwrap();
     static ref STEAMID_XML_PATTERN: Regex = Regex::new("<steamID64>(\\d+)</steamID64>").unwrap();
 }
 
 const PERM_LINK_PREFIX: &str = "https://steamcommunity.com/profiles/";
 
-pub(crate) async fn get_steamid(steamid: &str) -> Result<SteamID> {
+pub(crate) async fn get_steamid(steamid: &str) -> Result<Option<SteamID>> {
     if let Ok(sid) = SteamID::from_str(steamid) {
-        Ok(sid)
+        Ok(Some(sid))
     } else if let Some(cap) = PERM_LINK_PATTERN.captures(steamid) {
-        Ok(SteamID::from_str(cap.get(1).unwrap().as_str())?)
+        Ok(Some(SteamID::from_str(cap.get(1).unwrap().as_str())?))
     } else if let Some(mat) = VANITY_LINK_PATTERN.find(steamid) {
         let url = mat.as_str();
         resolve_vanity(url).await
@@ -31,14 +32,23 @@ pub(crate) async fn get_steamid(steamid: &str) -> Result<SteamID> {
     }
 }
 
-pub(crate) async fn resolve_vanity(url: &str) -> Result<SteamID> {
-    let profile_info = reqwest::get(format!("{url}?xml=1")).await?.text().await?;
-    STEAMID_XML_PATTERN
-        .find(&profile_info)
-        .ok_or(anyhow::anyhow!(
-            "Could not find steam id in server response"
-        ))
-        .and_then(|id| Ok(SteamID::from_str(id.as_str())?))
+pub(crate) async fn resolve_vanity(url: &str) -> Result<Option<SteamID>> {
+    let response = reqwest::get(format!("{url}?xml=1")).await?;
+    if !response.status().is_success() {
+        anyhow::bail!(
+            "Vanity resolve query replied with status {}",
+            response.status()
+        );
+    }
+    let profile_info = response.text().await?;
+    let Some(id_str) = STEAMID_XML_PATTERN
+        .captures(&profile_info)
+        .map(|c| c.get(1).unwrap().as_str().to_string())
+    else {
+        return Ok(None);
+    };
+
+    Ok(Some(SteamID::from_str(&id_str)?))
 }
 
 pub(crate) trait SteamIDProfileLink {

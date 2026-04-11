@@ -1,5 +1,13 @@
-pub(crate) mod users;
-pub(crate) mod officers;
+use crate::BotData;
+
+mod users;
+mod officers;
+
+pub(crate) fn register() -> Vec<poise::Command<BotData, anyhow::Error>> {
+    vec![
+        users::register(),
+    ].into_iter().flatten().collect()
+}
 
 mod checks {
     use anyhow::Result;

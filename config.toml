@@ -5,9 +5,6 @@ approve_image = "https://cdn.discordapp.com/attachments/1121780046928023613/1306
 log_channel = 1313271773395161169
 officer_roles = [
     1313270134852554852,  # testing role
-    1272988674455375872, # HP Officer
-    518203583825575964,  # Moderator
-    425686371974512640   # Admin
 ]
 confirmed_tag = 1313271682059993239
 ext_list_dir = "lists"
@@ -18,8 +15,7 @@ tfbd_list_filename = "playerlist.vorobey-hackerpolice.json"
 
 [vanity]
 resolve_channels = [
-    1313269900483235944, # hp-discussions
-    1313271534852374538 # hp-reports
+    1313269900483235942
 ]
 
 [react]
