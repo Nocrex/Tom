@@ -17,7 +17,7 @@ pub struct PostgresDB {
 
 impl PostgresDB {
     pub async fn new(url: &str) -> Result<Self> {
-        log::info!("Connecting to postgres");
+        tracing::info!("Connecting to postgres");
         let connection = Arc::new(Mutex::new(PgConnection::establish(url)?));
 
         Ok(Self { connection })

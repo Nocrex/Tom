@@ -26,7 +26,7 @@ impl TomReact {
             .flatten()
             .collect::<Vec<_>>();
 
-        log::info!("Loaded {} reaction images", images.len());
+        tracing::info!("Loaded {} reaction images", images.len());
 
         Ok(Self {
             cooldowns: Default::default(),

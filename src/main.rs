@@ -1,26 +1,25 @@
 use std::{sync::Arc, time::Duration};
 
 use poise::serenity_prelude::{
-    self as serenity, ActivityData, CacheHttp, ChannelId, CreateAttachment, CreateMessage
+    self as serenity, ActivityData, CacheHttp, ChannelId, CreateAttachment, CreateMessage,
 };
 use tokio::sync::RwLock;
 
 use tom::{
-    BotData,
-    commands,
+    BotData, commands,
     config::Config,
+    modules::{tom_react::TomReact, vanity_resolver::VanityResolver},
+    reports::{ReportDB, sql::PostgresDB},
     util,
-    modules::{tom_react::TomReact, vanity_resolver::VanityResolver}, reports::{ReportDB, sql::PostgresDB},
 };
 
 #[tokio::main]
 async fn main() {
     dotenv::dotenv().unwrap();
-    env_logger::builder()
-        .filter_level(log::LevelFilter::Warn)
-        .filter_module("tom", log::LevelFilter::Debug)
+    tracing_subscriber::fmt()
+        .with_env_filter("warn,tom=debug")
         .init();
-    
+
     let token = dotenv::var("TOKEN").expect("Missing discord TOKEN");
     let intents =
         serenity::GatewayIntents::non_privileged().union(serenity::GatewayIntents::MESSAGE_CONTENT);
@@ -39,7 +38,7 @@ async fn main() {
                             framework,
                             ..
                         } => {
-                            log::error!("{error:?}");
+                            tracing::error!("{error:?}");
                             ChannelId::from(framework.user_data.config.error_channel)
                                 .send_files(
                                     &ctx,
@@ -53,7 +52,7 @@ async fn main() {
                                 .expect("Could not send error message");
                         }
                         poise::FrameworkError::Command { error, ctx, .. } => {
-                            log::error!("{error:?}");
+                            tracing::error!("{error:?}");
                             ChannelId::from(ctx.data().config.error_channel)
                                 .send_files(
                                     &ctx,
@@ -67,7 +66,7 @@ async fn main() {
                                 .expect("Could not send error message");
                         }
                         poise::FrameworkError::CommandPanic { payload, ctx, .. } => {
-                            log::error!("Code panicked! {payload:?}");
+                            tracing::error!("Code panicked! {payload:?}");
                             ChannelId::from(ctx.data().config.error_channel)
                                 .send_files(
                                     &ctx,
@@ -86,10 +85,10 @@ async fn main() {
             },
             pre_command: |ctx| {
                 Box::pin(async move {
-                    log::info!(
-                        "{} in {} used command {}",
-                        ctx.author().display_name(),
-                        ctx.channel_id(),
+                    tracing::info!(
+                        user = ctx.author().display_name(),
+                        channel = u64::from(ctx.channel_id()),
+                        "Command {}",
                         ctx.invocation_string()
                     );
                 })
@@ -130,25 +129,30 @@ async fn main() {
                 let react = TomReact::load(ctx.http(), config.react.clone()).await?;
                 let vanity = VanityResolver::new(config.vanity.clone());
                 let lists = util::load_lists(&config.report.ext_list_dir)?;
-                
-                let reports = Arc::new(PostgresDB::new(&dotenv::var("DATABASE_URL").expect("Missing DATABASE_URL")).await?);
-                
+
+                let reports = Arc::new(
+                    PostgresDB::new(&dotenv::var("DATABASE_URL").expect("Missing DATABASE_URL"))
+                        .await?,
+                );
+
                 {
                     let ctx = ctx.clone();
                     let reports = reports.clone();
                     tokio::task::spawn(async move {
                         loop {
-                            if let Ok(count) = reports.reported_count().await {
-                                ctx.set_presence(Some(ActivityData::watching(format!("{count} SteamIDs"))), serenity::OnlineStatus::Online);
-                            } else {
-                                log::warn!("Error while fetching report count");
+                            match reports.reported_count().await {
+                                Ok(count) => ctx.set_presence(
+                                    Some(ActivityData::watching(format!("{count} SteamIDs"))),
+                                    serenity::OnlineStatus::Online,
+                                ),
+                                Err(e) => tracing::warn!("Error while fetching report count: {e:?}"),
                             }
                             tokio::time::sleep(Duration::from_mins(1)).await;
                         }
                     });
                 }
 
-                log::info!("Bot up and running");
+                tracing::info!("Bot up and running");
                 Ok(BotData {
                     reports,
                     lists,

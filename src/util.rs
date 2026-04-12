@@ -80,7 +80,7 @@ pub fn load_lists(dir: &str) -> Result<HashMap<SteamID, Vec<String>>> {
             .for_each(|id| lists.entry(id).or_default().push(list_name.to_owned()));
     }
 
-    log::info!("Loaded {} external list entries", lists.len());
+    tracing::info!("Loaded {} external list entries", lists.len());
     Ok(lists)
 }
 
