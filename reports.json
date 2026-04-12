@@ -759,7 +759,7 @@
         ]
     },
     "1083466350376276069": {
-        "count": 160,
+        "count": 162,
         "profile_id": 76561199071473686,
         "reports": [
             {
@@ -1953,6 +1953,16 @@
                     "76561199537704987": "cheater"
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-12T20:21:34.696966+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1492906344456650842 <@1083466350376276069> (Luggworm) cheater exposed (+2 points, 162 total)",
+                "players": {
+                    "76561197996884118": "cheater",
+                    "76561199885475064": "cheater"
+                },
+                "points": 2,
                 "verified": true
             }
         ]
