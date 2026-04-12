@@ -3,6 +3,7 @@ use std::sync::Arc;
 use anyhow::Result;
 use async_trait::async_trait;
 use diesel::{connection::DefaultLoadingMode, prelude::*};
+use itertools::Itertools;
 use tokio::sync::Mutex;
 
 use crate::reports::*;
@@ -103,13 +104,43 @@ impl ReportDB for PostgresDB {
         t.await?
     }
 
+    async fn report(&self, url: &str, fetch_players: bool) -> Result<Option<Report>> {
+        let conn = self.connection.clone();
+        let url = url.to_string();
+
+        let t = tokio::task::spawn_blocking(move || {
+            let mut db = conn.blocking_lock();
+
+            let rep = schema::reports::table
+                .select((models::Report::as_select(), schema::reports::id))
+                .filter(schema::reports::threadurl.eq(url))
+                .first(&mut *db)
+                .optional()?;
+
+            let mut rep: Option<(Report, i32)> = rep.map(|(r, id)| (r.into(), id));
+
+            if fetch_players && let Some((r, id)) = rep.as_mut() {
+                let players = schema::playerreports::table
+                    .select(models::ReportedPlayer::as_select())
+                    .filter(schema::playerreports::report.eq(*id))
+                    .load(&mut *db)?;
+                
+                r.players.extend(players.into_iter().map_into());
+            }
+
+            Ok(rep.map(|(r,_)|r))
+        });
+
+        t.await?
+    }
+
     async fn reporter(&self, user_id: UserId) -> Result<Option<Reporter>> {
         let conn = self.connection.clone();
 
         let t = tokio::task::spawn_blocking(move || {
             let mut db = conn.blocking_lock();
             let rep = schema::reporters::table
-                .select(models::Reporter::as_returning())
+                .select(models::Reporter::as_select())
                 .find(u64::from(user_id) as i64)
                 .first(&mut *db)
                 .optional()?;

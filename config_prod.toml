@@ -9,6 +9,12 @@ officer_roles = [
     425686371974512640   # Admin
 ]
 confirmed_tag = 1309945340073349130
+deny_tags = [
+    ["Not enough info", 1309945406385426432],
+    ["Duplicate", 1311759650261172334],
+    ["Not a cheater", 1309945373971709952],
+    ["Invalid report", 1322881469537976353]
+]
 ext_list_dir = "lists"
 
 [report.export]

@@ -83,3 +83,13 @@ pub fn load_lists(dir: &str) -> Result<HashMap<SteamID, Vec<String>>> {
     log::info!("Loaded {} external list entries", lists.len());
     Ok(lists)
 }
+
+pub trait GetJumpUrl {
+    fn jump_url(&self) -> String;
+}
+
+impl GetJumpUrl for poise::serenity_prelude::GuildChannel {
+    fn jump_url(&self) -> String {
+        format!("https://discord.com/channels/{}/{}", self.guild_id, self.id)
+    }
+}

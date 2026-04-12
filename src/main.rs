@@ -87,8 +87,9 @@ async fn main() {
             pre_command: |ctx| {
                 Box::pin(async move {
                     log::info!(
-                        "{} used command {}",
+                        "{} in {} used command {}",
                         ctx.author().display_name(),
+                        ctx.channel_id(),
                         ctx.invocation_string()
                     );
                 })
@@ -116,6 +117,10 @@ async fn main() {
                     }
                     Ok(())
                 })
+            },
+            prefix_options: poise::PrefixFrameworkOptions {
+                mention_as_prefix: false,
+                ..Default::default()
             },
             ..Default::default()
         })

@@ -15,9 +15,16 @@ pub struct ReportConfig {
     pub log_channel: u64,
     pub officer_roles: Vec<u64>,
     pub confirmed_tag: u64,
+    pub deny_tags: Vec<(String, u64)>,
 
     pub ext_list_dir: String,
     pub export: ExportConfig,
+}
+
+impl ReportConfig {
+    pub fn is_deny_tag(&self, id: u64) -> bool {
+        self.deny_tags.iter().find(|(_, n)|id == *n).is_some()
+    }
 }
 
 #[derive(Deserialize, Debug, Clone)]

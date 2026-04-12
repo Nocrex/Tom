@@ -9,6 +9,7 @@ pub trait ReportDB {
     async fn all_reports(&self) -> Result<Vec<PlayerReport>>;
     async fn reported_count(&self) -> Result<u64>;
 
+    async fn report(&self, url: &str, fetch_players: bool) -> Result<Option<Report>>;
     async fn reporter(&self, user_id: UserId) -> Result<Option<Reporter>>;
     async fn reporter_with_points(
         &self,
