@@ -5553,6 +5553,11 @@
             }
         ]
     },
+    "226867945987506177": {
+        "count": 0,
+        "profile_id": null,
+        "reports": []
+    },
     "228839875380510720": {
         "count": 2,
         "profile_id": 76561198126515080,
@@ -9057,7 +9062,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 40,
+        "count": 42,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -9323,6 +9328,16 @@
                     "76561199890950014": "cheater"
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-04-13T10:19:48.373222+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493193596411838607 <@309337035716558858> (lukasmaestro) cheater exposed (+2 points, 42 total)",
+                "players": {
+                    "76561198069652473": "cheater",
+                    "76561198783392452": "cheater"
+                },
+                "points": 2,
                 "verified": true
             }
         ]
