@@ -12003,7 +12003,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 77,
+        "count": 79,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -12682,6 +12682,16 @@
                     "76561198739225385": "cheater"
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-13T16:10:31.104305+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493280399676408031 <@365145249074642956> (Teltta) cheater exposed (+2 points, 79 total)",
+                "players": {
+                    "76561198149618699": "cheater",
+                    "76561198868788995": "cheater"
+                },
+                "points": 2,
                 "verified": true
             }
         ]
