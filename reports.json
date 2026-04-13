@@ -2144,7 +2144,7 @@
         ]
     },
     "1138819493020323932": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561198035711179,
         "reports": [
             {
@@ -2207,6 +2207,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1422334633957392385 <@1138819493020323932> (Officer Furroski) cheater exposed (+1 points, 8 total)",
                 "players": {
                     "76561198040668886": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-13T15:29:55.495536+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493268538314461184 <@1138819493020323932> (Vorobey) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561199323117199": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -5554,9 +5563,19 @@
         ]
     },
     "226867945987506177": {
-        "count": 0,
-        "profile_id": null,
-        "reports": []
+        "count": 1,
+        "profile_id": 76561199517888603,
+        "reports": [
+            {
+                "date": "2026-04-13T15:54:25.857383+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493128161670467604 <@226867945987506177> (Mr. Square) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199036465889": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
     },
     "228839875380510720": {
         "count": 2,
@@ -15471,10 +15490,10 @@
                 "verified": true
             },
             {
-                "date": "2026-04-09T21:09:04.006132+00:00",
+                "date": "2026-04-13T15:58:35.487161+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1486712781020463285 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 67 total)",
                 "players": {
-                    "76561198202816899": "exploiter"
+                    "76561198202816899": "cheater"
                 },
                 "points": 1,
                 "verified": true
