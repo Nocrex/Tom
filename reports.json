@@ -17120,7 +17120,7 @@
         ]
     },
     "571009999925542922": {
-        "count": 247,
+        "count": 245,
         "profile_id": 76561199323117199,
         "reports": [
             {
@@ -17128,17 +17128,6 @@
                 "msg": "https://discord.com/channels/354645865773924352/1317840387666350130 <@571009999925542922> (Itachi) cheater exposed (+1 points, 1 total)",
                 "players": {
                     "76561199702565412": "cheater"
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2024-12-15T20:04:47.697000+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1317945475898413167 <@571009999925542922> (Itachi) cheater exposed (+1 points, 2 total)",
-                "players": {
-                    "76561198902582798": "cheater",
-                    "76561199113282492": "cheater",
-                    "76561199619857359": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -17320,17 +17309,6 @@
                 "msg": "https://discord.com/channels/354645865773924352/1320804402214211644 <@571009999925542922> (Itachi) cheater exposed (+1 points, 23 total)",
                 "players": {
                     "76561199790963046": "cheater"
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2024-12-23T17:41:20.486000+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1320808477563686953 <@571009999925542922> (Itachi) cheater exposed (+1 points, 24 total)",
-                "players": {
-                    "76561199183533235": "cheater",
-                    "76561199680457711": "cheater",
-                    "76561199809424551": "cheater"
                 },
                 "points": 1,
                 "verified": true
