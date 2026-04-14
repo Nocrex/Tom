@@ -22536,7 +22536,7 @@
         ]
     },
     "775476032630947920": {
-        "count": 8,
+        "count": 9,
         "profile_id": 76561198402859419,
         "reports": [
             {
@@ -22607,6 +22607,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1493683367848316928 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 8 total)",
                 "players": {
                     "76561199623856937": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-14T19:13:15.632808+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493689940910018712 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 9 total)",
+                "players": {
+                    "76561199258787312": "cheater"
                 },
                 "points": 1,
                 "verified": true
