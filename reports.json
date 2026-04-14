@@ -21276,7 +21276,7 @@
         ]
     },
     "696404114262720524": {
-        "count": 14,
+        "count": 15,
         "profile_id": 76561199179969795,
         "reports": [
             {
@@ -21413,6 +21413,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1407674021553766471 <@696404114262720524> (Shiro) cheater exposed (+1 points, 14 total)",
                 "players": {
                     "76561199612122990": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-14T17:59:17.639282+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493654567492260062 <@696404114262720524> (Shiro) cheater exposed (+1 points, 15 total)",
+                "players": {
+                    "76561198715454095": "cheater"
                 },
                 "points": 1,
                 "verified": true
