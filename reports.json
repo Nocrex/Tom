@@ -6938,7 +6938,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 118,
+        "count": 120,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7896,6 +7896,24 @@
                 "msg": "https://discord.com/channels/354645865773924352/1491715960657285160 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 118 total)",
                 "players": {
                     "76561199361181758": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-13T23:35:43.750206+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493392896844501195 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 119 total)",
+                "players": {
+                    "76561198254124886": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-13T23:51:53.781829+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493395675575226500 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 120 total)",
+                "players": {
+                    "76561198715373876": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -22472,6 +22490,21 @@
                 "msg": "https://discord.com/channels/354645865773924352/1488878281749958817 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 7 total)",
                 "players": {
                     "76561199852717570": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
+    "775476032630947920": {
+        "count": 1,
+        "profile_id": 76561198402859419,
+        "reports": [
+            {
+                "date": "2026-04-13T23:54:43.264511+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493308847731900710 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199091978264": "cheater"
                 },
                 "points": 1,
                 "verified": true
