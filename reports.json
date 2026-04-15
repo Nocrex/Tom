@@ -6947,7 +6947,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 120,
+        "count": 121,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7923,6 +7923,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1493395675575226500 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 120 total)",
                 "players": {
                     "76561198715373876": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-15T12:29:38.961007+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493950996802441236 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 121 total)",
+                "players": {
+                    "76561198027315255": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -9127,7 +9136,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 42,
+        "count": 43,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -9403,6 +9412,15 @@
                     "76561198783392452": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-15T12:17:59.187883+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1493939539008290917 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 43 total)",
+                "players": {
+                    "76561199043836588": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
