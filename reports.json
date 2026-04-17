@@ -1,6 +1,6 @@
 {
     "1002220641459634226": {
-        "count": 43,
+        "count": 44,
         "profile_id": 76561199695684975,
         "reports": [
             {
@@ -356,6 +356,15 @@
                     "76561198719537006": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-17T13:33:49.621747+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494687713612398803 <@1002220641459634226> ([VOLVO] ae) cheater exposed (+1 points, 44 total)",
+                "players": {
+                    "76561198774345140": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -9224,7 +9233,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 43,
+        "count": 44,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -9507,6 +9516,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1493939539008290917 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 43 total)",
                 "players": {
                     "76561199043836588": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-17T13:08:22.416624+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494666343285522636 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 44 total)",
+                "players": {
+                    "76561198714730386": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -15193,7 +15211,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 70,
+        "count": 71,
         "profile_id": 76561199750445142,
         "reports": [
             {
@@ -15711,6 +15729,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1494314894538051644 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 70 total)",
                 "players": {
                     "76561198790054258": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-17T13:54:47.472797+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494689525350531242 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 71 total)",
+                "players": {
+                    "76561199651673874": "cheater"
                 },
                 "points": 1,
                 "verified": true
