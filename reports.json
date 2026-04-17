@@ -6971,7 +6971,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 126,
+        "count": 129,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -7996,6 +7996,25 @@
                 },
                 "points": 2,
                 "verified": true
+            },
+            {
+                "date": "2026-04-17T17:15:37.847755+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494734113784070276 <@286378350975647744> (Sauli01) cheater exposed (+2 points, 128 total)",
+                "players": {
+                    "76561198953757387": "cheater",
+                    "76561199807924958": "cheater"
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-17T17:50:48.609243+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494746038047870986 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 129 total)",
+                "players": {
+                    "76561198721111981": "cheater"
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -8740,7 +8759,7 @@
         ]
     },
     "293943718233505802": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561198748035294,
         "reports": [
             {
@@ -8784,6 +8803,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1494061064466202654 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 5 total)",
                 "players": {
                     "76561199110575632": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-17T17:36:09.392664+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494360929343639733 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561198753460072": "cheater"
                 },
                 "points": 1,
                 "verified": true
