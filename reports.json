@@ -19561,7 +19561,7 @@
         ]
     },
     "579548943663235101": {
-        "count": 65,
+        "count": 66,
         "profile_id": 76561199024884868,
         "reports": [
             {
@@ -20111,6 +20111,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1475895364002255010 <@579548943663235101> (Zardi) cheater exposed (+1 points, 65 total)",
                 "players": {
                     "76561198738292205": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-18T09:47:30.070553+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494830628376674505 <@579548943663235101> (Zardi) cheater exposed (+1 points, 66 total)",
+                "players": {
+                    "76561199269792141": "cheater"
                 },
                 "points": 1,
                 "verified": true
