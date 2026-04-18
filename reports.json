@@ -778,7 +778,7 @@
         ]
     },
     "1083466350376276069": {
-        "count": 163,
+        "count": 164,
         "profile_id": 76561199071473686,
         "reports": [
             {
@@ -1989,6 +1989,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1493119208198901860 <@1083466350376276069> (Luggworm) cheater exposed (+1 points, 163 total)",
                 "players": {
                     "76561199765819047": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-18T11:39:07.226175+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494955792304963634 <@1083466350376276069> (Luggworm) cheater exposed (+1 points, 164 total)",
+                "players": {
+                    "76561198711703586": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -15826,7 +15835,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 7,
+        "count": 9,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -15866,6 +15875,16 @@
                     "76561199549685097": "cheater"
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-18T11:34:49.657286+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1494894430321381376 <@454858232301879297> (Greenmovie13) cheater exposed (+2 points, 9 total)",
+                "players": {
+                    "76561199242299050": "cheater",
+                    "76561199864625876": "cheater"
+                },
+                "points": 2,
                 "verified": true
             }
         ]
