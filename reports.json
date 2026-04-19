@@ -4799,7 +4799,7 @@
         ]
     },
     "1344344481117372466": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561199796543931,
         "reports": [
             {
@@ -4853,6 +4853,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1489588517783867535 <@1344344481117372466> (Dis) cheater exposed (+1 points, 7 total)",
                 "players": {
                     "76561198795091296": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-19T17:40:45.767582+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1495303232828870756 <@1344344481117372466> (Dis) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561199560214887": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -15871,7 +15880,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 9,
+        "count": 10,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -15921,6 +15930,15 @@
                     "76561199864625876": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-19T17:26:27.133720+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1495220083579031702 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 10 total)",
+                "players": {
+                    "76561199201941800": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -22903,7 +22921,7 @@
         ]
     },
     "775476032630947920": {
-        "count": 43,
+        "count": 44,
         "profile_id": 76561198402859419,
         "reports": [
             {
@@ -23281,6 +23299,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1495298317884592158 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 43 total)",
                 "players": {
                     "76561199807063152": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-19T17:56:31.070615+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1495266779344273488 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 44 total)",
+                "players": {
+                    "76561198804491132": "cheater"
                 },
                 "points": 1,
                 "verified": true
