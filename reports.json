@@ -22861,7 +22861,7 @@
         ]
     },
     "771063194084573205": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561198258715564,
         "reports": [
             {
@@ -22923,6 +22923,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1488878281749958817 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 7 total)",
                 "players": {
                     "76561199852717570": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-20T21:59:23.761913+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1495846987189321809 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561199547339089": "cheater"
                 },
                 "points": 1,
                 "verified": true
