@@ -520,6 +520,21 @@
             }
         ]
     },
+    "1016915774297878538": {
+        "count": 1,
+        "profile_id": 76561199855550239,
+        "reports": [
+            {
+                "date": "2026-04-22T15:56:36.842176+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496532683705286758 <@1016915774297878538> (Bo) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198061495705": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
     "1020014289249124444": {
         "count": 1,
         "profile_id": null,
