@@ -24714,6 +24714,40 @@
             }
         ]
     },
+    "871096627417468999": {
+        "count": 4,
+        "profile_id": 76561197994906928,
+        "reports": [
+            {
+                "date": "2026-04-22T06:30:35.700975+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496371637627387914 <@871096627417468999> (True Astro) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198758174619": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-22T06:34:29.671180+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496332449871827084 <@871096627417468999> (True Astro) cheater exposed (+1 points, 2 total)",
+                "players": {
+                    "76561199840699593": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-22T06:53:57.751351+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496338115927740476 <@871096627417468999> (True Astro) cheater exposed (+2 points, 4 total)",
+                "players": {
+                    "76561198720827832": "cheater",
+                    "76561199855868207": "cheater"
+                },
+                "points": 2,
+                "verified": true
+            }
+        ]
+    },
     "874119946823671818": {
         "count": 3,
         "profile_id": 76561198857117045,
