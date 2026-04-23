@@ -8820,7 +8820,7 @@
         ]
     },
     "293943718233505802": {
-        "count": 6,
+        "count": 8,
         "profile_id": 76561198748035294,
         "reports": [
             {
@@ -8873,6 +8873,24 @@
                 "msg": "https://discord.com/channels/354645865773924352/1494360929343639733 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 6 total)",
                 "players": {
                     "76561198753460072": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-23T11:06:12.061531+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496128925921710190 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561199884125631": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-23T11:07:00.339653+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496120562244915271 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561198761206393": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -9322,7 +9340,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 47,
+        "count": 48,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -9628,6 +9646,16 @@
                 },
                 "points": 3,
                 "verified": true
+            },
+            {
+                "date": "2026-04-23T11:09:50.152840+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496523874626703441 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 48 total)",
+                "players": {
+                    "76561198713867165": "cheater",
+                    "76561198735483109": "cheater"
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -9648,7 +9676,7 @@
         ]
     },
     "310505171954434049": {
-        "count": 186,
+        "count": 187,
         "profile_id": 76561198217926783,
         "reports": [
             {
@@ -11067,6 +11095,15 @@
                 },
                 "points": 1,
                 "verified": true
+            },
+            {
+                "date": "2026-04-23T11:14:36.034092+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496250497261109499 <@310505171954434049> (Master Of Noob) cheater exposed (+1 points, 187 total)",
+                "players": {
+                    "76561198747277627": "cheater"
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -12291,7 +12328,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 84,
+        "count": 86,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -13009,6 +13046,24 @@
                     "76561199289680925": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-23T11:16:15.259159+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496831607267655771 <@365145249074642956> (Teltta) cheater exposed (+1 points, 85 total)",
+                "players": {
+                    "76561198399812756": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-23T11:20:14.918628+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1496477939817123840 <@365145249074642956> (Teltta) cheater exposed (+1 points, 86 total)",
+                "players": {
+                    "76561199820425639": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
