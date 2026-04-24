@@ -1,6 +1,6 @@
 {
     "1002220641459634226": {
-        "count": 44,
+        "count": 43,
         "profile_id": 76561199695684975,
         "reports": [
             {
@@ -356,15 +356,6 @@
                     "76561198719537006": "cheater"
                 },
                 "points": 2,
-                "verified": true
-            },
-            {
-                "date": "2026-04-17T13:33:49.621747+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1494687713612398803 <@1002220641459634226> ([VOLVO] ae) cheater exposed (+1 points, 44 total)",
-                "players": {
-                    "76561198774345140": "cheater"
-                },
-                "points": 1,
                 "verified": true
             }
         ]
