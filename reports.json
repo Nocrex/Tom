@@ -16270,7 +16270,7 @@
         ]
     },
     "483679614665752586": {
-        "count": 23,
+        "count": 22,
         "profile_id": 76561199845104206,
         "reports": [
             {
@@ -16468,15 +16468,6 @@
                 },
                 "points": 0,
                 "verified": false
-            },
-            {
-                "date": "2026-03-28T20:26:51.379550+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1487544985246105600 <@483679614665752586> (doctor_hax) cheater exposed (+1 points, 21 total)",
-                "players": {
-                    "76561198154952759": "cheater"
-                },
-                "points": 1,
-                "verified": true
             },
             {
                 "date": "2026-04-14T18:34:05.920402+00:00",
