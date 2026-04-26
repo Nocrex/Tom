@@ -281,7 +281,7 @@ class HPCog(commands.Cog):
         if not allow_duplicate:
             for steamid in steamids_dict: # check steamids if they were reported before
                 reports = self.reports.find_reported(steamid)
-                if len(reports) > 0 and (not verified or any(map(lambda r: r[2], reports))):
+                if len(reports) > 0 and (not verified or any(map(lambda r: r[1], reports))):
                     await interaction.response.send_message(f"Cheater {steamid} was already reported:\n{chr(10).join(map(lambda r: r[0] + (' -- (unverified)' if not r[1] else ''), reports))}", ephemeral=True)
                     return
 
