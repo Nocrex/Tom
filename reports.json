@@ -24804,7 +24804,7 @@
         ]
     },
     "852720524856786984": {
-        "count": 1,
+        "count": 2,
         "profile_id": 76561198741872942,
         "reports": [
             {
@@ -24812,6 +24812,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1476253227023597723 <@852720524856786984> (Will you be mine? \ud83d\udc8d) cheater exposed (+1 points, 1 total)",
                 "players": {
                     "76561199813431254": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T10:28:26.783646+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1497082865815388210 <@852720524856786984> (dalin) cheater exposed (+1 points, 2 total)",
+                "players": {
+                    "76561199551615064": "cheater"
                 },
                 "points": 1,
                 "verified": true
