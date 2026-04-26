@@ -290,7 +290,7 @@ class HPCog(commands.Cog):
             await self.log_channel.send(f"Associated SteamID {reporter_steamid_i} with user {owner.mention}", silent=True)
 
         # log channel message
-        msg = f"{thread.jump_url} {owner.mention} ({owner.global_name}) cheater exposed (+{points} points, {reporter.points()+points} total)"
+        msg = f"{thread.jump_url} {owner.mention} ({owner.display_name}) cheater exposed (+{points} points, {reporter.points()+points} total)"
         # add report to internal record
         reporter.add_report(msg, points, steamids_dict, verified)
 
