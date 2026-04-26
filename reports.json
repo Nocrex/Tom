@@ -8268,7 +8268,7 @@
         ]
     },
     "292025507518611458": {
-        "count": 69,
+        "count": 70,
         "profile_id": 76561198042509428,
         "reports": [
             {
@@ -8824,6 +8824,15 @@
                     "76561199770191903": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T13:16:23.542258+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1497228988521910343 <@292025507518611458> (AMOGUS) cheater exposed (+1 points, 70 total)",
+                "players": {
+                    "76561198763440885": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -12376,7 +12385,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 88,
+        "count": 89,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -13128,6 +13137,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1497647125859668058 <@365145249074642956> (Teltta) cheater exposed (+1 points, 88 total)",
                 "players": {
                     "76561198730605918": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T13:29:43.221516+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1497952772518055967 <@365145249074642956> (Teltta) cheater exposed (+1 points, 89 total)",
+                "players": {
+                    "76561199727644015": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -23791,7 +23809,7 @@
         ]
     },
     "825341186142109698": {
-        "count": 99,
+        "count": 100,
         "profile_id": 76561199190321580,
         "reports": [
             {
@@ -24624,6 +24642,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1496468364133142599 <@825341186142109698> (Dxxn) cheater exposed (+1 points, 99 total)",
                 "players": {
                     "76561199866971109": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T13:24:20.680006+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1497253012635390112 <@825341186142109698> (Dxxn) cheater exposed (+1 points, 100 total)",
+                "players": {
+                    "76561199300743879": "cheater"
                 },
                 "points": 1,
                 "verified": true
