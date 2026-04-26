@@ -8856,7 +8856,7 @@
         ]
     },
     "293943718233505802": {
-        "count": 14,
+        "count": 17,
         "profile_id": 76561198748035294,
         "reports": [
             {
@@ -8951,6 +8951,25 @@
                     "76561199636929849": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T20:13:58.303818+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498034109920972880 <@293943718233505802> (nonchalant) cheater exposed (+2 points, 16 total)",
+                "players": {
+                    "76561198368237096": "cheater",
+                    "76561198725389165": "cheater"
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T20:21:44.654870+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498043668458639440 <@293943718233505802> (nonchalant) cheater exposed (+1 points, 17 total)",
+                "players": {
+                    "76561198733142716": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -9416,7 +9435,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 49,
+        "count": 50,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -9738,6 +9757,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1497614029840187494 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 49 total)",
                 "players": {
                     "76561199031333670": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-26T20:02:02.417138+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498028911022571610 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 50 total)",
+                "players": {
+                    "76561198041867481": "cheater"
                 },
                 "points": 1,
                 "verified": true
