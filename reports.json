@@ -9084,7 +9084,7 @@
         ]
     },
     "305694184612823040": {
-        "count": 25,
+        "count": 26,
         "profile_id": 76561199804511490,
         "reports": [
             {
@@ -9284,6 +9284,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1497646499386097745 <@305694184612823040> (Exize) cheater exposed (+1 points, 25 total)",
                 "players": {
                     "76561198719058077": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-27T16:55:25.981016+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498366552884379832 <@305694184612823040> (Exize) cheater exposed (+1 points, 26 total)",
+                "players": {
+                    "76561198869045511": "cheater"
                 },
                 "points": 1,
                 "verified": true
@@ -25157,7 +25166,7 @@
         ]
     },
     "871096627417468999": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561197994906928,
         "reports": [
             {
@@ -25193,6 +25202,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1497930989207552020 <@871096627417468999> (True Astro) cheater exposed (+1 points, 5 total)",
                 "players": {
                     "76561198709076886": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-27T16:31:05.954275+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498360175176712262 <@871096627417468999> (True Astro) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561199716655921": "cheater"
                 },
                 "points": 1,
                 "verified": true
