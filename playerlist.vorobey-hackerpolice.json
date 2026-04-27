@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-04-27 18:27:37",
-        "title": "vorobey-hackerpolice - 2026-04-27 18:27:37",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-04-27 19:32:35",
+        "title": "vorobey-hackerpolice - 2026-04-27 19:32:35",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -12301,6 +12301,18 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1524458206]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1498308747897081947"
+            ],
+            "last_seen": {
+                "time": 1777318054
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1876251421]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1492516858450940044"
@@ -13759,6 +13771,18 @@
             ],
             "last_seen": {
                 "time": 1777304176
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:92366064]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1498384735913640147"
+            ],
+            "last_seen": {
+                "time": 1777318354
             }
         },
         {
@@ -18604,6 +18628,18 @@
             ],
             "last_seen": {
                 "time": 1777219454
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:802480750]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1498399056253161502"
+            ],
+            "last_seen": {
+                "time": 1777316602
             }
         },
         {
