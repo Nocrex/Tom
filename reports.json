@@ -5699,7 +5699,7 @@
         ]
     },
     "226867945987506177": {
-        "count": 1,
+        "count": 2,
         "profile_id": 76561199517888603,
         "reports": [
             {
@@ -5707,6 +5707,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1493128161670467604 <@226867945987506177> (Mr. Square) cheater exposed (+1 points, 1 total)",
                 "players": {
                     "76561199036465889": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-27T23:12:32.736520+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498461395375886519 <@226867945987506177> (Mr. Square) cheater exposed (+1 points, 2 total)",
+                "players": {
+                    "76561198746891217": "cheater"
                 },
                 "points": 1,
                 "verified": true
