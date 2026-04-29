@@ -20158,7 +20158,7 @@
         ]
     },
     "579548943663235101": {
-        "count": 69,
+        "count": 71,
         "profile_id": 76561199024884868,
         "reports": [
             {
@@ -20738,6 +20738,16 @@
                     "76561198109233183": "cheater"
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-29T17:39:36.583652+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1499048853070938183 <@579548943663235101> (orbitalcenter) cheater exposed (+2 points, 71 total)",
+                "players": {
+                    "76561199025159570": "cheater",
+                    "76561199863363243": "cheater"
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -22447,6 +22457,21 @@
                     "76561199518344095": "cheater"
                 },
                 "points": 2,
+                "verified": true
+            }
+        ]
+    },
+    "699183133047652413": {
+        "count": 1,
+        "profile_id": 76561199263703411,
+        "reports": [
+            {
+                "date": "2026-04-29T17:29:18.299509+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1499002068990689360 <@699183133047652413> (Malafbelike) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199848024660": "cheater"
+                },
+                "points": 1,
                 "verified": true
             }
         ]
