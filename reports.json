@@ -784,7 +784,7 @@
         ]
     },
     "1083466350376276069": {
-        "count": 167,
+        "count": 168,
         "profile_id": 76561199071473686,
         "reports": [
             {
@@ -2031,6 +2031,15 @@
                 "msg": "https://discord.com/channels/354645865773924352/1497600838217240718 <@1083466350376276069> (Luggworm) cheater exposed (+1 points, 167 total)",
                 "players": {
                     "76561198714719382": "cheater"
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-04-29T08:25:54.145372+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1498959213743964270 <@1083466350376276069> (Luggworm) cheater exposed (+1 points, 168 total)",
+                "players": {
+                    "76561198716864835": "cheater"
                 },
                 "points": 1,
                 "verified": true
