@@ -461,27 +461,9 @@ class HPCog(commands.Cog):
         thread: discord.Thread = interaction.channel
         reporter = self.reports.get(thread.owner_id)
         
-        if reporter is None:
+        if reporter is None or (report := reporter.find_report(thread.jump_url)) is None: # look up if report was already approved
             await interaction.response.send_message("Report was not approved", ephemeral=True)
             return
-            
-        if (report := reporter.find_report(thread.jump_url)) is None: # look up if report was already approved
-            
-            parent = thread.parent or await thread.guild.fetch_channel(thread.parent_id) 
-            if isinstance(parent, discord.TextChannel): # for "legacy" reports check if the thread was started on a regular message and look for a report with it's url
-                try: 
-                    message = thread.starter_message or await parent.fetch_message(thread.id)
-                except NotFound:
-                    await interaction.response.send_message("Error getting initial report message", ephemeral=True)
-                    return
-                
-                if (report := reporter.find_report(message.jump_url)) is None:
-                    await interaction.response.send_message("Report was not approved", ephemeral=True)
-                    return
-                    
-            else:
-                await interaction.response.send_message("Report was not approved", ephemeral=True)
-                return
 
         steamids_str = steamids.split(",") # get steamids from the command argument
         steamids_list: list[int] = []
