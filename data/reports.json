@@ -17300,6 +17300,24 @@
             }
         ]
     },
+    "339635152131063810": {
+        "count": 0,
+        "profile_id": 76561198061429794,
+        "reports": [
+            {
+                "date": "2026-05-22T05:16:56.992865+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1507216617728380989 <@339635152131063810> (SlightlyDuddy) cheater exposed (+0 points, 0 total)",
+                "players": {
+                    "76561199442611438": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-22T05:16:56.992865+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": false
+            }
+        ]
+    },
     "341316635606515712": {
         "count": 4,
         "profile_id": 76561198357764641,
