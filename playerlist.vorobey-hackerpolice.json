@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-05-24 19:50:48",
-        "title": "vorobey-hackerpolice - 2026-05-24 19:50:48",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-05-24 21:45:59",
+        "title": "vorobey-hackerpolice - 2026-05-24 21:45:59",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -20735,6 +20735,18 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:737659889]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1508224519641501746"
+            ],
+            "last_seen": {
+                "time": 1779659159
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1434397583]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1237539369657569300"
@@ -25523,7 +25535,7 @@
                 "https://discord.com/channels/354645865773924352/1503129116961018049"
             ],
             "last_seen": {
-                "time": 1778447370
+                "time": 1779657858
             }
         },
         {
