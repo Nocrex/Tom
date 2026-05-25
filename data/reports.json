@@ -24507,7 +24507,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 37,
+        "count": 38,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -24904,6 +24904,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-05-25T19:18:10.517857+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1508549467278938223 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 38 total)",
+                "players": {
+                    "76561198122919106": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-25T19:18:10.517857+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -30386,7 +30398,7 @@
         ]
     },
     "579548943663235101": {
-        "count": 74,
+        "count": 75,
         "profile_id": 76561199024884868,
         "reports": [
             {
@@ -31240,6 +31252,18 @@
                     "76561198701552982": {
                         "kind": "cheater",
                         "last_seen": "2026-05-22T14:11:26.651760+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-05-25T19:04:25.974361+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1508543863021895770 <@579548943663235101> (orbitalcenter) cheater exposed (+1 points, 75 total)",
+                "players": {
+                    "76561198095365611": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-25T19:04:25.974361+00:00"
                     }
                 },
                 "points": 1,
@@ -35114,7 +35138,7 @@
         ]
     },
     "771063194084573205": {
-        "count": 16,
+        "count": 17,
         "profile_id": 76561198258715564,
         "reports": [
             {
@@ -35283,6 +35307,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-05-25T19:03:19.660517+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1508540350640427169 <@771063194084573205> (Odin's Ravensus) cheater exposed (+1 points, 17 total)",
+                "players": {
+                    "76561199800284908": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-25T19:03:19.660517+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
