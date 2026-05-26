@@ -8110,7 +8110,7 @@
         ]
     },
     "211924579726262272": {
-        "count": 2,
+        "count": 3,
         "profile_id": 76561197986207693,
         "reports": [
             {
@@ -8132,6 +8132,18 @@
                     "76561198289578370": {
                         "kind": "cheater",
                         "last_seen": "2026-05-12T20:42:29.226911+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-05-26T16:57:09.489936+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1508862151949811812 <@211924579726262272> (lemming) cheater exposed (+1 points, 3 total)",
+                "players": {
+                    "76561197996925420": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-26T16:57:09.489936+00:00"
                     }
                 },
                 "points": 1,
@@ -13797,7 +13809,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 70,
+        "count": 72,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -14502,6 +14514,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-05-26T16:26:00.381748+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1508847567557890261 <@309337035716558858> (lukasmaestro) cheater exposed (+2 points, 72 total)",
+                "players": {
+                    "76561198718441578": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-26T16:26:00.381748+00:00"
+                    },
+                    "76561198831197272": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-26T16:26:00.381748+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
