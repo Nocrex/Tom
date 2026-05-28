@@ -24705,7 +24705,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 42,
+        "count": 45,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -25159,6 +25159,34 @@
                     "76561199077849955": {
                         "kind": "cheater",
                         "last_seen": "2026-05-28T10:10:01.958806+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-05-28T18:54:41.098701+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1509423915695476737 <@454858232301879297> (Greenmovie13) cheater exposed (+2 points, 44 total)",
+                "players": {
+                    "76561198074792700": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-28T18:54:41.098701+00:00"
+                    },
+                    "76561199568150325": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-28T18:54:41.098701+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-05-28T18:55:28.515987+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1509414538548871268 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 45 total)",
+                "players": {
+                    "76561198366003463": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-28T18:55:28.515987+00:00"
                     }
                 },
                 "points": 1,
