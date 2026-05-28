@@ -25227,7 +25227,7 @@
         ]
     },
     "463913931354931210": {
-        "count": 11,
+        "count": 12,
         "profile_id": 76561198164668247,
         "reports": [
             {
@@ -25336,6 +25336,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-05-28T08:58:33.155481+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1509363218278256841 <@463913931354931210> (Bekymre) cheater exposed (+1 points, 12 total)",
+                "players": {
+                    "76561198698312116": {
+                        "kind": "cheater",
+                        "last_seen": "2026-05-28T08:58:33.155481+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
