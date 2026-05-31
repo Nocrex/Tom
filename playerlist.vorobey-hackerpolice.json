@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-05-31 06:42:48",
-        "title": "vorobey-hackerpolice - 2026-05-31 06:42:48",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-05-31 13:31:10",
+        "title": "vorobey-hackerpolice - 2026-05-31 13:31:10",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -35746,6 +35746,18 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1463507902]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1510625541298851880"
+            ],
+            "last_seen": {
+                "time": 1780232645
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:896614184]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1268987488777797723"
@@ -36424,6 +36436,30 @@
             ],
             "last_seen": {
                 "time": 1780168464
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:788904312]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1510630969747574834"
+            ],
+            "last_seen": {
+                "time": 1780233662
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1278982879]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1510615217145643118"
+            ],
+            "last_seen": {
+                "time": 1780233954
             }
         },
         {
