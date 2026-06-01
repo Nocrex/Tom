@@ -25577,7 +25577,7 @@
         ]
     },
     "463913931354931210": {
-        "count": 16,
+        "count": 17,
         "profile_id": 76561198164668247,
         "reports": [
             {
@@ -25738,6 +25738,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-01T16:51:54.531864+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1510845731060060210 <@463913931354931210> (Bekymre) cheater exposed (+1 points, 17 total)",
+                "players": {
+                    "76561199468030745": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-01T16:51:54.531864+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -35265,7 +35277,7 @@
         ]
     },
     "718482610032083055": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561199160432044,
         "reports": [
             {
@@ -35315,6 +35327,18 @@
                     "76561199239248607": {
                         "kind": "cheater",
                         "last_seen": "2026-05-31T13:25:54.979817+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-01T16:28:18.624631+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1510784439746170960 <@718482610032083055> (WooHooASDF) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561199047230692": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-01T16:28:18.624631+00:00"
                     }
                 },
                 "points": 1,
