@@ -24187,7 +24187,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 103,
+        "count": 104,
         "profile_id": 76561199750445142,
         "reports": [
             {
@@ -25300,6 +25300,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-07T12:05:46.795788+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1513146047411523674 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 104 total)",
+                "players": {
+                    "76561198079393691": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-07T12:05:46.795788+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
