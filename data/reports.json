@@ -17773,7 +17773,7 @@
         ]
     },
     "338026495811387392": {
-        "count": 24,
+        "count": 26,
         "profile_id": 76561198004449070,
         "reports": [
             {
@@ -18058,6 +18058,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-07T18:36:17.400894+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1513223874723184892 <@338026495811387392> (John Demolitionsman) cheater exposed (+2 points, 26 total)",
+                "players": {
+                    "76561198701842364": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-07T18:36:17.400894+00:00"
+                    },
+                    "76561199146302094": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-07T18:36:17.400894+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -25371,7 +25387,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 57,
+        "count": 58,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -25981,6 +25997,18 @@
                     "76561197987851329": {
                         "kind": "cheater",
                         "last_seen": "2026-06-07T05:02:12.981136+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-07T18:03:19.205001+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1513011737639518368 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 58 total)",
+                "players": {
+                    "76561199499748487": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-07T18:03:19.205001+00:00"
                     }
                 },
                 "points": 1,
