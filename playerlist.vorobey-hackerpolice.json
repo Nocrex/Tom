@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-09 14:47:34",
-        "title": "vorobey-hackerpolice - 2026-06-09 14:47:34",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-09 15:46:19",
+        "title": "vorobey-hackerpolice - 2026-06-09 15:46:19",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -21755,6 +21755,18 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1526882488]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1513905034897653872"
+            ],
+            "last_seen": {
+                "time": 1781019200
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1434397583]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1237539369657569300"
@@ -36646,12 +36658,24 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:415949567]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1513914409444180079"
+            ],
+            "last_seen": {
+                "time": 1781019979
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:729833351]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1513914409444180079"
             ],
             "last_seen": {
-                "time": 1781016453
+                "time": 1781019979
             }
         },
         {
