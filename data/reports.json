@@ -41867,34 +41867,9 @@
         ]
     },
     "965997099474899034": {
-        "count": 2,
+        "count": 0,
         "profile_id": 76561198331362454,
-        "reports": [
-            {
-                "date": "2026-05-22T18:26:07.910880+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1506820081319936041 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 1 total)",
-                "players": {
-                    "76561198730636930": {
-                        "kind": "cheater",
-                        "last_seen": "2026-05-22T18:26:07.910880+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2026-05-31T18:22:15.618635+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1510686858072555643 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 2 total)",
-                "players": {
-                    "76561199516231950": {
-                        "kind": "cheater",
-                        "last_seen": "2026-05-31T18:22:15.618635+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            }
-        ]
+        "reports": []
     },
     "974347956645920829": {
         "count": 5,
