@@ -28797,7 +28797,7 @@
         ]
     },
     "551621415959265284": {
-        "count": 23,
+        "count": 24,
         "profile_id": 76561199177593557,
         "reports": [
             {
@@ -29023,6 +29023,18 @@
                     "76561199480260750": {
                         "kind": "cheater",
                         "last_seen": "2026-06-05T12:42:47.446618+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-10T20:22:23.829431+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1514354876207861760 <@551621415959265284> (Yevgeny Hyeon-jeong) cheater exposed (+1 points, 24 total)",
+                "players": {
+                    "76561198758051133": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-10T20:22:23.829431+00:00"
                     }
                 },
                 "points": 1,
