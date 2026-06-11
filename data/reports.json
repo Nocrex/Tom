@@ -35319,7 +35319,7 @@
         ]
     },
     "696404114262720524": {
-        "count": 20,
+        "count": 21,
         "profile_id": 76561199179969795,
         "reports": [
             {
@@ -35592,6 +35592,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-11T20:14:13.447309+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1514696715356213279 <@696404114262720524> (Shiro) cheater exposed (+1 points, 21 total)",
+                "players": {
+                    "76561199524200819": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-11T20:14:13.447309+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
