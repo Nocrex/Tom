@@ -18081,7 +18081,7 @@
         ]
     },
     "338026495811387392": {
-        "count": 29,
+        "count": 30,
         "profile_id": 76561198004449070,
         "reports": [
             {
@@ -18407,6 +18407,18 @@
                     "76561198697207227": {
                         "kind": "cheater",
                         "last_seen": "2026-06-10T08:38:10.695615+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-13T20:06:53.948456+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1514269642481205379 <@338026495811387392> (John Demolitionsman) cheater exposed (+1 points, 30 total)",
+                "players": {
+                    "76561198026837589": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-13T20:06:53.948456+00:00"
                     }
                 },
                 "points": 1,
