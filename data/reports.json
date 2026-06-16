@@ -36877,7 +36877,7 @@
         ]
     },
     "718482610032083055": {
-        "count": 9,
+        "count": 10,
         "profile_id": 76561199160432044,
         "reports": [
             {
@@ -36970,6 +36970,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-16T22:51:19.593968+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516431731844972617 <@718482610032083055> (WooHooASDF) cheater exposed (+1 points, 10 total)",
+                "players": {
+                    "76561198772695629": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-16T22:51:19.593968+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
