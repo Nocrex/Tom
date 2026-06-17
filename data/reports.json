@@ -15641,6 +15641,18 @@
                 },
                 "points": 2,
                 "verified": true
+            },
+            {
+                "date": "2026-06-17T19:42:43.861790+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516881939481493574 <@310412566138585089> (Exe_Red) cheater exposed (+0 points, 19 total)",
+                "players": {
+                    "76561199575712996": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-17T00:00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
             }
         ]
     },
