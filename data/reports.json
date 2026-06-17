@@ -718,7 +718,7 @@
         ]
     },
     "1014552225877606480": {
-        "count": 4,
+        "count": 6,
         "profile_id": 76561198012877148,
         "reports": [
             {
@@ -756,6 +756,30 @@
                     "76561199242818586": {
                         "kind": "cheater",
                         "last_seen": "2026-01-31T10:27:27.856423+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-16T23:01:57.018403+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516532460601475122 <@1014552225877606480> (Le Fishe) cheater exposed (+1 points, 5 total)",
+                "players": {
+                    "76561199575988158": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-16T23:01:57.018403+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-16T23:02:28.818119+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516536253393146107 <@1014552225877606480> (Le Fishe) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561198694363275": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-16T23:02:28.818119+00:00"
                     }
                 },
                 "points": 1,
@@ -19584,7 +19608,7 @@
         ]
     },
     "350283398784221206": {
-        "count": 2,
+        "count": 3,
         "profile_id": 76561199092398021,
         "reports": [
             {
@@ -19606,6 +19630,18 @@
                     "76561198699247249": {
                         "kind": "cheater",
                         "last_seen": "2026-06-15T13:46:54.751139+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-16T23:00:45.461641+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516438776141053982 <@350283398784221206> (NotTimpan) cheater exposed (+1 points, 3 total)",
+                "players": {
+                    "76561198689516911": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-16T23:00:45.461641+00:00"
                     }
                 },
                 "points": 1,
