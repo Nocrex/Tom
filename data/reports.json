@@ -10478,7 +10478,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 146,
+        "count": 147,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -12088,6 +12088,18 @@
                     "76561198691396758": {
                         "kind": "cheater",
                         "last_seen": "2026-06-16T18:47:48.035742+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-17T17:47:53.891379+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1516859888486322186 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 147 total)",
+                "players": {
+                    "76561199881142217": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-17T17:47:53.891379+00:00"
                     }
                 },
                 "points": 1,
@@ -26791,22 +26803,6 @@
                 "verified": true
             },
             {
-                "date": "2026-06-15T18:14:08.803395+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1515551184545517568 <@454858232301879297> (Greenmovie13) cheater exposed (+2 points, 63 total)",
-                "players": {
-                    "76561199443457586": {
-                        "kind": "cheater",
-                        "last_seen": "2026-06-15T18:14:08.803395+00:00"
-                    },
-                    "76561199466252954": {
-                        "kind": "cheater",
-                        "last_seen": "2026-06-15T18:14:08.803395+00:00"
-                    }
-                },
-                "points": 2,
-                "verified": true
-            },
-            {
                 "date": "2026-06-16T03:17:03.243773+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1516276078388314253 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 64 total)",
                 "players": {
@@ -26829,6 +26825,22 @@
                     "76561198162695775": {
                         "kind": "cheater",
                         "last_seen": "2026-06-17T12:26:53.918301+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-17T17:17:50.319107+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1515551184545517568 <@454858232301879297> (Greenmovie13) cheater exposed (+2 points, 66 total)",
+                "players": {
+                    "76561199376456114": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-17T17:17:50.319107+00:00"
+                    },
+                    "76561199466252954": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-17T17:17:50.319107+00:00"
                     }
                 },
                 "points": 2,
