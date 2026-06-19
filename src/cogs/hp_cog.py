@@ -93,12 +93,12 @@ class HPCog(commands.Cog):
             await self.error_channel.send(file=discord.File(sio, filename="error.txt"))
             logger.error(msg)
     
-    async def get_open_reports(self) -> list[discord.Thread]:
+    async def get_open_reports(self, full=False) -> list[discord.Thread]:
         open_reports: list[discord.Thread] = []
         tags_handled = [tag.id for tag in (statics.TAGS + [statics.CONFIRMED_TAG])] 
         channel = await self.bot.fetch_channel(statics.REPORT_FORUM.id)
         assert isinstance(channel, discord.ForumChannel)
-        async for thread in join(iter(channel.threads), channel.archived_threads()):
+        async for thread in join(iter(channel.threads), channel.archived_threads(limit=100 if not full else None)):
             if thread.archived:
                 continue
             tags = [t.id for t in thread.applied_tags]
@@ -111,7 +111,7 @@ class HPCog(commands.Cog):
     @tasks.loop(time=time(hour=12))
     async def nag_officers(self):
         logger.info("Looking for reports to nag about")
-        open_reports = await self.get_open_reports()
+        open_reports = await self.get_open_reports(full=True)
         
         now = datetime.now(timezone.utc)
         
@@ -508,10 +508,14 @@ class HPCog(commands.Cog):
         name="open_reports",
         description="Sends a list of open reports, can only be used in the modding channel"
     )
+    @app_commands.describe(
+        full="check the entire history of the channel (slow)"
+    )
     @app_commands.checks.has_any_role(*statics.CONFIRM_ROLE_WHITELIST)
     @app_commands.checks.cooldown(1, 10*60, key=lambda int: int.guild_id)
     async def openreports(self, 
         interaction: discord.Interaction, 
+        full: bool | None = None
     ):
         if interaction.channel_id != statics.REPORT_CHANNEL_ID:
             await interaction.response.send_message("Can only be used in the modding channel", ephemeral=True)
@@ -519,7 +523,7 @@ class HPCog(commands.Cog):
             
         await interaction.response.defer()
             
-        open_reports = await self.get_open_reports()
+        open_reports = await self.get_open_reports(full or False)
         
         if len(open_reports) > 0:
             open_reports.sort(key=lambda t: t.created_at)

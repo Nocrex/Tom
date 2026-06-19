@@ -6,7 +6,6 @@ from . import statics
 
 intents = discord.Intents.default()
 intents.message_content = True
-intents.members = True
 bot = discord.ext.commands.Bot(command_prefix='idkhowtodisablethissoilljustputsomethingunlikelyhere', intents=intents, help_command=None)
 
 logger = logging.getLogger(__name__)
