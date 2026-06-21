@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-21 10:59:32",
-        "title": "vorobey-hackerpolice - 2026-06-21 10:59:32",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-21 11:24:35",
+        "title": "vorobey-hackerpolice - 2026-06-21 11:24:35",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -3583,24 +3583,36 @@
             "attributes": [
                 "cheater"
             ],
-            "steamid": "[U:1:1472341250]",
-            "proof": [
-                "https://discord.com/channels/354645865773924352/1518175582645391480"
-            ],
-            "last_seen": {
-                "time": 1782031900
-            }
-        },
-        {
-            "attributes": [
-                "cheater"
-            ],
             "steamid": "[U:1:1913686214]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1518131248680140820"
             ],
             "last_seen": {
                 "time": 1782032315
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1472341250]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518175582645391480"
+            ],
+            "last_seen": {
+                "time": 1782041075
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1480715013]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518175582645391480"
+            ],
+            "last_seen": {
+                "time": 1782041075
             }
         },
         {
