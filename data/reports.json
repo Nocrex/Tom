@@ -39211,6 +39211,24 @@
             }
         ]
     },
+    "803180016589471765": {
+        "count": 1,
+        "profile_id": 76561199372113514,
+        "reports": [
+            {
+                "date": "2026-06-21T14:33:02.236378+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1518257318184358018 <@803180016589471765> (Mini Sentry Gaming) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199316827971": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T14:33:02.236378+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": false
+            }
+        ]
+    },
     "807763681541750814": {
         "count": 3,
         "profile_id": 76561199816542248,
