@@ -3304,6 +3304,18 @@
                 },
                 "points": 2,
                 "verified": true
+            },
+            {
+                "date": "2026-06-21T01:24:01.429306+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1517978713210360038 <@1083466350376276069> (Luggworm) cheater exposed (+0 points, 196 total)",
+                "players": {
+                    "76561198687680981": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T01:24:01.429306+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": false
             }
         ]
     },
@@ -36567,7 +36579,7 @@
         ]
     },
     "698317097167749272": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561198850313548,
         "reports": [
             {
@@ -36641,6 +36653,18 @@
                     "76561199439168192": {
                         "kind": "cheater",
                         "last_seen": "2026-06-20T17:15:11.520629+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-21T01:13:12.443770+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1518047492523036804 <@698317097167749272> (Titan) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561198684217458": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T01:13:12.443770+00:00"
                     }
                 },
                 "points": 1,
