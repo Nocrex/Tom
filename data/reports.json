@@ -27169,7 +27169,7 @@
         ]
     },
     "463913931354931210": {
-        "count": 38,
+        "count": 39,
         "profile_id": 76561198164668247,
         "reports": [
             {
@@ -27567,6 +27567,18 @@
                     "76561198685959536": {
                         "kind": "cheater",
                         "last_seen": "2026-06-21T19:57:41.376154+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-21T20:11:26.221214+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1518262269845180547 <@463913931354931210> (Bekymre) cheater exposed (+1 points, 39 total)",
+                "players": {
+                    "76561199845306344": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T20:11:26.221214+00:00"
                     }
                 },
                 "points": 1,
@@ -40973,7 +40985,7 @@
         ]
     },
     "850945111797530674": {
-        "count": 9,
+        "count": 10,
         "profile_id": 76561199087622610,
         "reports": [
             {
@@ -41058,6 +41070,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-21T20:06:47.416622+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1518323005183365160 <@850945111797530674> (\u0415viL N1GhTmare) cheater exposed (+1 points, 10 total)",
+                "players": {
+                    "76561198693810251": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T20:06:47.416622+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
