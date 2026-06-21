@@ -29766,7 +29766,7 @@
         ]
     },
     "551621415959265284": {
-        "count": 27,
+        "count": 28,
         "profile_id": 76561199177593557,
         "reports": [
             {
@@ -30035,6 +30035,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-06-21T18:30:53.521959+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1518105511176700004 <@551621415959265284> (Yevgeny) cheater exposed (+1 points, 28 total)",
+                "players": {
+                    "76561199886847948": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-21T18:30:53.521959+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
