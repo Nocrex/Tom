@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-22 17:54:32",
-        "title": "vorobey-hackerpolice - 2026-06-22 17:54:32",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-22 18:27:19",
+        "title": "vorobey-hackerpolice - 2026-06-22 18:27:19",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -28663,6 +28663,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1021521258]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518353771392925747"
+            ],
+            "last_seen": {
+                "time": 1782151801
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1576474787]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518353771392925747"
+            ],
+            "last_seen": {
+                "time": 1782151801
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1823088164]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1303728242317852754"
@@ -35702,6 +35726,18 @@
             ],
             "last_seen": {
                 "time": 1782119857
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1325146921]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518566862043090954"
+            ],
+            "last_seen": {
+                "time": 1782152839
             }
         },
         {
