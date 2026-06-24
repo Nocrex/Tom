@@ -1242,7 +1242,7 @@
         ]
     },
     "1083466350376276069": {
-        "count": 203,
+        "count": 204,
         "profile_id": 76561199071473686,
         "reports": [
             {
@@ -3375,6 +3375,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-06-24T17:26:45.387658+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1519308302432080005 <@1083466350376276069> (Luggworm) cheater exposed (+1 points, 204 total)",
+                "players": {
+                    "76561199853697246": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-24T17:26:45.387658+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -14741,7 +14753,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 95,
+        "count": 96,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -15663,6 +15675,18 @@
                     "76561199150204179": {
                         "kind": "cheater",
                         "last_seen": "2026-06-20T17:24:41.509028+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-24T17:14:05.879738+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1519373194409021501 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 96 total)",
+                "players": {
+                    "76561198983749988": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-24T17:14:05.879738+00:00"
                     }
                 },
                 "points": 1,
@@ -27691,7 +27715,7 @@
         ]
     },
     "465299266303426570": {
-        "count": 1,
+        "count": 3,
         "profile_id": 76561198283458824,
         "reports": [
             {
@@ -27704,6 +27728,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-24T17:34:42.157355+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1519339830042038322 <@465299266303426570> (Moist Phrog) cheater exposed (+2 points, 3 total)",
+                "players": {
+                    "76561199475833223": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-24T17:34:42.157355+00:00"
+                    },
+                    "76561199853894267": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-24T17:34:42.157355+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
