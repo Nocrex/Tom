@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-25 15:38:52",
-        "title": "vorobey-hackerpolice - 2026-06-25 15:38:52",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-06-25 17:50:54",
+        "title": "vorobey-hackerpolice - 2026-06-25 17:50:54",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -22692,6 +22692,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1850454290]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1519661113246220310"
+            ],
+            "last_seen": {
+                "time": 1782409854
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1628032678]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1519661113246220310"
+            ],
+            "last_seen": {
+                "time": 1782409854
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1434397583]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1237539369657569300"
@@ -28249,6 +28273,18 @@
             ],
             "last_seen": {
                 "time": 1782401931
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:738541481]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1519475173844189274"
+            ],
+            "last_seen": {
+                "time": 1782409492
             }
         },
         {
@@ -42581,6 +42617,30 @@
             ],
             "last_seen": {
                 "time": 1782072407
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1518151945]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518666298169626795"
+            ],
+            "last_seen": {
+                "time": 1782408135
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1256458401]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1518666298169626795"
+            ],
+            "last_seen": {
+                "time": 1782408135
             }
         },
         {
