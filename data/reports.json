@@ -30766,7 +30766,7 @@
         ]
     },
     "571009999925542922": {
-        "count": 245,
+        "count": -1,
         "profile_id": 76561199323117199,
         "reports": [
             {
@@ -33602,18 +33602,6 @@
                 "verified": true
             },
             {
-                "date": "2026-04-09T10:00:46.540937+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1491739201593671720 <@571009999925542922> (Midnight) cheater exposed (+1 points, 246 total)",
-                "players": {
-                    "76561198152572893": {
-                        "kind": "cheater",
-                        "last_seen": "2026-04-09T10:00:46.540937+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
                 "date": "2026-04-12T14:27:30.207723+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1492893866418901034 <@571009999925542922> (Midnight) cheater exposed (+1 points, 247 total)",
                 "players": {
@@ -33623,6 +33611,18 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-30T19:49:04.064621+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1491739201593671720 <@571009999925542922> (deleted_user_1520a9ca4094) cheater exposed (+-245 points, -1 total)",
+                "players": {
+                    "76561198152572893": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-30T19:49:04.064621+00:00"
+                    }
+                },
+                "points": -245,
                 "verified": true
             }
         ]
@@ -33724,7 +33724,7 @@
         ]
     },
     "579548943663235101": {
-        "count": 96,
+        "count": 97,
         "profile_id": 76561199024884868,
         "reports": [
             {
@@ -34794,6 +34794,18 @@
                     "76561199491099490": {
                         "kind": "cheater",
                         "last_seen": "2026-06-30T16:35:46.919997+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-06-30T19:38:38.138547+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1521599845192831018 <@579548943663235101> (Baa) cheater exposed (+1 points, 97 total)",
+                "players": {
+                    "76561199570806925": {
+                        "kind": "cheater",
+                        "last_seen": "2026-06-30T19:38:38.138547+00:00"
                     }
                 },
                 "points": 1,
