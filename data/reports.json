@@ -37859,7 +37859,7 @@
         ]
     },
     "702280983738581012": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561198964350076,
         "reports": [
             {
@@ -37912,6 +37912,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-07-04T01:37:09.331332+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1522729468660154368 <@702280983738581012> (Formosa) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561199688030118": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-04T01:37:09.331332+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
