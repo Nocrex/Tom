@@ -44324,23 +44324,19 @@
         ]
     },
     "940742997753086002": {
-        "count": 2,
+        "count": 1,
         "profile_id": 76561199862180380,
         "reports": [
             {
-                "date": "2026-07-04T13:54:04.888525+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1371340093985521754 <@940742997753086002> (gaither) cheater exposed (+2 points, 2 total)",
+                "date": "2026-07-06T23:02:17.436297+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1371340093985521754 <@940742997753086002> (gaither) cheater exposed (+1 points, 1 total)",
                 "players": {
-                    "76561198052793694": {
-                        "kind": "cheater",
-                        "last_seen": "2026-07-04T13:54:04.888525+00:00"
-                    },
                     "76561198788830072": {
                         "kind": "cheater",
-                        "last_seen": "2026-07-04T13:54:04.888525+00:00"
+                        "last_seen": "2026-07-06T23:02:17.436297+00:00"
                     }
                 },
-                "points": 2,
+                "points": 1,
                 "verified": true
             }
         ]
