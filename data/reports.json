@@ -42936,7 +42936,7 @@
         ]
     },
     "871096627417468999": {
-        "count": 23,
+        "count": 24,
         "profile_id": 76561197994906928,
         "reports": [
             {
@@ -43181,6 +43181,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-07-10T06:10:31.171788+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1524965535106990202 <@871096627417468999> (True Astro) cheater exposed (+1 points, 24 total)",
+                "players": {
+                    "76561198677030678": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-10T06:10:31.171788+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
