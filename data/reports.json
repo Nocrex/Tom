@@ -14687,7 +14687,7 @@
         ]
     },
     "305694184612823040": {
-        "count": 37,
+        "count": 38,
         "profile_id": 76561199804511490,
         "reports": [
             {
@@ -15105,6 +15105,18 @@
                     "76561199850724334": {
                         "kind": "cheater",
                         "last_seen": "2026-07-10T16:40:46.221246+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-11T15:18:51.640126+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1525489532001058836 <@305694184612823040> (Exize) cheater exposed (+1 points, 38 total)",
+                "players": {
+                    "76561198674888961": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-11T15:18:51.640126+00:00"
                     }
                 },
                 "points": 1,
@@ -42741,7 +42753,7 @@
         ]
     },
     "850945111797530674": {
-        "count": 15,
+        "count": 16,
         "profile_id": 76561199087622610,
         "reports": [
             {
@@ -42874,6 +42886,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-07-11T15:47:42.771044+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1525514896618291200 <@850945111797530674> (\u0415viL KOTzilla) cheater exposed (+1 points, 16 total)",
+                "players": {
+                    "76561198681324635": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-11T15:47:42.771044+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
