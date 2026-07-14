@@ -12014,7 +12014,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 164,
+        "count": 165,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -13824,6 +13824,18 @@
                     "76561199506924473": {
                         "kind": "cheater",
                         "last_seen": "2026-07-13T02:20:33.262885+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-14T16:09:49.968305+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1526517326613319812 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 165 total)",
+                "players": {
+                    "76561198770970904": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-14T16:09:49.968305+00:00"
                     }
                 },
                 "points": 1,
@@ -44820,7 +44832,7 @@
         ]
     },
     "902104074802040853": {
-        "count": 6,
+        "count": 9,
         "profile_id": 76561198306640318,
         "reports": [
             {
@@ -44885,6 +44897,34 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-14T16:10:52.289232+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1526534539055202395 <@902104074802040853> (domorie) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561198878978157": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-14T16:10:52.289232+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-14T16:13:32.109911+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1526601408189825075 <@902104074802040853> (domorie) cheater exposed (+2 points, 9 total)",
+                "players": {
+                    "76561198763636095": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-14T16:13:32.109911+00:00"
+                    },
+                    "76561199788369358": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-14T16:13:32.109911+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
