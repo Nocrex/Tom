@@ -1,6 +1,9 @@
+import asyncio
 import re
-
+import logging
 import aiohttp
+
+log = logging.getLogger(__name__)
 
 STEAMID_XML_PATTERN = re.compile("<steamID64>(\\d+)</steamID64>")
 VANITY_LINK_PATTERN = re.compile("(https://steamcommunity.com/id/([\\w-]+))")
@@ -29,4 +32,6 @@ async def resolve_vanity_url(url: str) -> int | None:
                     return int(steamid.group(1))
                 if "The specified profile could not be found." in txt:
                     return None
+                await asyncio.sleep(0.1)
+        log.error(f"Failed to resolve profile '{url}' after 3 tries")
         return None
