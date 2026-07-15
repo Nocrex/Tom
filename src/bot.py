@@ -1,3 +1,5 @@
+import asyncio
+
 import discord, logging, os, sys
 import discord.ext.commands
 from io import StringIO
@@ -19,6 +21,21 @@ cogs = [
     "vanity_resolver_cog",
     "tom_react"
 ]
+
+class ErrorChannelHandler(logging.Handler):
+    def emit(self, record: logging.LogRecord) -> None:
+        print("emit")
+        loop: asyncio.AbstractEventLoop | None = getattr(bot, "loop", None)
+        if not loop or loop.is_closed():
+            return
+
+        async def _log():
+            if error_channel is not None:
+                await error_channel.send(f"{record.levelname}: {record.message}")
+
+        loop.call_soon_threadsafe(lambda: loop.create_task(_log()))
+
+logging.getLogger().addHandler(ErrorChannelHandler(logging.WARN))
 
 @bot.event
 async def on_ready():
