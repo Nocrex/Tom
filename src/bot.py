@@ -1,5 +1,4 @@
 import asyncio
-
 import discord, logging, os, sys
 import discord.ext.commands
 from io import StringIO
@@ -31,7 +30,8 @@ class ErrorChannelHandler(logging.Handler):
 
         async def _log():
             if error_channel is not None:
-                await error_channel.send(f"{record.levelname}: {record.message}")
+                sio = StringIO(record.message)
+                await error_channel.send(file=discord.File(sio, filename=f"log_{record.levelname}.txt"))
 
         loop.call_soon_threadsafe(lambda: loop.create_task(_log()))
 
