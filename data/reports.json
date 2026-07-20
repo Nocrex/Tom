@@ -1216,7 +1216,7 @@
         ]
     },
     "1055101437471903774": {
-        "count": 0,
+        "count": 1,
         "profile_id": 76561199474317629,
         "reports": [
             {
@@ -1246,6 +1246,18 @@
                 },
                 "points": 0,
                 "verified": false
+            },
+            {
+                "date": "2026-07-20T20:41:39.345381+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1528846722720334047 <@1055101437471903774> (Froggyy) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198780089002": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-20T20:41:39.345381+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -37955,7 +37967,7 @@
         ]
     },
     "626801591512727574": {
-        "count": 6,
+        "count": 7,
         "profile_id": 76561199075910648,
         "reports": [
             {
@@ -38025,6 +38037,18 @@
                     "76561199203405666": {
                         "kind": "cheater",
                         "last_seen": "2026-07-19T18:11:48.810829+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-20T20:54:20.467851+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1528864164557357147 <@626801591512727574> (tex) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561198681976464": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-20T20:54:20.467851+00:00"
                     }
                 },
                 "points": 1,
