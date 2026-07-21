@@ -16733,7 +16733,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 113,
+        "count": 114,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -17831,6 +17831,18 @@
                     "76561198672128739": {
                         "kind": "cheater",
                         "last_seen": "2026-07-21T17:51:23.672398+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:07:46.796728+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529219894451900526 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 114 total)",
+                "players": {
+                    "76561198032281553": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:07:46.796728+00:00"
                     }
                 },
                 "points": 1,
@@ -46691,7 +46703,7 @@
         ]
     },
     "965997099474899034": {
-        "count": 12,
+        "count": 21,
         "profile_id": 76561198331362454,
         "reports": [
             {
@@ -46820,6 +46832,106 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:02:02.731064+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529209230744359012 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 13 total)",
+                "players": {
+                    "76561198165922625": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:02:02.731064+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:04:38.713063+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529232088702648420 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 14 total)",
+                "players": {
+                    "76561199748135150": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:04:38.713063+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:05:10.905691+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529219636627771422 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 15 total)",
+                "players": {
+                    "76561198978125535": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:05:10.905691+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:05:28.094146+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529223583975342130 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 16 total)",
+                "players": {
+                    "76561199847339947": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:05:28.094146+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:06:13.290260+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529225698525315333 <@965997099474899034> (Fidoo001) cheater exposed (+2 points, 18 total)",
+                "players": {
+                    "76561199500764532": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:06:13.290260+00:00"
+                    },
+                    "76561199848850380": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:06:13.290260+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:06:42.096366+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529229571759538206 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 19 total)",
+                "players": {
+                    "76561198745657223": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:06:42.096366+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:45:53.365229+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529236618483994765 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 20 total)",
+                "players": {
+                    "76561198736552813": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:45:53.365229+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-21T21:56:42.690680+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529238006538702918 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 21 total)",
+                "players": {
+                    "76561198679101065": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-21T21:56:42.690680+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
