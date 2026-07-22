@@ -9,28 +9,26 @@ import aiofiles
 
 from . import exports, statics, steam
 
+
 # data classes to interact with the json data (I don't like working with dicts directly)
 class PlayerKind(str, enum.Enum):
     CHEATER = "cheater"
     EXPLOITER = "exploiter"
+
 
 class PlayerData:
     def __init__(self, kind: PlayerKind, last_seen: datetime) -> Self:
         self.kind: PlayerKind = kind
         self.last_seen: datetime = last_seen
         pass
-        
+
     def to_json(self) -> dict[str, Any]:
-        return {
-            "kind": self.kind,
-            "last_seen": self.last_seen.isoformat()
-        }
-        
+        return {"kind": self.kind, "last_seen": self.last_seen.isoformat()}
+
     @staticmethod
     def from_json(json) -> Self:
         return PlayerData(
-            PlayerKind(json["kind"]), 
-            datetime.fromisoformat(json["last_seen"])
+            PlayerKind(json["kind"]), datetime.fromisoformat(json["last_seen"])
         )
 
 
@@ -57,7 +55,10 @@ class Report:
     def from_json(json_report) -> Self:
         return Report(
             json_report["msg"],
-            {int(p): PlayerData.from_json(d) for p, d in json_report["players"].items()},
+            {
+                int(p): PlayerData.from_json(d)
+                for p, d in json_report["players"].items()
+            },
             json_report["points"],
             json_report["verified"],
             datetime.fromisoformat(json_report["date"]),
@@ -88,7 +89,13 @@ class Reporter:
     ):
         ts = datetime.now(timezone.utc)
         self.reports.append(
-            Report(msg, {id: PlayerData(kind, ts) for id, kind in players.items()}, points, verified, ts)
+            Report(
+                msg,
+                {id: PlayerData(kind, ts) for id, kind in players.items()},
+                points,
+                verified,
+                ts,
+            )
         )
 
     # looks for a report with the passed thread link and removes it
@@ -156,7 +163,9 @@ class Reports:
         for reporter in self._reporters.values():
             for report in reporter.reports:
                 if steamid in report.players:
-                    matching_reports.append((report.thread_url, report.verified, report.players[steamid]))
+                    matching_reports.append(
+                        (report.thread_url, report.verified, report.players[steamid])
+                    )
         return matching_reports
 
     def check_external_lists(self, steamid: int) -> set[str]:
@@ -222,7 +231,14 @@ class Reports:
         return reporters
 
     def get_reported_count(self) -> int:
-        return len(set(player for reporter in self._reporters.values() for report in reporter.reports for player in report.players))
+        return len(
+            set(
+                player
+                for reporter in self._reporters.values()
+                for report in reporter.reports
+                for player in report.players
+            )
+        )
 
 
 async def test():

@@ -1,6 +1,7 @@
 import asyncio
-import re
 import logging
+import re
+
 import aiohttp
 
 log = logging.getLogger(__name__)
@@ -23,13 +24,16 @@ def sid3_to64(id: str) -> None | int:
 
 steam_token = open("steamtoken.txt").read().strip()
 
+
 async def resolve_vanity_url(url: str) -> int | None:
     vanity = VANITY_LINK_PATTERN.match(url)
     if vanity is None:
         return None
     vanity = vanity.group(2)
     async with aiohttp.ClientSession() as session:
-        async with session.get(f"https://api.steampowered.com/ISteamUser/ResolveVanityURL/v1/?vanityurl={vanity}&key={steam_token}") as resp:
+        async with session.get(
+            f"https://api.steampowered.com/ISteamUser/ResolveVanityURL/v1/?vanityurl={vanity}&key={steam_token}"
+        ) as resp:
             js = await resp.json()
             status = js["response"]["success"]
             if status == 1:
