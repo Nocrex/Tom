@@ -16733,7 +16733,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 116,
+        "count": 117,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -17862,6 +17862,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-07-23T19:11:06.019782+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529900811080040498 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 117 total)",
+                "players": {
+                    "76561198668860168": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-23T19:11:06.019782+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -29377,7 +29389,7 @@
         ]
     },
     "463913931354931210": {
-        "count": 51,
+        "count": 52,
         "profile_id": 76561198164668247,
         "reports": [
             {
@@ -29910,6 +29922,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-07-23T19:10:43.480555+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529258040400805958 <@463913931354931210> (Bekymre) cheater exposed (+1 points, 52 total)",
+                "players": {
+                    "76561199872677119": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-23T19:10:43.480555+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -39551,7 +39575,7 @@
         ]
     },
     "698317097167749272": {
-        "count": 10,
+        "count": 11,
         "profile_id": 76561198850313548,
         "reports": [
             {
@@ -39661,6 +39685,18 @@
                     "76561198804393839": {
                         "kind": "cheater",
                         "last_seen": "2026-07-23T14:18:59.344727+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-23T19:18:56.075153+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1529922086552997938 <@698317097167749272> (Titan) cheater exposed (+1 points, 11 total)",
+                "players": {
+                    "76561199152234598": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-23T19:18:56.075153+00:00"
                     }
                 },
                 "points": 1,
