@@ -8672,7 +8672,7 @@
         ]
     },
     "1454453593246662802": {
-        "count": 11,
+        "count": 12,
         "profile_id": 76561198705746637,
         "reports": [
             {
@@ -8786,6 +8786,18 @@
                     "76561199861511990": {
                         "kind": "cheater",
                         "last_seen": "2026-07-24T19:47:55.096611+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-07-28T16:42:21.590545+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1531690967889875044 <@1454453593246662802> (Master Of Closet) cheater exposed (+1 points, 12 total)",
+                "players": {
+                    "76561198666364112": {
+                        "kind": "cheater",
+                        "last_seen": "2026-07-28T16:42:21.590545+00:00"
                     }
                 },
                 "points": 1,
