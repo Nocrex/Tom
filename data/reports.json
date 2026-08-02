@@ -12210,7 +12210,7 @@
         ]
     },
     "249257143931371521": {
-        "count": 5,
+        "count": 6,
         "profile_id": 76561198306149164,
         "reports": [
             {
@@ -12260,6 +12260,18 @@
                     "76561199665172233": {
                         "kind": "cheater",
                         "last_seen": "2026-07-12T03:29:42.238253+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-02T02:29:23.441614+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1533106218787143801 <@249257143931371521> (BlazenFire) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561198983072671": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-02T02:29:23.441614+00:00"
                     }
                 },
                 "points": 1,
@@ -39344,6 +39356,24 @@
                 },
                 "points": 1,
                 "verified": false
+            }
+        ]
+    },
+    "660121742328463371": {
+        "count": 1,
+        "profile_id": 76561199537727640,
+        "reports": [
+            {
+                "date": "2026-08-02T02:13:55.308118+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1533265648896180357 <@660121742328463371> (G.O. Star) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199686329700": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-02T02:13:55.308118+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
