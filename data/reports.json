@@ -592,29 +592,9 @@
         ]
     },
     "1005151095745691729": {
-        "count": 8,
+        "count": 7,
         "profile_id": 76561199018462942,
         "reports": [
-            {
-                "date": "2026-07-10T03:31:45.246854+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1524972190309810351 <@1005151095745691729> (Zirian) cheater exposed (+3 points, 3 total)",
-                "players": {
-                    "76561198410573994": {
-                        "kind": "cheater",
-                        "last_seen": "2026-07-10T03:31:45.246854+00:00"
-                    },
-                    "76561199119064102": {
-                        "kind": "cheater",
-                        "last_seen": "2026-07-10T03:31:45.246854+00:00"
-                    },
-                    "76561199589932917": {
-                        "kind": "cheater",
-                        "last_seen": "2026-07-10T03:31:45.246854+00:00"
-                    }
-                },
-                "points": 3,
-                "verified": true
-            },
             {
                 "date": "2026-07-11T04:40:00.931573+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1525339090524831804 <@1005151095745691729> (Zirian) cheater exposed (+1 points, 4 total)",
@@ -673,6 +653,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-13T21:50:36.351421+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1524972190309810351 <@1005151095745691729> (Zirian) cheater exposed (+2 points, 7 total)",
+                "players": {
+                    "76561198410573994": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-13T21:50:36.351421+00:00"
+                    },
+                    "76561199589932917": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-13T21:50:36.351421+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
