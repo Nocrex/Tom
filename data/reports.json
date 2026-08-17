@@ -19159,7 +19159,7 @@
         ]
     },
     "310505171954434049": {
-        "count": 221,
+        "count": 223,
         "profile_id": 76561198217926783,
         "reports": [
             {
@@ -21536,6 +21536,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-17T16:55:54.167017+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1538572246828716182 <@310505171954434049> (Master Of Noob) cheater exposed (+2 points, 223 total)",
+                "players": {
+                    "76561198660449766": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T16:55:54.167017+00:00"
+                    },
+                    "76561199252382219": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T16:55:54.167017+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -29380,7 +29396,7 @@
                     },
                     "76561199536274666": {
                         "kind": "cheater",
-                        "last_seen": "2026-06-05T15:22:12.312263+00:00"
+                        "last_seen": "2026-08-17T16:38:23.307660+00:00"
                     }
                 },
                 "points": 2,
@@ -38475,6 +38491,24 @@
                 "date": "2024-06-14T06:27:48.172000+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1121780046928023613/1251060505838223360 weedchidna (589858996530184207) 1 cheater exposed",
                 "players": {},
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
+    "594785324148981770": {
+        "count": 1,
+        "profile_id": 76561198986016100,
+        "reports": [
+            {
+                "date": "2026-08-17T16:39:28.963939+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1538459164832038932 <@594785324148981770> (plyn) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561199179001590": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T16:39:28.963939+00:00"
+                    }
+                },
                 "points": 1,
                 "verified": true
             }
