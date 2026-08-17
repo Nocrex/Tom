@@ -19147,7 +19147,7 @@
         ]
     },
     "310505171954434049": {
-        "count": 220,
+        "count": 221,
         "profile_id": 76561198217926783,
         "reports": [
             {
@@ -21512,6 +21512,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-08-17T12:58:46.984612+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1538654654551040092 <@310505171954434049> (Master Of Noob) cheater exposed (+1 points, 221 total)",
+                "players": {
+                    "76561198047379611": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T12:58:46.984612+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
