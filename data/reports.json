@@ -19189,7 +19189,7 @@
         ]
     },
     "310505171954434049": {
-        "count": 223,
+        "count": 224,
         "profile_id": 76561198217926783,
         "reports": [
             {
@@ -21582,6 +21582,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-08-17T18:19:48.442967+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1538974115032207451 <@310505171954434049> (Master Of Noob) cheater exposed (+1 points, 224 total)",
+                "players": {
+                    "76561198663145478": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T18:19:48.442967+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -27563,6 +27575,24 @@
                 },
                 "points": 1,
                 "verified": true
+            }
+        ]
+    },
+    "409018307388112896": {
+        "count": 0,
+        "profile_id": 76561198221827208,
+        "reports": [
+            {
+                "date": "2026-08-17T18:31:06.453653+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1538973050186240061 <@409018307388112896> (Dragotor) cheater exposed (+0 points, 0 total)",
+                "players": {
+                    "76561198005539480": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-17T18:31:06.453653+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": false
             }
         ]
     },
