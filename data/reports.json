@@ -592,7 +592,7 @@
         ]
     },
     "1005151095745691729": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561199018462942,
         "reports": [
             {
@@ -669,6 +669,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-08-18T12:05:35.375607+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1539120334844989491 <@1005151095745691729> (Zirian) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561198100867953": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-18T12:05:35.375607+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
