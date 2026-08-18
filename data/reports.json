@@ -49873,6 +49873,24 @@
             }
         ]
     },
+    "990408641523908638": {
+        "count": 1,
+        "profile_id": 76561199398651352,
+        "reports": [
+            {
+                "date": "2026-08-18T02:35:50.453743+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1539089075049467924 <@990408641523908638> (Plappy) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198792678877": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-18T02:35:50.453743+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
     "993703309703647242": {
         "count": 0,
         "profile_id": null,
