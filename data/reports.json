@@ -17445,7 +17445,7 @@
         ]
     },
     "307653956660625411": {
-        "count": 26,
+        "count": 27,
         "profile_id": 76561199545021803,
         "reports": [
             {
@@ -17714,6 +17714,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-08-26T03:17:28.710802+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1541824164166508615 <@307653956660625411> (noskillch) cheater exposed (+1 points, 27 total)",
+                "players": {
+                    "76561199474317629": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T03:17:28.710802+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
