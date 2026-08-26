@@ -10948,7 +10948,7 @@
         ]
     },
     "217469993628073994": {
-        "count": 4,
+        "count": 6,
         "profile_id": 76561198074302262,
         "reports": [
             {
@@ -10997,6 +10997,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-26T19:09:08.315643+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1541728075740356698 <@217469993628073994> (Spoob (Spoob)) cheater exposed (+2 points, 6 total)",
+                "players": {
+                    "76561199119333908": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:09:08.315643+00:00"
+                    },
+                    "76561199501067141": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:09:08.315643+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -32466,7 +32482,7 @@
         ]
     },
     "478023532459065345": {
-        "count": 2,
+        "count": 3,
         "profile_id": 76561198804937176,
         "reports": [
             {
@@ -32488,6 +32504,18 @@
                     "76561199371564951": {
                         "kind": "cheater",
                         "last_seen": "2026-08-06T22:16:56.757837+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-26T19:21:13.154840+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1542190603398553600 <@478023532459065345> (Skyori!) cheater exposed (+1 points, 3 total)",
+                "players": {
+                    "76561198682237770": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:21:13.154840+00:00"
                     }
                 },
                 "points": 1,
@@ -40657,7 +40685,7 @@
         ]
     },
     "626801591512727574": {
-        "count": 16,
+        "count": 18,
         "profile_id": 76561199075910648,
         "reports": [
             {
@@ -40850,6 +40878,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-08-26T19:17:18.712497+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1541782797042065418 <@626801591512727574> (tex) cheater exposed (+2 points, 18 total)",
+                "players": {
+                    "76561198666716440": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:17:18.712497+00:00"
+                    },
+                    "76561198668936135": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:17:18.712497+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -49160,7 +49204,7 @@
         ]
     },
     "943527802416795721": {
-        "count": 14,
+        "count": 15,
         "profile_id": 76561198448053566,
         "reports": [
             {
@@ -49313,6 +49357,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-08-26T19:20:54.806172+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1542181573015904307 <@943527802416795721> (cvshvh) cheater exposed (+1 points, 15 total)",
+                "players": {
+                    "76561199181057729": {
+                        "kind": "cheater",
+                        "last_seen": "2026-08-26T19:20:54.806172+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
