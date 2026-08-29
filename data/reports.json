@@ -50119,7 +50119,7 @@
         ]
     },
     "965997099474899034": {
-        "count": 78,
+        "count": 77,
         "profile_id": 76561198331362454,
         "reports": [
             {
@@ -50688,18 +50688,6 @@
                     }
                 },
                 "points": 2,
-                "verified": true
-            },
-            {
-                "date": "2026-08-21T17:32:08.604034+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1539329538759069706 <@965997099474899034> (Fidoo001) cheater exposed (+1 points, 55 total)",
-                "players": {
-                    "76561198326297065": {
-                        "kind": "cheater",
-                        "last_seen": "2026-08-21T17:32:08.604034+00:00"
-                    }
-                },
-                "points": 1,
                 "verified": true
             },
             {
