@@ -19615,7 +19615,7 @@
         ]
     },
     "310412566138585089": {
-        "count": 23,
+        "count": 24,
         "profile_id": 76561198154952759,
         "reports": [
             {
@@ -19877,6 +19877,18 @@
                     "76561199111921582": {
                         "kind": "cheater",
                         "last_seen": "2026-07-21T17:52:08.768916+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-03T18:54:27.190651+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1543052792720269334 <@310412566138585089> (Exe_Red) cheater exposed (+1 points, 24 total)",
+                "players": {
+                    "76561199256466471": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:54:27.190651+00:00"
                     }
                 },
                 "points": 1,
@@ -30755,7 +30767,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 92,
+        "count": 95,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -31756,6 +31768,34 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-03T18:45:38.411887+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1543315146292731935 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 93 total)",
+                "players": {
+                    "76561198106001418": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:45:38.411887+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-03T18:49:11.416281+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1543288760739831980 <@454858232301879297> (Greenmovie13) cheater exposed (+2 points, 95 total)",
+                "players": {
+                    "76561199004574486": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:49:11.416281+00:00"
+                    },
+                    "76561199012633745": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:49:11.416281+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -49816,7 +49856,7 @@
         ]
     },
     "943527802416795721": {
-        "count": 16,
+        "count": 19,
         "profile_id": 76561198448053566,
         "reports": [
             {
@@ -49990,6 +50030,34 @@
                     "76561198723789685": {
                         "kind": "cheater",
                         "last_seen": "2026-08-27T15:57:12.372419+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-03T18:31:21.992882+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1544033345250525275 <@943527802416795721> (cvshvh) cheater exposed (+2 points, 18 total)",
+                "players": {
+                    "76561198060028391": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:31:21.992882+00:00"
+                    },
+                    "76561198751130231": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:31:21.992882+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-09-03T18:59:59.762256+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1543037757683798016 <@943527802416795721> (cvshvh) cheater exposed (+1 points, 19 total)",
+                "players": {
+                    "76561198652876842": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-03T18:59:59.762256+00:00"
                     }
                 },
                 "points": 1,
