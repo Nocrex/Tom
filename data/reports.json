@@ -15706,7 +15706,7 @@
         ]
     },
     "292025507518611458": {
-        "count": 89,
+        "count": 90,
         "profile_id": 76561198042509428,
         "reports": [
             {
@@ -16687,6 +16687,18 @@
                     "76561199816055930": {
                         "kind": "cheater",
                         "last_seen": "2026-08-24T00:07:38.530037+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-05T18:59:17.475128+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1545516812312117270 <@292025507518611458> (AMOGUS) cheater exposed (+1 points, 90 total)",
+                "players": {
+                    "76561198644538844": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-05T18:59:17.475128+00:00"
                     }
                 },
                 "points": 1,
@@ -18203,7 +18215,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 160,
+        "count": 161,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -19732,6 +19744,18 @@
                     }
                 },
                 "points": 5,
+                "verified": true
+            },
+            {
+                "date": "2026-09-05T18:04:19.516251+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1545851856956428410 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 161 total)",
+                "players": {
+                    "76561198646614342": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-05T18:04:19.516251+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
