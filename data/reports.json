@@ -33168,7 +33168,7 @@
         "reports": []
     },
     "469410914874163201": {
-        "count": 8,
+        "count": 9,
         "profile_id": 76561198358863286,
         "reports": [
             {
@@ -33257,6 +33257,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-09-07T17:19:20.352186+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1546566872474976316 <@469410914874163201> (Vitaly) cheater exposed (+1 points, 9 total)",
+                "players": {
+                    "76561199436234108": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-07T17:19:20.352186+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
