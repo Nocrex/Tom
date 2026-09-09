@@ -5623,6 +5623,36 @@
             }
         ]
     },
+    "1190044902436909086": {
+        "count": 2,
+        "profile_id": 76561199588466996,
+        "reports": [
+            {
+                "date": "2026-09-09T20:53:30.487264+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1547284310145634325 <@1190044902436909086> (Ducky) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198643177156": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-09T20:53:30.487264+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-09T20:55:26.602019+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1547277216243777599 <@1190044902436909086> (Ducky) cheater exposed (+1 points, 2 total)",
+                "players": {
+                    "76561199148014698": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-09T20:55:26.602019+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
     "1192516134365319168": {
         "count": 1,
         "profile_id": null,
