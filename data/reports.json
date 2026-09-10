@@ -23319,7 +23319,7 @@
         ]
     },
     "338026495811387392": {
-        "count": 36,
+        "count": 38,
         "profile_id": 76561198004449070,
         "reports": [
             {
@@ -23716,6 +23716,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-10T20:05:07.790711+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1547429158039191573 <@338026495811387392> (John Demolitionsman) cheater exposed (+2 points, 38 total)",
+                "players": {
+                    "76561198644072153": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-10T20:05:07.790711+00:00"
+                    },
+                    "76561198667617647": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-10T20:05:07.790711+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -41341,7 +41357,7 @@
         ]
     },
     "618814400849117196": {
-        "count": 13,
+        "count": 14,
         "profile_id": 76561198346066569,
         "reports": [
             {
@@ -41482,6 +41498,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-09-10T20:05:40.456097+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1547696797261238453 <@618814400849117196> (\u041a\u0440\u0438\u0448\u0442\u0438\u0430\u043d\u043e  \u043c\u0430\u043a\u0430\u0440\u043e\u043d\u044b) cheater exposed (+1 points, 14 total)",
+                "players": {
+                    "76561199799081440": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-10T20:05:40.456097+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
