@@ -13540,7 +13540,7 @@
         ]
     },
     "249257143931371521": {
-        "count": 9,
+        "count": 11,
         "profile_id": 76561198306149164,
         "reports": [
             {
@@ -13633,6 +13633,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-14T17:53:46.821193+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1549101662197514371 <@249257143931371521> (BlazenFire) cheater exposed (+2 points, 11 total)",
+                "players": {
+                    "76561198181739330": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-14T17:53:46.821193+00:00"
+                    },
+                    "76561198235700546": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-14T17:53:46.821193+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -17781,7 +17797,7 @@
         ]
     },
     "305694184612823040": {
-        "count": 46,
+        "count": 48,
         "profile_id": 76561199804511490,
         "reports": [
             {
@@ -18310,6 +18326,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-14T17:55:26.760982+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1549100600309055508 <@305694184612823040> (Exize) cheater exposed (+2 points, 48 total)",
+                "players": {
+                    "76561198684675395": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-14T17:55:26.760982+00:00"
+                    },
+                    "76561199084707395": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-14T17:55:26.760982+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
