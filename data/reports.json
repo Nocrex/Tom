@@ -5660,7 +5660,7 @@
         ]
     },
     "1190044902436909086": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561199588466996,
         "reports": [
             {
@@ -5729,6 +5729,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-09-14T12:15:00.469175+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1547599245916250193 <@1190044902436909086> (Ducky) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561198707586895": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-14T12:15:00.469175+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
