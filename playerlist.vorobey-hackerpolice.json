@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-09-15 17:32:36",
-        "title": "vorobey-hackerpolice - 2026-09-15 17:32:36",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-09-15 19:36:28",
+        "title": "vorobey-hackerpolice - 2026-09-15 19:36:28",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -53702,6 +53702,78 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1543709586]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549489414756110436"
+            ],
+            "last_seen": {
+                "time": 1789500754
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1660942781]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549489414756110436"
+            ],
+            "last_seen": {
+                "time": 1789500754
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1918712479]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549489414756110436"
+            ],
+            "last_seen": {
+                "time": 1789500754
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1071316125]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549489414756110436"
+            ],
+            "last_seen": {
+                "time": 1789500754
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1023923014]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549465243153997834"
+            ],
+            "last_seen": {
+                "time": 1789500988
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1092420386]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549465243153997834"
+            ],
+            "last_seen": {
+                "time": 1789500988
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1324740259]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1463235987449708646"
@@ -55160,6 +55232,42 @@
             ],
             "last_seen": {
                 "time": 1789225827
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:716502992]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549277245992992818"
+            ],
+            "last_seen": {
+                "time": 1789499808
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1796146989]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549277245992992818"
+            ],
+            "last_seen": {
+                "time": 1789499808
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1212483438]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1549277245992992818"
+            ],
+            "last_seen": {
+                "time": 1789499808
             }
         }
     ]
