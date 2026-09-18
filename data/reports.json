@@ -7721,7 +7721,7 @@
         ]
     },
     "121783686378029057": {
-        "count": 3,
+        "count": 5,
         "profile_id": 76561198057396696,
         "reports": [
             {
@@ -7758,6 +7758,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-09-18T09:48:49.288700+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1550354487732871269 <@121783686378029057> (Santalilcamper) cheater exposed (+2 points, 5 total)",
+                "players": {
+                    "76561198650889503": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-18T09:48:49.288700+00:00"
+                    },
+                    "76561198993161875": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-18T09:48:49.288700+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
