@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-09-21 10:48:29",
-        "title": "vorobey-hackerpolice - 2026-09-21 10:48:29",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-09-21 17:46:25",
+        "title": "vorobey-hackerpolice - 2026-09-21 17:46:25",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -20866,6 +20866,30 @@
             ],
             "last_seen": {
                 "time": 1789987709
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:869968595]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1551603501531009074"
+            ],
+            "last_seen": {
+                "time": 1790012572
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:680323414]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1551277774847610961"
+            ],
+            "last_seen": {
+                "time": 1790012785
             }
         },
         {
@@ -55707,24 +55731,12 @@
             "attributes": [
                 "cheater"
             ],
-            "steamid": "[U:1:908547403]",
-            "proof": [
-                "https://discord.com/channels/354645865773924352/1550340822065487932"
-            ],
-            "last_seen": {
-                "time": 1789910536
-            }
-        },
-        {
-            "attributes": [
-                "cheater"
-            ],
             "steamid": "[U:1:793313081]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1550340822065487932"
             ],
             "last_seen": {
-                "time": 1789910536
+                "time": 1790012460
             }
         }
     ]
