@@ -9497,22 +9497,9 @@
         ]
     },
     "1372225389333839973": {
-        "count": 1,
+        "count": 0,
         "profile_id": 76561198643164290,
-        "reports": [
-            {
-                "date": "2026-09-29T03:05:47.550163+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1553998517398405220 <@1372225389333839973> (criplak) cheater exposed (+1 points, 1 total)",
-                "players": {
-                    "76561199626043888": {
-                        "kind": "cheater",
-                        "last_seen": "2026-09-29T03:05:47.550163+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            }
-        ]
+        "reports": []
     },
     "139401022991761408": {
         "count": 55,
