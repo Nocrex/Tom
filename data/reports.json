@@ -34901,7 +34901,7 @@
         ]
     },
     "478023532459065345": {
-        "count": 11,
+        "count": 12,
         "profile_id": 76561198804937176,
         "reports": [
             {
@@ -35018,6 +35018,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-09-30T10:03:28.096517+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1554751130284593233 <@478023532459065345> (Skyori!) cheater exposed (+1 points, 12 total)",
+                "players": {
+                    "76561198273962876": {
+                        "kind": "cheater",
+                        "last_seen": "2026-09-30T10:03:28.096517+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
