@@ -3,7 +3,7 @@ import enum
 import json
 import os
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Self
+from typing import Any, Self
 
 import aiofiles
 
@@ -65,7 +65,7 @@ class Report:
         )
 
     # creates a dict ready to be converted to json
-    def to_json(self) -> Dict[str, Any]:
+    def to_json(self) -> dict[str, Any]:
         return {
             "msg": self.message,
             "players": {p: d.to_json() for p, d in self.players.items()},
@@ -78,10 +78,10 @@ class Report:
 # class that represents a person reporting cheaters
 # stores userid, list of Reports and steam profile id
 class Reporter:
-    def __init__(self, userid: int, reports: List[Report], profile_id: Optional[int]):
+    def __init__(self, userid: int, reports: list[Report], profile_id: int | None):
         self.userid: int = userid
-        self.reports: List[Report] = reports
-        self.profile_id: Optional[int] = profile_id
+        self.reports: list[Report] = reports
+        self.profile_id: int | None = profile_id
 
     # creates a new report for this reporter
     def add_report(
@@ -110,7 +110,7 @@ class Reporter:
     # looks for a report based on a thread link
     def find_report(
         self, thread_link: str
-    ) -> Optional[Report]:  # could return None or a Report
+    ) -> Report | None:  # could return None or a Report
         for report in self.reports:
             if thread_link in report.message:
                 return report
@@ -140,8 +140,8 @@ class Reporter:
 
 
 class Reports:
-    def __init__(self, reporters: Dict[str, Reporter]):
-        self._reporters: Dict[str, Reporter] = reporters
+    def __init__(self, reporters: dict[str, Reporter]):
+        self._reporters: dict[str, Reporter] = reporters
         self._lists: dict[str, set[int]] = dict()
 
     # gets the Reporter object for the given discord id, or creates a new empty one if it doesn't exist
@@ -152,14 +152,14 @@ class Reports:
         return self._reporters[reporter_id]
 
     # gets the Reporter object for the given discord id, or None if it doesn't exist
-    def get(self, reporter_idi: int) -> Optional[Reporter]:
+    def get(self, reporter_idi: int) -> Reporter | None:
         reporter_id = str(reporter_idi)
         if reporter_id in self._reporters:
             return self._reporters[reporter_id]
 
     # looks up if a cheater has been reported before, if yes returns the first Report
-    def find_reported(self, steamid: int) -> List[tuple[str, bool, PlayerData]]:
-        matching_reports: List[tuple[str, bool, PlayerData]] = []
+    def find_reported(self, steamid: int) -> list[tuple[str, bool, PlayerData]]:
+        matching_reports: list[tuple[str, bool, PlayerData]] = []
         for reporter in self._reporters.values():
             for report in reporter.reports:
                 if steamid in report.players:
@@ -168,6 +168,13 @@ class Reports:
                     )
         return matching_reports
 
+    def find_report(self, thread_url: str) -> tuple[Reporter, Report]| None:
+        for reporter in self._reporters.values():
+            for report in reporter.reports:
+                if report.thread_url == thread_url:
+                    return (reporter, report)
+        return None
+        
     def check_external_lists(self, steamid: int) -> set[str]:
         return {l for l, i in self._lists.items() if steamid in i}
 
@@ -211,7 +218,7 @@ class Reports:
         await exports.export(self)
 
     # makes a list sorted by report count descending and returns the first n items
-    def get_top_n(self, n) -> List[Reporter]:
+    def get_top_n(self, n) -> list[Reporter]:
         reporter_list = list(self._reporters.values())
         reporter_list.sort(key=lambda r: r.points(), reverse=True)
         return reporter_list[: min(20, len(reporter_list))]
@@ -224,7 +231,7 @@ class Reports:
         return Reports(json_map)
 
     # creates a dict ready to be converted to json
-    def to_json(self) -> Dict[str, dict]:
+    def to_json(self) -> dict[str, dict]:
         reporters = {}
         for reporter in self._reporters:
             reporters[reporter] = self._reporters[reporter].to_json()

@@ -382,16 +382,17 @@ class HPCog(commands.Cog):
         # Approves the report the command is executed in
         assert isinstance(interaction.channel, discord.Thread)
         thread: discord.Thread = interaction.channel
-        owner = await self.bot.fetch_user(thread.owner_id)
-        reporter = self.reports.get_or_create(thread.owner_id)
 
-        if reporter.find_report(
-            thread.jump_url
-        ):  # look up if report was already approved
+        existing = self.reports.find_report(thread.jump_url)
+
+        if existing is not None:  # look up if report was already approved
             await interaction.response.send_message(
                 "Report was already approved", ephemeral=True
             )
             return
+            
+        owner = await self.bot.fetch_user(thread.owner_id)
+        reporter = self.reports.get_or_create(thread.owner_id)
 
         reporter_steamid_i = None
         if (
@@ -532,22 +533,19 @@ class HPCog(commands.Cog):
         assert isinstance(interaction.channel, discord.Thread)
         thread = interaction.channel
 
-        reporter = self.reports.get(thread.owner_id)
-        if not reporter:
-            await interaction.response.send_message(
-                "User does not have any reports", ephemeral=True
-            )
-            return
+        existing = self.reports.find_report(thread.jump_url)
 
-        prior_points = reporter.points()
-        if not reporter.remove_report(
-            thread.jump_url
-        ):  # try to remove report from user, returns False if no matching reports were found
+        if not existing:  # try to remove report from user, returns False if no matching reports were found
             await interaction.response.send_message(
                 "This thread has not been confirmed", ephemeral=True
             )
             return
 
+        (reporter, _) = existing
+
+        prior_points = reporter.points()
+        reporter.remove_report(thread.jump_url)
+        
         roles_removed: list[Object] = []
         new_points = reporter.points()
 
@@ -601,16 +599,16 @@ class HPCog(commands.Cog):
     ):
         assert isinstance(interaction.channel, discord.Thread)
         thread: discord.Thread = interaction.channel
-        reporter = self.reports.get(thread.owner_id)
 
-        if (
-            reporter is None
-            or (report := reporter.find_report(thread.jump_url)) is None
-        ):  # look up if report was already approved
+        existing = self.reports.find_report(thread.jump_url)
+
+        if not existing:  # look up if report was already approved
             await interaction.response.send_message(
                 "Report was not approved", ephemeral=True
             )
             return
+
+        (_, report) = existing
 
         steamids_str = steamids.split(",")  # get steamids from the command argument
         steamids_list: list[int] = []
