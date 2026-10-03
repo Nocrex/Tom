@@ -1,25 +1,35 @@
 import asyncio
-import discord, logging, os, sys
-import discord.ext.commands
-from io import StringIO
+import logging
+import os
+import sys
 import traceback
+from io import StringIO
+
+import discord
+import discord.ext.commands
+
 from . import statics
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = discord.ext.commands.Bot(command_prefix='idkhowtodisablethissoilljustputsomethingunlikelyhere', intents=intents, help_command=None)
+bot = discord.ext.commands.Bot(
+    command_prefix="idkhowtodisablethissoilljustputsomethingunlikelyhere",
+    intents=intents,
+    help_command=None,
+)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-logging.basicConfig(level=logging.INFO, format="{levelname:8s} | {asctime} | {name:15s} | {message}", style="{")
+logging.basicConfig(
+    level=logging.INFO,
+    format="{levelname:8s} | {asctime} | {name:15s} | {message}",
+    style="{",
+)
 
 error_channel = None
 
-cogs = [
-    "hp_cog",
-    "vanity_resolver_cog",
-    "tom_react"
-]
+cogs = ["hp_cog", "vanity_resolver_cog", "tom_react"]
+
 
 class ErrorChannelHandler(logging.Handler):
     def emit(self, record: logging.LogRecord) -> None:
@@ -31,11 +41,15 @@ class ErrorChannelHandler(logging.Handler):
         async def _log():
             if error_channel is not None:
                 sio = StringIO(record.message)
-                await error_channel.send(file=discord.File(sio, filename=f"log_{record.levelname}.txt"))
+                await error_channel.send(
+                    file=discord.File(sio, filename=f"log_{record.levelname}.txt")
+                )
 
         loop.call_soon_threadsafe(lambda: loop.create_task(_log()))
 
+
 logging.getLogger().addHandler(ErrorChannelHandler(logging.WARN))
+
 
 @bot.event
 async def on_ready():
@@ -45,8 +59,9 @@ async def on_ready():
     error_channel = await bot.fetch_channel(statics.ERROR_CHANNEL_ID)
     for cog in cogs:
         await bot.load_extension(f"src.cogs.{cog}")
-    await bot.tree.sync() # upload command tree to discord, so you can see all available commands in the client
+    await bot.tree.sync()  # upload command tree to discord, so you can see all available commands in the client
     logger.info(f"{bot.user} is up and running meow")
+
 
 @bot.event
 async def on_error(event, *args, **kwargs):
@@ -56,7 +71,9 @@ async def on_error(event, *args, **kwargs):
     await error_channel.send(file=discord.File(sio, filename="error.txt"))
     logger.error(msg)
 
-if os.environ.get("DEBUG") == "1": # only enable command if debug is set in environment
+
+if os.environ.get("DEBUG") == "1":  # only enable command if debug is set in environment
+
     @bot.tree.command()
     async def reload(interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=True)
@@ -64,5 +81,3 @@ if os.environ.get("DEBUG") == "1": # only enable command if debug is set in envi
             await bot.reload_extension(f"src.cogs.{cog}")
         await bot.tree.sync()
         await interaction.followup.send("Reloaded!", ephemeral=True)
-
-

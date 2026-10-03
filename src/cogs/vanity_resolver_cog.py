@@ -1,12 +1,19 @@
-import discord
 import logging
-from discord.ext import commands
-from .hp_cog import HPCog
-from .. import statics
 
-from ..steam import resolve_vanity_url, VANITY_LINK_PATTERN, PERM_LINK_PATTERN, PERM_LINK_PREFIX
+import discord
+from discord.ext import commands
+
+from .. import statics
+from ..steam import (
+    PERM_LINK_PATTERN,
+    PERM_LINK_PREFIX,
+    VANITY_LINK_PATTERN,
+    resolve_vanity_url,
+)
+from .hp_cog import HPCog
 
 logger = logging.getLogger(__name__)
+
 
 # Extra cog that watches channels for steam profile vanity links and attempts to find the perma link for them
 class VanityCog(commands.Cog):
@@ -21,7 +28,11 @@ class VanityCog(commands.Cog):
     async def on_message(self, message: discord.Message):
         if message.author.bot:
             return
-        channel_id = message.channel.parent_id if isinstance(message.channel, discord.Thread) else message.channel.id
+        channel_id = (
+            message.channel.parent_id
+            if isinstance(message.channel, discord.Thread)
+            else message.channel.id
+        )
         if channel_id not in statics.VANITY_RESOLVER_CHANNELS:
             return
 
@@ -35,7 +46,7 @@ class VanityCog(commands.Cog):
                 steamids[match[1]] = str(res)
             else:
                 unresolved_steamids.append(match[1])
-                    
+
         matches = PERM_LINK_PATTERN.findall(message.content)
         reported_perms = dict()
         list_matches = dict()
@@ -46,32 +57,73 @@ class VanityCog(commands.Cog):
             if len(reports) > 0:
                 verified = any(map(lambda r: r[1], reports))
                 if verified:
-                    reported_perms[sid] = {"report": next(filter(lambda r: r[1], reports))[0], "verified": True}
+                    reported_perms[sid] = {
+                        "report": next(filter(lambda r: r[1], reports))[0],
+                        "verified": True,
+                    }
                 else:
                     reported_perms[sid] = {"report": reports[0][0], "verified": False}
-            
+
             lists = self.hp_cog.reports.check_external_lists(sid)
             if len(lists) > 0:
                 list_matches[sid] = lists
 
         # only reply if there were steamids found
-        if len(steamids) > 0 or len(unresolved_steamids) > 0 or len(reported_perms) > 0 or len(list_matches) > 0:
+        if (
+            len(steamids) > 0
+            or len(unresolved_steamids) > 0
+            or len(reported_perms) > 0
+            or len(list_matches) > 0
+        ):
             embed = discord.Embed()
             if len(steamids) > 0:
-                embed.add_field(inline=False, name="Permanent links", value=
-                    "\n".join(map(lambda sid: f'"{sid[0]}": {PERM_LINK_PREFIX+sid[1]}', steamids.items())) + "\n")
+                embed.add_field(
+                    inline=False,
+                    name="Permanent links",
+                    value="\n".join(
+                        map(
+                            lambda sid: f'"{sid[0]}": {PERM_LINK_PREFIX + sid[1]}',
+                            steamids.items(),
+                        )
+                    )
+                    + "\n",
+                )
             if len(unresolved_steamids) > 0:
-                embed.add_field(inline=False, name="", value=
-                    "Could not find profile for " + ", ".join(map(lambda vid: f'"{vid}"', unresolved_steamids)))
+                embed.add_field(
+                    inline=False,
+                    name="",
+                    value="Could not find profile for "
+                    + ", ".join(map(lambda vid: f'"{vid}"', unresolved_steamids)),
+                )
             if len(reported_perms) > 0:
-                embed.add_field(inline=False, name="Reports", value=
-                    "\n".join(map(lambda s: f"`{s[0]}` -> {s[1]['report']}{' (unverified)' if not s[1]['verified'] else ''}", reported_perms.items())))
+                embed.add_field(
+                    inline=False,
+                    name="Reports",
+                    value="\n".join(
+                        map(
+                            lambda s: (
+                                f"`{s[0]}` -> {s[1]['report']}{' (unverified)' if not s[1]['verified'] else ''}"
+                            ),
+                            reported_perms.items(),
+                        )
+                    ),
+                )
             elif len(steamids) > 0:
-                embed.add_field(inline=False, name="SteamIDs have not been reported", value="")
-            
+                embed.add_field(
+                    inline=False, name="SteamIDs have not been reported", value=""
+                )
+
             if len(list_matches) > 0:
-                embed.add_field(inline=False, name="Players present in lists", value=
-                "\n".join(map(lambda s: f"`{s[0]}` -> {', '.join(s[1])}", list_matches.items())))
+                embed.add_field(
+                    inline=False,
+                    name="Players present in lists",
+                    value="\n".join(
+                        map(
+                            lambda s: f"`{s[0]}` -> {', '.join(s[1])}",
+                            list_matches.items(),
+                        )
+                    ),
+                )
 
             if len(reported_perms) > 0:
                 color = discord.Color.orange()
@@ -82,6 +134,6 @@ class VanityCog(commands.Cog):
             embed.color = color
             await message.reply(embed=embed, mention_author=False)
 
-    
+
 async def setup(bot: commands.Bot):
     await bot.add_cog(VanityCog(bot))
