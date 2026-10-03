@@ -8860,7 +8860,7 @@
         ]
     },
     "1322852327933083729": {
-        "count": 40,
+        "count": 41,
         "profile_id": 76561199389262041,
         "reports": [
             {
@@ -9237,6 +9237,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-03T01:07:49.823134+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1555747930860822528 <@1322852327933083729> (\u0405k\u0456\u0435\u0455R\u0435d) cheater exposed (+1 points, 41 total)",
+                "players": {
+                    "76561199824526854": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-03T01:07:49.823134+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
