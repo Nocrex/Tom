@@ -10784,7 +10784,7 @@
         ]
     },
     "1525105310308503553": {
-        "count": 66,
+        "count": 65,
         "profile_id": 76561198845535280,
         "reports": [
             {
@@ -10877,7 +10877,7 @@
                 "players": {
                     "76561198063855425": {
                         "kind": "cheater",
-                        "last_seen": "2025-02-09T09:15:01.134000+00:00"
+                        "last_seen": "2026-10-03T09:37:41.793977+00:00"
                     }
                 },
                 "points": 1,
@@ -11522,18 +11522,6 @@
                     "76561199866112473": {
                         "kind": "cheater",
                         "last_seen": "2025-08-09T11:52:31.585000+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2025-08-09T12:04:56.301000+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1403710640178204784 <@388199716644454401> (j) cheater exposed (+1 points, 63 total)",
-                "players": {
-                    "76561198398319125": {
-                        "kind": "cheater",
-                        "last_seen": "2025-08-09T12:04:56.301000+00:00"
                     }
                 },
                 "points": 1,
@@ -29962,24 +29950,6 @@
                     }
                 },
                 "points": 1,
-                "verified": true
-            }
-        ]
-    },
-    "388199716644454401": {
-        "count": 0,
-        "profile_id": null,
-        "reports": [
-            {
-                "date": "2026-10-03T06:53:13.637531+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1338075674874871859 <@388199716644454401> (deleted_user_1167eb6b3c34) cheater exposed (+0 points, 0 total)",
-                "players": {
-                    "76561198063855425": {
-                        "kind": "cheater",
-                        "last_seen": "2026-10-03T06:53:13.637531+00:00"
-                    }
-                },
-                "points": 0,
                 "verified": true
             }
         ]
