@@ -29966,6 +29966,24 @@
             }
         ]
     },
+    "388199716644454401": {
+        "count": 0,
+        "profile_id": null,
+        "reports": [
+            {
+                "date": "2026-10-03T06:53:13.637531+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1338075674874871859 <@388199716644454401> (deleted_user_1167eb6b3c34) cheater exposed (+0 points, 0 total)",
+                "players": {
+                    "76561198063855425": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-03T06:53:13.637531+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            }
+        ]
+    },
     "391884814552399872": {
         "count": 1,
         "profile_id": 76561198018984223,
