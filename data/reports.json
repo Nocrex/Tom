@@ -8860,7 +8860,7 @@
         ]
     },
     "1322852327933083729": {
-        "count": 51,
+        "count": 53,
         "profile_id": 76561199389262041,
         "reports": [
             {
@@ -9366,6 +9366,30 @@
                     "76561198452155046": {
                         "kind": "cheater",
                         "last_seen": "2026-10-04T13:35:30.478104+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-04T23:08:53.787527+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1556078368338743306 <@1322852327933083729> (\u0405k\u0456\u0435\u0455R\u0435d) cheater exposed (+1 points, 52 total)",
+                "players": {
+                    "76561199826384336": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-04T23:08:53.787527+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-04T23:45:21.267594+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1556092786082713650 <@1322852327933083729> (\u0405k\u0456\u0435\u0455R\u0435d) cheater exposed (+1 points, 53 total)",
+                "players": {
+                    "76561198144844155": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-04T23:45:21.267594+00:00"
                     }
                 },
                 "points": 1,
@@ -32802,7 +32826,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 108,
+        "count": 109,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -33971,6 +33995,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-04T23:34:33.149432+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1556383587610267788 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 109 total)",
+                "players": {
+                    "76561198688902491": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-04T23:34:33.149432+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
