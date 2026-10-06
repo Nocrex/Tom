@@ -19699,7 +19699,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 184,
+        "count": 185,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -21468,6 +21468,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-10-06T17:39:03.631406+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1557078551822336131 <@309337035716558858> (lukasmaestro) cheater exposed (+1 points, 185 total)",
+                "players": {
+                    "76561198630510706": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-06T17:39:03.631406+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -35409,7 +35421,7 @@
         ]
     },
     "478023532459065345": {
-        "count": 14,
+        "count": 15,
         "profile_id": 76561198804937176,
         "reports": [
             {
@@ -35559,6 +35571,18 @@
                     "76561199007625274": {
                         "kind": "cheater",
                         "last_seen": "2026-10-02T14:13:53.058313+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-06T17:57:24.600475+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1557082237495672953 <@478023532459065345> (Skyori!) cheater exposed (+1 points, 15 total)",
+                "players": {
+                    "76561198653864010": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-06T17:57:24.600475+00:00"
                     }
                 },
                 "points": 1,
