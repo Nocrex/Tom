@@ -44702,7 +44702,7 @@
         ]
     },
     "611165932978438151": {
-        "count": 4,
+        "count": 5,
         "profile_id": 76561199161073359,
         "reports": [
             {
@@ -44743,6 +44743,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-07T16:23:33.368540+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1557425945072115733 <@611165932978438151> (VeeLiz) cheater exposed (+1 points, 5 total)",
+                "players": {
+                    "76561198794169405": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-07T16:23:33.368540+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
