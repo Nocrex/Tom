@@ -32918,7 +32918,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 110,
+        "count": 111,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -34103,6 +34103,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-08T04:17:32.587510+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1557587191943790634 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 111 total)",
+                "players": {
+                    "76561198637627933": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-08T04:17:32.587510+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
