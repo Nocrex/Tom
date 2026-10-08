@@ -8069,7 +8069,7 @@
         ]
     },
     "1219155216960716800": {
-        "count": 23,
+        "count": 24,
         "profile_id": 76561199191069546,
         "reports": [
             {
@@ -8306,6 +8306,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-08T01:41:03.153492+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1387093577452093512 <@1219155216960716800> (piss monster) cheater exposed (+1 points, 24 total)",
+                "players": {
+                    "76561198381004449": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-08T01:41:03.153492+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
