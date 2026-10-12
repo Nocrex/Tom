@@ -5560,7 +5560,7 @@
         ]
     },
     "1155558450525372571": {
-        "count": 3,
+        "count": 4,
         "profile_id": 76561198259327022,
         "reports": [
             {
@@ -5589,6 +5589,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-12T00:59:05.605412+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1559005750787833897 <@1155558450525372571> (kv.bin) cheater exposed (+1 points, 4 total)",
+                "players": {
+                    "76561198659677308": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-12T00:59:05.605412+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
