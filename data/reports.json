@@ -42981,7 +42981,7 @@
         ]
     },
     "589758843324465162": {
-        "count": 123,
+        "count": 125,
         "profile_id": 76561198331362454,
         "reports": [
             {
@@ -44263,6 +44263,30 @@
                     "76561198641223372": {
                         "kind": "cheater",
                         "last_seen": "2026-10-06T22:15:40.186547+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-15T18:02:32.388238+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1560348222411776141 <@589758843324465162> (Fidoo001) cheater exposed (+1 points, 124 total)",
+                "players": {
+                    "76561198707874203": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-15T18:02:32.388238+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-15T18:03:11.649579+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1560349522826363022 <@589758843324465162> (Fidoo001) cheater exposed (+1 points, 125 total)",
+                "players": {
+                    "76561198644203788": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-15T18:03:11.649579+00:00"
                     }
                 },
                 "points": 1,
@@ -53495,6 +53519,24 @@
                     "76561198646360531": {
                         "kind": "cheater",
                         "last_seen": "2026-10-07T05:37:21.548207+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
+    "878693161491394580": {
+        "count": 1,
+        "profile_id": 76561199200686324,
+        "reports": [
+            {
+                "date": "2026-10-15T18:01:06.738303+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1560304113068015636 <@878693161491394580> (Honigbi3ne) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198060313539": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-15T18:01:06.738303+00:00"
                     }
                 },
                 "points": 1,
