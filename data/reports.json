@@ -47189,7 +47189,7 @@
         ]
     },
     "660121742328463371": {
-        "count": 4,
+        "count": 5,
         "profile_id": 76561199537727640,
         "reports": [
             {
@@ -47222,6 +47222,18 @@
                     }
                 },
                 "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-10-17T02:40:33.022309+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1560825364714889216 <@660121742328463371> (G.O. Star) cheater exposed (+1 points, 5 total)",
+                "players": {
+                    "76561199343901593": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-17T02:40:33.022309+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
