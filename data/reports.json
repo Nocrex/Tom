@@ -45768,7 +45768,7 @@
         ]
     },
     "613019555052388371": {
-        "count": 25,
+        "count": 26,
         "profile_id": 76561199081583537,
         "reports": [
             {
@@ -46037,6 +46037,18 @@
                     }
                 },
                 "points": 4,
+                "verified": true
+            },
+            {
+                "date": "2026-10-18T19:21:42.570655+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1561458089977454602 <@613019555052388371> (chimp) cheater exposed (+1 points, 26 total)",
+                "players": {
+                    "76561198392339356": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-18T19:21:42.570655+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
