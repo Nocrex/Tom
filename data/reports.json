@@ -43187,7 +43187,7 @@
         ]
     },
     "589758843324465162": {
-        "count": 150,
+        "count": 153,
         "profile_id": 76561198331362454,
         "reports": [
             {
@@ -44785,6 +44785,42 @@
                     "76561198315176229": {
                         "kind": "cheater",
                         "last_seen": "2026-10-19T09:50:35.653894+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-19T10:03:46.864868+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1561502277649567805 <@589758843324465162> (Fidoo001) cheater exposed (+1 points, 151 total)",
+                "players": {
+                    "76561198182891987": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-19T10:03:46.864868+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-19T10:11:15.152181+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1561503237507653662 <@589758843324465162> (Fidoo001) cheater exposed (+1 points, 152 total)",
+                "players": {
+                    "76561198662355901": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-19T10:11:15.152181+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-19T10:17:17.661586+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1561506548386242580 <@589758843324465162> (Fidoo001) cheater exposed (+1 points, 153 total)",
+                "players": {
+                    "76561198697530501": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-19T10:17:17.661586+00:00"
                     }
                 },
                 "points": 1,
