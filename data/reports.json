@@ -22355,7 +22355,7 @@
         ]
     },
     "310505171954434049": {
-        "count": 234,
+        "count": 236,
         "profile_id": 76561198217926783,
         "reports": [
             {
@@ -24880,6 +24880,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T17:15:11.738789+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562065988717908069 <@310505171954434049> (Master Of Noob) cheater exposed (+2 points, 236 total)",
+                "players": {
+                    "76561198048139696": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T17:15:11.738789+00:00"
+                    },
+                    "76561198617898761": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T17:15:11.738789+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -56013,7 +56029,7 @@
         ]
     },
     "943527802416795721": {
-        "count": 29,
+        "count": 31,
         "profile_id": 76561198448053566,
         "reports": [
             {
@@ -56327,6 +56343,30 @@
                     "76561199367687953": {
                         "kind": "cheater",
                         "last_seen": "2026-10-19T00:47:46.426888+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T17:39:39.318905+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562096806857539675 <@943527802416795721> (cvshvh) cheater exposed (+1 points, 30 total)",
+                "players": {
+                    "76561198659003027": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T17:39:39.318905+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T17:52:35.356389+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562098055627538483 <@943527802416795721> (cvshvh) cheater exposed (+1 points, 31 total)",
+                "players": {
+                    "76561198661069268": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T17:52:35.356389+00:00"
                     }
                 },
                 "points": 1,
