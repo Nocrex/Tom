@@ -33570,7 +33570,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 125,
+        "count": 128,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -34919,6 +34919,42 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T23:12:43.182851+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562230082922348564 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 126 total)",
+                "players": {
+                    "76561198627378793": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T23:12:43.182851+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T23:24:38.440854+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562243145310150740 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 127 total)",
+                "players": {
+                    "76561199825313107": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T23:24:38.440854+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-20T23:39:58.500754+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1562196698569379980 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 128 total)",
+                "players": {
+                    "76561199375136888": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-20T23:39:58.500754+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -38268,7 +38304,7 @@
                 "players": {
                     "76561198267331108": {
                         "kind": "cheater",
-                        "last_seen": "2024-12-30T06:29:02.660000+00:00"
+                        "last_seen": "2026-10-20T23:40:55.058202+00:00"
                     }
                 },
                 "points": 1,
