@@ -34208,7 +34208,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 135,
+        "count": 136,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -35678,6 +35678,18 @@
                 },
                 "points": 1,
                 "verified": true
+            },
+            {
+                "date": "2026-10-26T03:44:24.006377+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564048905673379850 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 136 total)",
+                "players": {
+                    "76561198625557078": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-26T03:44:24.006377+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -35778,7 +35790,7 @@
         ]
     },
     "463913931354931210": {
-        "count": 84,
+        "count": 85,
         "profile_id": 76561198164668247,
         "reports": [
             {
@@ -36668,6 +36680,18 @@
                     "76561199663469390": {
                         "kind": "cheater",
                         "last_seen": "2026-10-22T17:45:11.681402+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-26T03:38:45.734936+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564079852464902214 <@463913931354931210> (Bekymre) cheater exposed (+1 points, 85 total)",
+                "players": {
+                    "76561198734199571": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-26T03:38:45.734936+00:00"
                     }
                 },
                 "points": 1,
