@@ -5560,7 +5560,7 @@
         ]
     },
     "1155558450525372571": {
-        "count": 5,
+        "count": 7,
         "profile_id": 76561198259327022,
         "reports": [
             {
@@ -5613,6 +5613,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-28T14:52:41.917528+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564725620016152607 <@1155558450525372571> (kv.bin) cheater exposed (+2 points, 7 total)",
+                "players": {
+                    "76561198613693250": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T14:52:41.917528+00:00"
+                    },
+                    "76561198772946379": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T14:52:41.917528+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
@@ -34464,7 +34480,7 @@
         ]
     },
     "454858232301879297": {
-        "count": 138,
+        "count": 139,
         "profile_id": 76561197994760255,
         "reports": [
             {
@@ -35970,6 +35986,18 @@
                 },
                 "points": 1,
                 "verified": true
+            },
+            {
+                "date": "2026-10-28T14:29:20.023624+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564836967147905165 <@454858232301879297> (Greenmovie13) cheater exposed (+1 points, 139 total)",
+                "players": {
+                    "76561198282256856": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T14:29:20.023624+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -37279,7 +37307,7 @@
         "reports": []
     },
     "469410914874163201": {
-        "count": 13,
+        "count": 14,
         "profile_id": 76561198358863286,
         "reports": [
             {
@@ -37420,6 +37448,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-28T14:30:52.217219+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564939238477267055 <@469410914874163201> (Vitaly) cheater exposed (+1 points, 14 total)",
+                "players": {
+                    "76561199874187151": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T14:30:52.217219+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
