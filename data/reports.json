@@ -48136,7 +48136,7 @@
         ]
     },
     "626801591512727574": {
-        "count": 34,
+        "count": 35,
         "profile_id": 76561199075910648,
         "reports": [
             {
@@ -48469,6 +48469,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-28T03:52:31.695604+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564836165444571246 <@626801591512727574> (tex) cheater exposed (+1 points, 35 total)",
+                "players": {
+                    "76561198413122514": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T03:52:31.695604+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -52901,7 +52913,7 @@
         ]
     },
     "796123922600558623": {
-        "count": 6,
+        "count": 7,
         "profile_id": 76561199126506687,
         "reports": [
             {
@@ -52966,6 +52978,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-28T03:45:37.968637+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1564844222735974460 <@796123922600558623> (enwa) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561198045814204": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-28T03:45:37.968637+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
