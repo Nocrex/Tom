@@ -20891,7 +20891,7 @@
         ]
     },
     "309337035716558858": {
-        "count": 206,
+        "count": 208,
         "profile_id": 76561198189607470,
         "reports": [
             {
@@ -22868,6 +22868,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-10-30T17:06:39.951062+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1565771081510559816 <@309337035716558858> (lukasmaestro) cheater exposed (+2 points, 208 total)",
+                "players": {
+                    "76561198694005680": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-30T17:06:39.951062+00:00"
+                    },
+                    "76561199474871091": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-30T17:06:39.951062+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
