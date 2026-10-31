@@ -10054,7 +10054,7 @@
         ]
     },
     "1324687028872282193": {
-        "count": 2,
+        "count": 3,
         "profile_id": 76561198772124078,
         "reports": [
             {
@@ -10071,6 +10071,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-10-31T17:05:47.047556+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566065005210632253 <@1324687028872282193> (birthday toothpaste) cheater exposed (+1 points, 3 total)",
+                "players": {
+                    "76561198728566146": {
+                        "kind": "cheater",
+                        "last_seen": "2026-10-31T17:05:47.047556+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
