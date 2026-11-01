@@ -5560,7 +5560,7 @@
         ]
     },
     "1155558450525372571": {
-        "count": 7,
+        "count": 8,
         "profile_id": 76561198259327022,
         "reports": [
             {
@@ -5629,6 +5629,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-01T06:07:39.380598+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566243328125837332 <@1155558450525372571> (kv.bin) cheater exposed (+1 points, 8 total)",
+                "players": {
+                    "76561198611226027": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T06:07:39.380598+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -11024,7 +11036,7 @@
         ]
     },
     "1394443620714545184": {
-        "count": 4,
+        "count": 7,
         "profile_id": 76561199863825135,
         "reports": [
             {
@@ -11073,6 +11085,26 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-01T06:15:23.092502+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566248522544840754 <@1394443620714545184> (XhillPanda) cheater exposed (+3 points, 7 total)",
+                "players": {
+                    "76561198149964333": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T06:15:23.092502+00:00"
+                    },
+                    "76561198641569431": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T06:15:23.092502+00:00"
+                    },
+                    "76561199562040890": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T06:15:23.092502+00:00"
+                    }
+                },
+                "points": 3,
                 "verified": true
             }
         ]
