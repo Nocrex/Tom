@@ -28475,7 +28475,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 165,
+        "count": 168,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -30353,6 +30353,42 @@
                     "76561198074928110": {
                         "kind": "cheater",
                         "last_seen": "2026-10-26T08:28:52.156625+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-01T17:15:52.475761+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566499429161238589 <@365145249074642956> (Teltta) cheater exposed (+1 points, 166 total)",
+                "players": {
+                    "76561198612140172": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T17:15:52.475761+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-01T17:16:02.673859+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566500920173531206 <@365145249074642956> (Teltta) cheater exposed (+1 points, 167 total)",
+                "players": {
+                    "76561198620635780": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T17:16:02.673859+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-01T17:34:33.613234+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1566505635489513592 <@365145249074642956> (Teltta) cheater exposed (+1 points, 168 total)",
+                "players": {
+                    "76561199741405540": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-01T17:34:33.613234+00:00"
                     }
                 },
                 "points": 1,
