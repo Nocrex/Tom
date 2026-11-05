@@ -53167,7 +53167,7 @@
         ]
     },
     "775476032630947920": {
-        "count": 79,
+        "count": 78,
         "profile_id": 76561198402859419,
         "reports": [
             {
@@ -54007,22 +54007,6 @@
                 "verified": true
             },
             {
-                "date": "2026-08-29T18:01:40.943055+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1543270360013602899 <@775476032630947920> (moosetwin) cheater exposed (+2 points, 72 total)",
-                "players": {
-                    "76561198123648127": {
-                        "kind": "cheater",
-                        "last_seen": "2026-08-29T18:01:40.943055+00:00"
-                    },
-                    "76561199808331208": {
-                        "kind": "cheater",
-                        "last_seen": "2026-08-29T18:01:40.943055+00:00"
-                    }
-                },
-                "points": 2,
-                "verified": true
-            },
-            {
                 "date": "2026-09-03T14:59:56.822282+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1545085630961295520 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 73 total)",
                 "players": {
@@ -54101,6 +54085,18 @@
                     "76561198636983238": {
                         "kind": "cheater",
                         "last_seen": "2026-10-24T05:54:10.359218+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-05T15:06:58.385188+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1543270360013602899 <@775476032630947920> (moosetwin) cheater exposed (+1 points, 78 total)",
+                "players": {
+                    "76561198123648127": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-05T15:06:58.385188+00:00"
                     }
                 },
                 "points": 1,
