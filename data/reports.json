@@ -38529,7 +38529,7 @@
         ]
     },
     "478023532459065345": {
-        "count": 18,
+        "count": 19,
         "profile_id": 76561198804937176,
         "reports": [
             {
@@ -38599,18 +38599,6 @@
                     "76561198853420295": {
                         "kind": "cheater",
                         "last_seen": "2026-09-06T16:50:49.288803+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2026-09-08T03:28:20.298250+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1546719391629181008 <@478023532459065345> (Skyori!) cheater exposed (+1 points, 7 total)",
-                "players": {
-                    "76561198643905841": {
-                        "kind": "cheater",
-                        "last_seen": "2026-09-08T03:28:20.298250+00:00"
                     }
                 },
                 "points": 1,
@@ -38730,6 +38718,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-06T04:59:20.958606+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1546719391629181008 <@478023532459065345> (Skyori!) cheater exposed (+2 points, 19 total)",
+                "players": {
+                    "76561198301768596": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-06T04:59:20.958606+00:00"
+                    },
+                    "76561198643905841": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-06T04:59:20.958606+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
