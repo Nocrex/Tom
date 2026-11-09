@@ -13614,7 +13614,7 @@
         ]
     },
     "1538770517979439197": {
-        "count": 41,
+        "count": 46,
         "profile_id": 76561198096347625,
         "reports": [
             {
@@ -14072,6 +14072,58 @@
                     "76561197975320202": {
                         "kind": "cheater",
                         "last_seen": "2026-11-09T12:50:50.293620+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-09T13:05:44.880817+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569130818268307466 <@1538770517979439197> (catface) cheater exposed (+1 points, 42 total)",
+                "players": {
+                    "76561198654537907": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:05:44.880817+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-09T13:36:04.016686+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569343996361310308 <@1538770517979439197> (catface) cheater exposed (+1 points, 43 total)",
+                "players": {
+                    "76561198063253464": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:36:04.016686+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-09T13:55:58.821381+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569348158096547950 <@1538770517979439197> (catface) cheater exposed (+2 points, 45 total)",
+                "players": {
+                    "76561198130134244": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:55:58.821381+00:00"
+                    },
+                    "76561199278154970": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:55:58.821381+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-09T13:57:54.317303+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569350126068039720 <@1538770517979439197> (catface) cheater exposed (+1 points, 46 total)",
+                "players": {
+                    "76561199864943939": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:57:54.317303+00:00"
                     }
                 },
                 "points": 1,
@@ -41943,7 +41995,7 @@
         ]
     },
     "551621415959265284": {
-        "count": 47,
+        "count": 48,
         "profile_id": 76561199177593557,
         "reports": [
             {
@@ -42449,6 +42501,18 @@
                     "76561197994621104": {
                         "kind": "cheater",
                         "last_seen": "2026-11-03T11:03:25.651460+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-09T13:40:22.154693+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569345614880178292 <@551621415959265284> (BossZe) cheater exposed (+1 points, 48 total)",
+                "players": {
+                    "76561199191691659": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-09T13:40:22.154693+00:00"
                     }
                 },
                 "points": 1,
