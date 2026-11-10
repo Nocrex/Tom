@@ -52289,7 +52289,7 @@
         ]
     },
     "659611421017112616": {
-        "count": 1,
+        "count": 3,
         "profile_id": 76561199013031576,
         "reports": [
             {
@@ -52302,6 +52302,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-10T10:56:56.951937+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1569623700435898398 <@659611421017112616> (Dubyasquid) cheater exposed (+2 points, 3 total)",
+                "players": {
+                    "76561198026326450": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-10T10:56:56.951937+00:00"
+                    },
+                    "76561198175035934": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-10T10:56:56.951937+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
