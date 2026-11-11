@@ -14580,7 +14580,7 @@
         ]
     },
     "1541096358272962561": {
-        "count": 2,
+        "count": 7,
         "profile_id": 76561198650998518,
         "reports": [
             {
@@ -14602,6 +14602,66 @@
                     "76561198725153951": {
                         "kind": "cheater",
                         "last_seen": "2026-11-11T19:20:19.766349+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-11T20:16:32.952807+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570158321850392676 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 3 total)",
+                "players": {
+                    "76561199888622916": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-11T20:16:32.952807+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-11T20:17:05.045593+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570160886297923594 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 4 total)",
+                "players": {
+                    "76561198657630854": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-11T20:17:05.045593+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-11T20:17:27.079307+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570162523422986290 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 5 total)",
+                "players": {
+                    "76561199621861337": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-11T20:17:27.079307+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-11T20:17:51.435344+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570164226213814463 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561199696451317": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-11T20:17:51.435344+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-11T20:21:01.347610+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570166691365658724 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561199823635007": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-11T20:21:01.347610+00:00"
                     }
                 },
                 "points": 1,
