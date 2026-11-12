@@ -14822,7 +14822,7 @@
         ]
     },
     "1541096358272962561": {
-        "count": 11,
+        "count": 12,
         "profile_id": 76561198650998518,
         "reports": [
             {
@@ -14940,6 +14940,18 @@
                 },
                 "points": 2,
                 "verified": true
+            },
+            {
+                "date": "2026-11-12T19:28:18.070391+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570517715209298071 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 12 total)",
+                "players": {
+                    "76561199779230577": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-12T19:28:18.070391+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
             }
         ]
     },
@@ -15032,7 +15044,7 @@
         ]
     },
     "160483451303100416": {
-        "count": 124,
+        "count": 126,
         "profile_id": 76561198052791876,
         "reports": [
             {
@@ -16409,6 +16421,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-12T19:00:59.538835+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570499364525178921 <@160483451303100416> (soLo') cheater exposed (+2 points, 126 total)",
+                "players": {
+                    "76561198828909285": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-12T19:00:59.538835+00:00"
+                    },
+                    "76561199577650772": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-12T19:00:59.538835+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
