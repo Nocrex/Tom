@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-12 17:53:31",
-        "title": "vorobey-hackerpolice - 2026-11-12 17:53:31",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-12 19:00:02",
+        "title": "vorobey-hackerpolice - 2026-11-12 19:00:02",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -15371,6 +15371,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1580739220]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570502451461628106"
+            ],
+            "last_seen": {
+                "time": 1794508901
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:35286468]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570502451461628106"
+            ],
+            "last_seen": {
+                "time": 1794508901
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:120668409]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1568015722884505691"
@@ -16745,6 +16769,198 @@
             ],
             "last_seen": {
                 "time": 1794506010
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1129331033]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570504604636946442"
+            ],
+            "last_seen": {
+                "time": 1794507980
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1527711185]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570501827001057300"
+            ],
+            "last_seen": {
+                "time": 1794508257
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1846577382]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570502601684820009"
+            ],
+            "last_seen": {
+                "time": 1794508286
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1036287840]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570506735486107751"
+            ],
+            "last_seen": {
+                "time": 1794508593
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1268538274]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570507391059894434"
+            ],
+            "last_seen": {
+                "time": 1794508598
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1783127168]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570505307610685481"
+            ],
+            "last_seen": {
+                "time": 1794508654
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1896268098]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570503989802565632"
+            ],
+            "last_seen": {
+                "time": 1794508820
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1901020744]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570494637414817822"
+            ],
+            "last_seen": {
+                "time": 1794508979
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1752897333]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570494637414817822"
+            ],
+            "last_seen": {
+                "time": 1794508979
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1736911732]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570496885012176956"
+            ],
+            "last_seen": {
+                "time": 1794509237
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:330035580]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570496885012176956"
+            ],
+            "last_seen": {
+                "time": 1794509237
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1892639573]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570495890605482014"
+            ],
+            "last_seen": {
+                "time": 1794509288
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1388585539]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570497457023098920"
+            ],
+            "last_seen": {
+                "time": 1794509304
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:172088466]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570512170003857418"
+            ],
+            "last_seen": {
+                "time": 1794509838
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1878499819]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570511522956976199"
+            ],
+            "last_seen": {
+                "time": 1794509880
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1005046491]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570490664184057916"
+            ],
+            "last_seen": {
+                "time": 1794510002
             }
         },
         {
