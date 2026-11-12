@@ -32,6 +32,20 @@ def check_in_thread(
 
 T = TypeVar("T")
 
+def split_embed(embed: discord.Embed) -> list[discord.Embed]:
+    embeds = [embed]
+    if not embed.description:
+        return embeds
+        
+    while len(embeds[-1].description) > 4096:
+        lines = embeds[-1].description.splitlines()
+        separated_lines = []
+        while len("\n".join(lines)) > 4096:
+            separated_lines.append(lines.pop())
+        embeds[-1].description = "\n".join(lines)
+        embeds.append(discord.Embed(color=embed.color, description="\n".join(separated_lines)))
+
+    return embeds
 
 async def join(it1: "Iterator[T]", it2: "AsyncIterator[T]") -> "AsyncGenerator[T]":
     while True:
@@ -165,7 +179,8 @@ class HPCog(commands.Cog):
                 ),
             )
             emb.colour = discord.Color.orange()
-            await self.log_channel.send(embed=emb)
+            for e in split_embed(emb):
+                await self.log_channel.send(embed=e)
             logging.info(f"{len(open_reports)} stale reports")
         else:
             logging.info("Nothing to nag :)")
@@ -681,7 +696,7 @@ class HPCog(commands.Cog):
         if len(open_reports) > 0:
             open_reports.sort(key=lambda t: t.created_at)
             now = datetime.now(timezone.utc)
-            emb = discord.Embed(
+            embds = split_embed(discord.Embed(
                 title=f"{len(open_reports)} open reports",
                 description="\n".join(
                     [
@@ -689,12 +704,14 @@ class HPCog(commands.Cog):
                         for thread in open_reports
                     ]
                 ),
-            )
+            ))
         else:
-            emb = discord.Embed(title="No open reports")
-            emb.color = discord.Color.green()
+            embds = [discord.Embed(title="No open reports")]
+            embds[0].color = discord.Color.green()
 
-        await interaction.followup.send(embed=emb)
+        await interaction.followup.send(embed=embds[0])
+        for em in embds[1:]:
+            await interaction.channel.send(embed=em)
 
 
 async def setup(bot: commands.Bot):
