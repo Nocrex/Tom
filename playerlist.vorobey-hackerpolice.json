@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-13 13:09:36",
-        "title": "vorobey-hackerpolice - 2026-11-13 13:09:36",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-13 17:00:10",
+        "title": "vorobey-hackerpolice - 2026-11-13 17:00:10",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -17549,6 +17549,30 @@
             ],
             "last_seen": {
                 "time": 1794575376
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:790878016]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570798603666989127"
+            ],
+            "last_seen": {
+                "time": 1794588976
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1033290639]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570797756157526107"
+            ],
+            "last_seen": {
+                "time": 1794589113
             }
         },
         {
@@ -36998,6 +37022,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:665583213]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570823430729900052"
+            ],
+            "last_seen": {
+                "time": 1794587522
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:646402050]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570812620389482567"
+            ],
+            "last_seen": {
+                "time": 1794587792
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1434397583]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1121780046928023613/1237539369657569300"
@@ -38876,6 +38924,54 @@
             ],
             "last_seen": {
                 "time": 1794492862
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:647995743]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570805042376744990"
+            ],
+            "last_seen": {
+                "time": 1794588330
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:50092716]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570805042376744990"
+            ],
+            "last_seen": {
+                "time": 1794588330
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:895715335]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570789006298316950"
+            ],
+            "last_seen": {
+                "time": 1794588478
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:721165323]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570788736201920552"
+            ],
+            "last_seen": {
+                "time": 1794588538
             }
         },
         {
@@ -43875,6 +43971,30 @@
             ],
             "last_seen": {
                 "time": 1794531182
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1521880628]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570613085755019315"
+            ],
+            "last_seen": {
+                "time": 1794588820
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1738870305]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570576548677816350"
+            ],
+            "last_seen": {
+                "time": 1794589209
             }
         },
         {
@@ -58668,6 +58788,30 @@
             "attributes": [
                 "cheater"
             ],
+            "steamid": "[U:1:1616795784]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570664567371997284"
+            ],
+            "last_seen": {
+                "time": 1794588653
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1212083630]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570694428266467409"
+            ],
+            "last_seen": {
+                "time": 1794588884
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
             "steamid": "[U:1:1726063972]",
             "proof": [
                 "https://discord.com/channels/354645865773924352/1533265648896180357"
@@ -60019,6 +60163,18 @@
             ],
             "last_seen": {
                 "time": 1793031921
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:210633183]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1570833589757677688"
+            ],
+            "last_seen": {
+                "time": 1794587166
             }
         },
         {
