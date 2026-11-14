@@ -12878,7 +12878,7 @@
         ]
     },
     "1525105310308503553": {
-        "count": 87,
+        "count": 89,
         "profile_id": 76561198845535280,
         "reports": [
             {
@@ -13895,6 +13895,30 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:08:37.835873+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571108151707828274 <@1525105310308503553> (j) cheater exposed (+1 points, 88 total)",
+                "players": {
+                    "76561199861823888": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:08:37.835873+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:09:05.985028+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571108315973288026 <@1525105310308503553> (j) cheater exposed (+1 points, 89 total)",
+                "players": {
+                    "76561198102932801": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:09:05.985028+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
@@ -15312,7 +15336,7 @@
         ]
     },
     "160483451303100416": {
-        "count": 134,
+        "count": 130,
         "profile_id": 76561198052791876,
         "reports": [
             {
@@ -17616,54 +17640,6 @@
                 "verified": true
             },
             {
-                "date": "2026-11-14T15:54:24.052789+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1570999422270054521 <@160483451303100416> (soLo') cheater exposed (+1 points, 133 total)",
-                "players": {
-                    "76561199834518435": {
-                        "kind": "cheater",
-                        "last_seen": "2026-11-14T15:54:24.052789+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2026-11-14T15:54:46.264645+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1571000003735060671 <@160483451303100416> (soLo') cheater exposed (+1 points, 134 total)",
-                "players": {
-                    "76561198307225435": {
-                        "kind": "cheater",
-                        "last_seen": "2026-11-14T15:54:46.264645+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2026-11-14T15:55:03.903775+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1571000358489301002 <@160483451303100416> (soLo') cheater exposed (+1 points, 135 total)",
-                "players": {
-                    "76561199487510626": {
-                        "kind": "cheater",
-                        "last_seen": "2026-11-14T15:55:03.903775+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
-                "date": "2026-11-14T15:59:31.536491+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1571003449590423572 <@160483451303100416> (soLo') cheater exposed (+1 points, 136 total)",
-                "players": {
-                    "76561198747936934": {
-                        "kind": "cheater",
-                        "last_seen": "2026-11-14T15:59:31.536491+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
                 "date": "2026-11-14T15:59:58.946622+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1570996465956815030 <@160483451303100416> (soLo') cheater exposed (+0 points, 135 total)",
                 "players": {
@@ -17682,6 +17658,430 @@
                     "76561198856707918": {
                         "kind": "cheater",
                         "last_seen": "2026-11-14T16:00:10.123093+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:00:23.844622+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1570999422270054521 <@160483451303100416> (soLo') cheater exposed (+0 points, 133 total)",
+                "players": {
+                    "76561199834518435": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:00:23.844622+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:00:35.920960+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571000003735060671 <@160483451303100416> (soLo') cheater exposed (+0 points, 132 total)",
+                "players": {
+                    "76561198307225435": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:00:35.920960+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:00:45.560391+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571000358489301002 <@160483451303100416> (soLo') cheater exposed (+0 points, 131 total)",
+                "players": {
+                    "76561199487510626": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:00:45.560391+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:01:30.249365+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571003449590423572 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198747936934": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:01:30.249365+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:01:58.535687+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571004276677812244 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199827006791": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:01:58.535687+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:02:20.567636+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571004631897735309 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199043389134": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:02:20.567636+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:02:46.461175+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571005022697689108 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198746040643": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:02:46.461175+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:03:29.290095+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571005601033621574 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199223074255": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:03:29.290095+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:04:05.429445+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571006650062471260 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199185479415": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:04:05.429445+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:04:48.630241+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571008449901367458 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199489663916": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:04:48.630241+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:07:44.271080+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571093661574365235 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199738849294": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:07:44.271080+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:09:32.672401+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571108675752304680 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198110823563": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:09:32.672401+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:13:06.906974+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571121273222992033 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198779340206": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:13:06.906974+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:13:28.351276+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571121832776572948 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198835541223": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:13:28.351276+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:14:21.255924+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571122431567986770 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199244733977": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:14:21.255924+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:16:44.742235+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571128811888713840 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199778377432": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:16:44.742235+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:17:18.262677+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571129422705336431 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198348930851": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:17:18.262677+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:17:53.119937+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571132460094193744 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198274457577": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:17:53.119937+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:18:14.023095+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571134326165217341 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199090456046": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:18:14.023095+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:19:54.981923+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571135861813153822 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198165839920": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:19:54.981923+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:20:20.755462+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571137435499368570 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199414067373": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:20:20.755462+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:20:55.481038+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571142964632223826 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199214767944": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:20:55.481038+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:21:22.135036+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571143573322076260 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198720812473": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:21:22.135036+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:22:37.198828+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571145516404711495 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199764193914": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:22:37.198828+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:24:27.712469+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571147131295768636 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561197976866010": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:24:27.712469+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:24:59.376892+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571148015840796772 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198627698071": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:24:59.376892+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:25:46.816515+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571148523926192249 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198724969371": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:25:46.816515+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:26:25.918737+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571150583648358480 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199140574605": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:26:25.918737+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:26:47.753902+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571151141989912667 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199839495720": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:26:47.753902+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:27:48.159306+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571152165895016569 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198621883413": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:27:48.159306+00:00"
+                    },
+                    "76561199521743715": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:27:48.159306+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:28:15.808550+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571153030684868639 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199485154197": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:28:15.808550+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:28:45.957730+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571162520612245534 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198772124078": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:28:45.957730+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:30:10.733098+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571164099478298745 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198891237589": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:30:10.733098+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:30:55.926767+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571164907527868466 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561199470926115": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:30:55.926767+00:00"
+                    }
+                },
+                "points": 0,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:31:49.202362+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571165923304276078 <@160483451303100416> (soLo') cheater exposed (+0 points, 130 total)",
+                "players": {
+                    "76561198958429203": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:31:49.202362+00:00"
                     }
                 },
                 "points": 0,
@@ -20468,12 +20868,12 @@
                 "verified": true
             },
             {
-                "date": "2026-11-14T15:57:36.190916+00:00",
+                "date": "2026-11-14T16:01:17.018568+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1571002081672691862 <@279557167852552193> (1b3d5) cheater exposed (+1 points, 5 total)",
                 "players": {
                     "76561198769479033": {
                         "kind": "cheater",
-                        "last_seen": "2026-11-14T15:57:36.190916+00:00"
+                        "last_seen": "2026-11-14T16:01:17.018568+00:00"
                     }
                 },
                 "points": 1,
@@ -52308,7 +52708,7 @@
                 "players": {
                     "76561198641223372": {
                         "kind": "cheater",
-                        "last_seen": "2026-10-20T21:08:01.271006+00:00"
+                        "last_seen": "2026-11-14T16:51:03.881396+00:00"
                     }
                 },
                 "points": 1,
@@ -62170,7 +62570,7 @@
         ]
     },
     "850945111797530674": {
-        "count": 42,
+        "count": 44,
         "profile_id": 76561199087622610,
         "reports": [
             {
@@ -62555,6 +62955,22 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-14T16:10:46.201050+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1571110493052080138 <@850945111797530674> (\u0415viL KOTzilla) cheater exposed (+2 points, 44 total)",
+                "players": {
+                    "76561198606467836": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:10:46.201050+00:00"
+                    },
+                    "76561198765940065": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-14T16:10:46.201050+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
