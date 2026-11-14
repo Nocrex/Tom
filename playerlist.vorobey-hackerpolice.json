@@ -4,8 +4,8 @@
         "authors": [
             "All contributors in the hackerpolice channel"
         ],
-        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-14 10:41:49",
-        "title": "vorobey-hackerpolice - 2026-11-14 10:41:49",
+        "description": "List of cheaters reported in the hackerpolice channel on the Vorobey discord server, last updated 2026-11-14 11:45:33",
+        "title": "vorobey-hackerpolice - 2026-11-14 11:45:33",
         "update_url": "https://raw.githubusercontent.com/Nocrex/Tom/refs/heads/main/../data/playerlist.vorobey-hackerpolice.json"
     },
     "players": [
@@ -17777,6 +17777,42 @@
             ],
             "last_seen": {
                 "time": 1794622160
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1281465951]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1571123364695638156"
+            ],
+            "last_seen": {
+                "time": 1794656196
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:1859084660]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1571123364695638156"
+            ],
+            "last_seen": {
+                "time": 1794656196
+            }
+        },
+        {
+            "attributes": [
+                "cheater"
+            ],
+            "steamid": "[U:1:884217714]",
+            "proof": [
+                "https://discord.com/channels/354645865773924352/1571125939105173644"
+            ],
+            "last_seen": {
+                "time": 1794656732
             }
         },
         {
@@ -48867,7 +48903,7 @@
                 "https://discord.com/channels/354645865773924352/1567048720699101225"
             ],
             "last_seen": {
-                "time": 1793703805
+                "time": 1794654726
             }
         },
         {
