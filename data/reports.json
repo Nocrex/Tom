@@ -12187,6 +12187,24 @@
         "profile_id": 76561198643164290,
         "reports": []
     },
+    "1380182558557470771": {
+        "count": 1,
+        "profile_id": 76561198601720661,
+        "reports": [
+            {
+                "date": "2026-11-22T17:29:19.179781+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574053920743882782 <@1380182558557470771> (nightfall.) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198639682284": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-22T17:29:19.179781+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
+    },
     "139401022991761408": {
         "count": 55,
         "profile_id": 76561198202816899,
