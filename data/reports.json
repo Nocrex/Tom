@@ -27823,6 +27823,28 @@
             }
         ]
     },
+    "301291792270098432": {
+        "count": 2,
+        "profile_id": 76561198110675264,
+        "reports": [
+            {
+                "date": "2026-11-24T16:39:16.697148+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574802712875241633 <@301291792270098432> (Mike\u0443) cheater exposed (+2 points, 2 total)",
+                "players": {
+                    "76561198177995653": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:39:16.697148+00:00"
+                    },
+                    "76561198627040863": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:39:16.697148+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            }
+        ]
+    },
     "303155849667411968": {
         "count": 1,
         "profile_id": 76561198220450928,
@@ -59373,7 +59395,7 @@
         ]
     },
     "618814400849117196": {
-        "count": 39,
+        "count": 62,
         "profile_id": 76561198346066569,
         "reports": [
             {
@@ -59799,6 +59821,250 @@
                     "76561198702365042": {
                         "kind": "cheater",
                         "last_seen": "2026-11-24T15:58:54.296263+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:05:31.349753+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574702033586618479 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 40 total)",
+                "players": {
+                    "76561198703960588": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:05:31.349753+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:07:26.107031+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574715798109421590 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 41 total)",
+                "players": {
+                    "76561199799183165": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:07:26.107031+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:10:08.611392+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574718378546036777 <@618814400849117196> (krekrekrekrek) cheater exposed (+2 points, 43 total)",
+                "players": {
+                    "76561199136678994": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:10:08.611392+00:00"
+                    },
+                    "76561199768685503": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:10:08.611392+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:14:14.844771+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574722182762860637 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 44 total)",
+                "players": {
+                    "76561198776198842": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:14:14.844771+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:16:55.771122+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574725513648279622 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 45 total)",
+                "players": {
+                    "76561199576610743": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:16:55.771122+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:18:13.492057+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574726925379706992 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 46 total)",
+                "players": {
+                    "76561199116918934": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:18:13.492057+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:19:12.610467+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574727520849502260 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 47 total)",
+                "players": {
+                    "76561199884288219": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:19:12.610467+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:20:39.010496+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574729035785965578 <@618814400849117196> (krekrekrekrek) cheater exposed (+2 points, 49 total)",
+                "players": {
+                    "76561198724300349": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:20:39.010496+00:00"
+                    },
+                    "76561198733597049": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:20:39.010496+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:22:35.270907+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574731259169472594 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 50 total)",
+                "players": {
+                    "76561199030701507": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:22:35.270907+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:24:40.986921+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574733111500218449 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 51 total)",
+                "players": {
+                    "76561198841826352": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:24:40.986921+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:25:31.887094+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574734417937567774 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 52 total)",
+                "players": {
+                    "76561198750442692": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:25:31.887094+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:27:55.857406+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574738406729191495 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 53 total)",
+                "players": {
+                    "76561199417374184": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:27:55.857406+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:30:47.629830+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574739549572300810 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 54 total)",
+                "players": {
+                    "76561199800868492": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:30:47.629830+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:33:09.037804+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574744139738783806 <@618814400849117196> (krekrekrekrek) cheater exposed (+3 points, 57 total)",
+                "players": {
+                    "76561199126608369": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:33:09.037804+00:00"
+                    },
+                    "76561199743295119": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:33:09.037804+00:00"
+                    },
+                    "76561199807368317": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:33:09.037804+00:00"
+                    }
+                },
+                "points": 3,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:34:11.280565+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574747921046310922 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 58 total)",
+                "players": {
+                    "76561199758931201": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:34:11.280565+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:40:59.595356+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574751358458920991 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 59 total)",
+                "players": {
+                    "76561199079614671": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:40:59.595356+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:43:08.571469+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574752275325517935 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 60 total)",
+                "players": {
+                    "76561198046629468": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:43:08.571469+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:50:37.391948+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574764520189206528 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 61 total)",
+                "players": {
+                    "76561198931480567": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:50:37.391948+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T16:53:07.210211+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574517315901456474 <@618814400849117196> (krekrekrekrek) cheater exposed (+1 points, 62 total)",
+                "players": {
+                    "76561198303388591": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T16:53:07.210211+00:00"
                     }
                 },
                 "points": 1,
