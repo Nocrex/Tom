@@ -22031,7 +22031,7 @@
         ]
     },
     "286378350975647744": {
-        "count": 286,
+        "count": 287,
         "profile_id": 76561198069149120,
         "reports": [
             {
@@ -25204,6 +25204,18 @@
                     }
                 },
                 "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T06:56:59.398622+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574556647991287908 <@286378350975647744> (Sauli01) cheater exposed (+1 points, 287 total)",
+                "players": {
+                    "76561199044450157": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T06:56:59.398622+00:00"
+                    }
+                },
+                "points": 1,
                 "verified": true
             }
         ]
