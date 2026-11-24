@@ -39068,24 +39068,24 @@
                 "verified": true
             },
             {
-                "date": "2026-11-22T20:52:37.682638+00:00",
-                "msg": "https://discord.com/channels/354645865773924352/1574091295788498954 <@365145249074642956> (Teltta) cheater exposed (+1 points, 179 total)",
-                "players": {
-                    "76561194715407077": {
-                        "kind": "cheater",
-                        "last_seen": "2026-11-22T20:52:37.682638+00:00"
-                    }
-                },
-                "points": 1,
-                "verified": true
-            },
-            {
                 "date": "2026-11-22T20:54:28.198658+00:00",
                 "msg": "https://discord.com/channels/354645865773924352/1574080561180577884 <@365145249074642956> (Teltta) cheater exposed (+1 points, 180 total)",
                 "players": {
                     "76561199103241309": {
                         "kind": "cheater",
                         "last_seen": "2026-11-22T20:54:28.198658+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-24T08:43:02.091572+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574091295788498954 <@365145249074642956> (Teltta) cheater exposed (+1 points, 180 total)",
+                "players": {
+                    "76561198683407707": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-24T08:43:02.091572+00:00"
                     }
                 },
                 "points": 1,
