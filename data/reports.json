@@ -16560,9 +16560,22 @@
         ]
     },
     "1571058463499493501": {
-        "count": 0,
-        "profile_id": null,
-        "reports": []
+        "count": 1,
+        "profile_id": 76561198632591248,
+        "reports": [
+            {
+                "date": "2026-11-25T22:19:04.924761+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574998837859196949 <@1571058463499493501> (a boat that can fly) cheater exposed (+1 points, 1 total)",
+                "players": {
+                    "76561198602288071": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T22:19:04.924761+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            }
+        ]
     },
     "158306905851166720": {
         "count": 5,
