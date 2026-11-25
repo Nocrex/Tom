@@ -16128,7 +16128,7 @@
         ]
     },
     "1541096358272962561": {
-        "count": 33,
+        "count": 34,
         "profile_id": 76561198650998518,
         "reports": [
             {
@@ -16506,6 +16506,18 @@
                     "76561199174528352": {
                         "kind": "cheater",
                         "last_seen": "2026-11-24T21:21:27.292245+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:11:59.619268+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575185596580761681 <@1541096358272962561> (Mad Skillz) cheater exposed (+1 points, 34 total)",
+                "players": {
+                    "76561198837918328": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:11:59.619268+00:00"
                     }
                 },
                 "points": 1,
@@ -37319,7 +37331,7 @@
         ]
     },
     "365145249074642956": {
-        "count": 193,
+        "count": 198,
         "profile_id": 76561198414556771,
         "reports": [
             {
@@ -39517,6 +39529,66 @@
                     "76561198710891876": {
                         "kind": "cheater",
                         "last_seen": "2026-11-25T19:00:15.592025+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:02:21.446960+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575202151246995677 <@365145249074642956> (Teltta) cheater exposed (+1 points, 194 total)",
+                "players": {
+                    "76561199639064219": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:02:21.446960+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:03:46.300468+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575197968145842287 <@365145249074642956> (Teltta) cheater exposed (+1 points, 195 total)",
+                "players": {
+                    "76561198736959556": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:03:46.300468+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:04:41.259477+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575198781136310423 <@365145249074642956> (Teltta) cheater exposed (+1 points, 196 total)",
+                "players": {
+                    "76561198258067761": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:04:41.259477+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:10:00.336632+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575203536130809938 <@365145249074642956> (Teltta) cheater exposed (+1 points, 197 total)",
+                "players": {
+                    "76561198030842879": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:10:00.336632+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T19:10:43.176615+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575204023378772108 <@365145249074642956> (Teltta) cheater exposed (+1 points, 198 total)",
+                "players": {
+                    "76561198220323265": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T19:10:43.176615+00:00"
                     }
                 },
                 "points": 1,
