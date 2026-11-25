@@ -14878,7 +14878,7 @@
         ]
     },
     "1538770517979439197": {
-        "count": 105,
+        "count": 110,
         "profile_id": 76561198096347625,
         "reports": [
             {
@@ -16027,6 +16027,50 @@
                     }
                 },
                 "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T11:51:18.070921+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575013084781617152 <@1538770517979439197> (catface) cheater exposed (+2 points, 107 total)",
+                "players": {
+                    "76561198601842848": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T11:51:18.070921+00:00"
+                    },
+                    "76561198651369527": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T11:51:18.070921+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T11:53:13.232786+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574954183671414824 <@1538770517979439197> (catface) cheater exposed (+1 points, 108 total)",
+                "players": {
+                    "76561198755899720": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T11:53:13.232786+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-25T11:55:19.010647+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1574953608477286420 <@1538770517979439197> (catface) cheater exposed (+2 points, 110 total)",
+                "players": {
+                    "76561198832388069": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T11:55:19.010647+00:00"
+                    },
+                    "76561198984948713": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-25T11:55:19.010647+00:00"
+                    }
+                },
+                "points": 2,
                 "verified": true
             }
         ]
