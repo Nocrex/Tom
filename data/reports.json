@@ -16560,7 +16560,7 @@
         ]
     },
     "1571058463499493501": {
-        "count": 1,
+        "count": 7,
         "profile_id": 76561198632591248,
         "reports": [
             {
@@ -16570,6 +16570,70 @@
                     "76561198602288071": {
                         "kind": "cheater",
                         "last_seen": "2026-11-25T22:19:04.924761+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-26T08:42:28.550228+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575426470975643688 <@1571058463499493501> (a boat that can fly) cheater exposed (+1 points, 2 total)",
+                "players": {
+                    "76561198782545493": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:42:28.550228+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-26T08:55:20.457298+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575402435457982546 <@1571058463499493501> (a boat that can fly) cheater exposed (+2 points, 4 total)",
+                "players": {
+                    "76561198931106657": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:55:20.457298+00:00"
+                    },
+                    "76561199730716991": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:55:20.457298+00:00"
+                    }
+                },
+                "points": 2,
+                "verified": true
+            },
+            {
+                "date": "2026-11-26T08:55:50.694934+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575370607900495974 <@1571058463499493501> (a boat that can fly) cheater exposed (+1 points, 5 total)",
+                "players": {
+                    "76561198022475104": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:55:50.694934+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-26T08:56:32.737082+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575387145240313856 <@1571058463499493501> (a boat that can fly) cheater exposed (+1 points, 6 total)",
+                "players": {
+                    "76561199125558710": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:56:32.737082+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-26T08:57:00.604677+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575405766582472825 <@1571058463499493501> (a boat that can fly) cheater exposed (+1 points, 7 total)",
+                "players": {
+                    "76561198601337417": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-26T08:57:00.604677+00:00"
                     }
                 },
                 "points": 1,
