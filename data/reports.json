@@ -43941,7 +43941,7 @@
         ]
     },
     "451418782678777856": {
-        "count": 213,
+        "count": 216,
         "profile_id": 76561198157038283,
         "reports": [
             {
@@ -46243,6 +46243,42 @@
                     "76561198738007162": {
                         "kind": "cheater",
                         "last_seen": "2026-11-27T15:53:40.656751+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-27T16:10:34.634469+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575906479318507633 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 214 total)",
+                "players": {
+                    "76561199539620014": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-27T16:10:34.634469+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-27T16:19:45.163398+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575908930649858311 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 215 total)",
+                "players": {
+                    "76561199228729154": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-27T16:19:45.163398+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-27T16:32:01.172198+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575911657987903680 <@451418782678777856> (BrokenMartin) cheater exposed (+1 points, 216 total)",
+                "players": {
+                    "76561199013591169": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-27T16:32:01.172198+00:00"
                     }
                 },
                 "points": 1,
@@ -57090,7 +57126,7 @@
         ]
     },
     "589758843324465162": {
-        "count": 203,
+        "count": 204,
         "profile_id": 76561198331362454,
         "reports": [
             {
@@ -59276,6 +59312,18 @@
                     "76561198723597412": {
                         "kind": "cheater",
                         "last_seen": "2026-11-27T14:38:51.167968+00:00"
+                    }
+                },
+                "points": 1,
+                "verified": true
+            },
+            {
+                "date": "2026-11-27T16:52:30.811283+00:00",
+                "msg": "https://discord.com/channels/354645865773924352/1575904684902719631 <@589758843324465162> (Fidoo) cheater exposed (+1 points, 204 total)",
+                "players": {
+                    "76561199709047040": {
+                        "kind": "cheater",
+                        "last_seen": "2026-11-27T16:52:30.811283+00:00"
                     }
                 },
                 "points": 1,
